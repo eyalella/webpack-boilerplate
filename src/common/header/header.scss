@@ -1,0 +1,568 @@
+@import "../util/util.scss";
+
+header {
+  object-fit: contain;
+  background-color: $header-blue;
+  padding:0 0 37px 0;
+  position: relative;
+  font-family: $main-font;
+
+  @media (min-width: $screen-lg-min) {
+    padding: 0;
+  }
+
+  .gery-line {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    object-fit: contain;
+    border: solid #1c6897;
+    border-width: 1px 0 0 0;
+  }
+
+  .top-sec-main-container {
+    margin:0 0 43px 0;
+
+    @media (min-width: $screen-lg-min) {
+      margin: 0 auto 22px;
+      padding: 0 20px;
+      height: 75px;
+    }
+
+    .top-sec {
+      margin: 19px 0 0 0;
+
+      @media (min-width: $screen-lg-min) {
+        margin: 22px 0 0 0;
+      }
+
+      .top-sec-container {
+        width: 100%;
+
+        /* --main nav mobile-- */
+
+        .nav-button {
+          padding: 0;
+          margin: 0;
+          border: 0;
+          background-color: transparent;
+        }
+
+
+
+        .main-mobile-nav-wrapper {
+          position: static;
+        }
+      }
+    }
+  }
+
+  /* --middle section header-- */
+
+  .middle-sec {
+    margin: 40px 0 0;
+
+    @media (min-width: $screen-lg-min) {
+      margin: 31px 0 0;
+      width: auto;
+    }
+
+    .font-size-container {
+      margin: 0 0 0 15px;
+      height: auto;
+      text-decoration: none;
+
+      @media (min-width: $screen-lg-min) {
+        margin: 0 0 3px 177px;
+      }
+
+      a {
+        display: inline-block;
+
+        &:first-child {
+          margin: 0 8px 0 0;
+        }
+      }
+
+      .Abig {
+        object-fit: contain;
+        font-size: 2.6rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.5;
+        letter-spacing: normal;
+        color: $main-white;
+        margin:0 0 0 8px;
+      }
+
+      .Asmall {
+        object-fit: contain;
+        font-size: 2rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.55;
+        letter-spacing: normal;
+        color: $main-white;
+      }
+    }
+
+    .ent-container {
+      margin: 0 auto 0 0;
+
+      @media (min-width: $screen-lg-min) {
+        margin: 0;
+      }
+    }
+
+    .ent-dropdown-logged-in-container {
+
+      .ent-arrow {
+        border: solid $main-white;
+        border-width: 0 1.5px 1.5px 0;
+        display: inline-block;
+        transform: rotate(45deg);
+        height: 9px;
+        width: 9px;
+        margin: 0 17px 9px 0;
+
+        @media (min-width: $screen-lg-min) {
+          margin: 0px 13px 8px 0;
+        }
+      }
+
+      .logged-in-name, .ent-dropdown-item-wrapper {
+        font-size: 2rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.8;
+        letter-spacing: normal;
+        color: $main-white;
+      }
+
+      .logged-in-name {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .ent-dropdown-items-container {
+        background-color: $cobalt;
+        position: absolute;
+        width: 169px;
+        left: 0;
+        z-index: 100;
+        margin: 7px 0 0 0;
+
+        @media (min-width: $screen-lg-min) {
+          margin: 0;
+          border-top: solid 5px $header-blue; 
+        }
+      }
+
+      .ent-dropdown-wrapper {
+        position: relative;
+      }
+
+      .ent-dropdown-item-wrapper {
+        height: 50px;
+        font-weight: normal;
+        text-align: center;
+        border: solid #0a7bb6;
+        border-width: 0 0 1px 0;
+
+        &:last-child {
+          border: 0;
+        }
+      }
+    }
+
+    .middle-sec-container {
+      width: 100%;
+
+      @media (min-width: $screen-lg-min) {
+        margin: 0;
+      }
+
+      .lng-dropdown {
+        width: auto;
+
+        @media (min-width: $screen-lg-min) {
+          margin-bottom: 0;
+        }
+
+        .lng-btn {
+          padding: 0;
+          height: auto;
+          width: auto;
+          background-color: transparent;
+          border: none;
+          margin:0 0 0 24px;
+          object-fit: contain;
+          font-size: 2rem;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 0.8;
+          letter-spacing: normal;
+          color: $main-white;
+
+          @media (min-width: $screen-lg-min) {
+            width: auto;
+            height: auto;
+          }
+        }
+
+        .lng-btn::after {
+          border: solid $main-white;
+          border-width: 0 1.5px 1.5px 0;
+          display: inline-block;
+          transform: rotate(45deg);
+          height: 9px;
+          width: 9px;
+          margin: 0 17px 9px 0;
+
+          @media (min-width: $screen-lg-min) {
+            margin: 0px 13px 8px 0;
+          }
+        }
+
+        .lng-dropdown-menu {
+          background-color: $header-blue;
+          min-width: 7rem;
+          padding: 0;
+
+          .lng-dropdown-item-1 {
+            font-size: 2rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 0.8;
+            letter-spacing: normal;
+            color: $main-white;
+            text-align: center;
+            padding: 5px;
+            margin-top: 3px;
+            //font-family: fbagol, OpenSans;
+
+            &:hover, &:focus {
+              background-color: #1c6897;
+              //color: #0a7bb6;
+              border: 0;
+            }
+          }
+        }
+      }
+
+      .ent-btn {
+        font-size: 2rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.8;
+        letter-spacing: normal;
+        color: $main-white;
+        cursor: pointer;
+
+        &:active, &:focus {
+          color: $cobalt;
+        }
+
+        @media (min-width: $screen-lg-min) {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  /* --input section-- */
+
+  .input-sec {
+    height: 60px;
+    width: 100%;
+
+    @media (min-width: $screen-lg-min) {
+      margin: 20px auto 0;
+    }
+
+    .input-container {
+      background-color: $main-white;
+      width: 100%;
+      position: relative;
+
+      .input-dropdown {
+        height: 100%;
+        width: 150px;
+        padding: 14px 0;
+        position: relative;
+        min-width: 100px;
+        bottom: 0;
+        overflow: hidden;
+
+        @media (min-width: $screen-lg-min) {
+          height: 60px;
+          width: 180px;
+        }
+
+        .input-toggle-select {
+          object-fit: contain;
+          font-size: 2rem;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 0.8;
+          letter-spacing: normal;
+          color: $input-toggle-text;
+          background-color: $main-white;
+          border: none;
+          border-radius: 0;
+          padding: 1px 15px 0 20px;
+          height: 100%;
+          border-left: rgba(102, 102, 102, 0.3) solid 1px;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+
+          &::-ms-expand {
+              display: none;
+          }
+
+          @media (min-width: $screen-lg-min) {
+            font-size: 2.4rem;
+            line-height: normal;
+            padding: 0 26px 0 20px;
+          }
+
+          @media (max-width: 340px) {
+            padding: 1px 10px 0 20px;
+          }
+
+          option {
+            width: inherit !important;
+            font-size: inherit !important;
+          }
+        }
+
+        .input-toggle-arrow {
+          position: absolute;
+          color: $header-blue;
+          z-index: 4;
+          left: 18px;
+          top: 25px;
+          right: auto;
+          margin-top: -1px;
+          border: solid $header-blue;
+          border-width: 0 1.5px 1.5px 0;
+          display: inline-block;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          height: 9px;
+          width: 9px;
+          margin-top: -1px;
+          pointer-events: none;
+
+          @media (min-width: $screen-lg-min) {
+            
+          }
+        }
+
+        .input-dropdown-menu {
+          width: 100%;
+
+          .input-dropdown-item {
+            font-size: 2rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 0.8;
+            letter-spacing: normal;
+            color: $input-toggle-text;
+            background-color: $main-white;
+            border: none;
+            margin: 10px 0 15px 0;
+            height: 60px;
+          }
+        }
+      }
+
+      .main-input {
+        font-size: 2rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.1;
+        letter-spacing: normal;
+        color: $main-input-text;
+        border: 0;
+        padding: 0 20px;
+        flex: 1;
+        width: 100%;
+        opacity: 0.8;
+
+        @media (min-width: $screen-lg-min) {
+          object-fit: contain;
+          font-size: 2.4rem;
+          line-height: 0.67;
+          //padding-bottom: 0;
+        }
+      }
+
+      .search-input {
+        height: 100%;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        padding: 0 10px 0 20px;
+
+        @media (min-width: $screen-lg-min) {
+          padding: 0 22px;
+        }
+
+        &:active, &:focus {
+          border: solid 1px #80bdff !important;
+          outline: 0 !important;
+          box-sizing: border-box;
+          //box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important; 
+        }
+
+        img {
+          width: 20px;
+          height: 19px;
+        }
+      }
+    }
+
+    #inputErrorP {
+      position: absolute;
+      width: 325px;
+      height: 46px;
+      background-color: #f2f2f2;
+      border: solid 1px #cccccc;
+      font-size: 1.3rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #505050;
+      right: 50%;
+      left: auto;
+      bottom: -26px;
+      z-index: 10000;
+      display: flex;
+      margin: 0 -162px 0 0;
+
+      @media (min-width: $screen-lg-min) {
+        width: 669px;
+        height: 38px;
+        //right: 275px;
+        font-size: 1.2rem;
+        margin: 0 -268px 0 0;
+      }
+
+      @media (min-width: $screen-xl-min) {
+        margin: 0 -335px 0 0;
+      }
+    }
+  }
+}
+
+.logo {
+
+  img {
+    height: 32px;
+    width: auto;
+
+    @media (min-width: $screen-lg-min) {
+      height: 38px;
+    }
+  }
+
+  .logo-head-container {
+    margin-right: 8px;
+
+    .first-head {
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: 1.3px;
+      color: $main-white;
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 1.6rem;
+        line-height: 1;
+        letter-spacing: 1.5px;
+      }
+
+    }
+
+    .second-head {
+      font-family: fbagol, OpenSans;
+      font-size: 0.8rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2;
+      letter-spacing: 1.1px;
+      color: $main-white;
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 1.4rem;
+        line-height: 1.14;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+
+  // .btn, a:focus {
+  //   outline: none;
+  //   box-shadow: none;
+  // }
+}
+
+.logged-in-name:hover + .ent-dropdown-items-container {
+  @media (min-width: $screen-lg-min) {
+    display: block !important;
+  }
+}
+
+.ent-dropdown-items-container:hover {
+  @media (min-width: $screen-lg-min) {
+    display: block !important;
+  }
+}
+
+.none {
+  display: none !important;
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) div:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus,
+body:not(.user-is-tabbing) a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+// main content link
+
+#mainContentLink {
+  display: none;
+}
+
+.user-is-tabbing #mainContentLink {
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 0 0 24px;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="116px" viewBox="0 0 116 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>C222FB8E-6D28-4BC7-AE55-01263D8295C3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1600" height="308"></rect>
+        <filter x="-0.5%" y="-2.1%" width="101.1%" height="105.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Dictionary-blue-2-colors" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1335.000000, -325.000000)">
+        <g id="Group-11" transform="translate(0.000000, 230.000000)">
+            <g id="stock-vector-thin-line-flat-design-concept-for-contact-banner-concept-for-website-banners-and-promotional-293651963">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+        <g id="Group-2" transform="translate(1335.000000, 325.000000)" fill="#6266A6" fill-rule="nonzero">
+            <path d="M45.1681416,11.2920354 C26.4905047,11.2920354 11.2920354,26.4905047 11.2920354,45.1681416 C11.2920354,63.8457785 26.4905047,79.0442478 45.1681416,79.0442478 C63.8457785,79.0442478 79.0442478,63.8457785 79.0442478,45.1681416 C79.0442478,26.4905047 63.8457785,11.2920354 45.1681416,11.2920354 Z M45.1681416,75.290409 C28.5734274,75.290409 15.0458742,61.785745 15.0458742,45.1681416 C15.0458742,28.5505381 28.5505381,15.0458742 45.1681416,15.0458742 C61.785745,15.0458742 75.290409,28.5505381 75.290409,45.1681416 C75.290409,61.785745 61.7628558,75.290409 45.1681416,75.290409 Z" id="Shape"></path>
+            <path d="M20.5309735,47.2212389 L24.3339305,47.2212389 C24.3339305,34.6065522 34.6065522,24.3339305 47.2212389,24.3339305 L47.2212389,20.5309735 C32.4963748,20.5309735 20.5309735,32.4963748 20.5309735,47.2212389 Z" id="Shape"></path>
+            <path d="M89.123622,73.1850394 L86.4748031,75.8338583 L81.7708661,71.1299213 C87.0228346,63.7543307 90.1283465,54.7574803 90.1283465,45.0299213 C90.1283465,20.2086614 69.919685,0 45.0755906,0 C20.2314961,0 0,20.2086614 0,45.0755906 C0,69.9425197 20.2086614,90.1511811 45.0755906,90.1511811 C54.8031496,90.1511811 63.8,87.0456693 71.1527559,81.7937008 L75.8566929,86.4976378 L73.207874,89.1464567 L100.061417,116 L102.710236,113.351181 L78.5055118,89.123622 L89.123622,78.5055118 L113.351181,102.733071 L116,100.084252 L89.123622,73.1850394 Z M3.74488189,45.0755906 C3.74488189,22.2866142 22.2866142,3.76771654 45.0527559,3.76771654 C67.8188976,3.76771654 86.3606299,22.3094488 86.3606299,45.0755906 C86.3606299,67.8417323 67.8188976,86.3834646 45.0527559,86.3834646 C22.2866142,86.3834646 3.74488189,67.8417323 3.74488189,45.0755906 Z M74.1440945,79.4645669 C76.0622047,77.8433071 77.8433071,76.0622047 79.4645669,74.1440945 L83.8259843,78.5055118 L78.5055118,83.8031496 L74.1440945,79.4645669 Z" id="Shape"></path>
+            <rect id="Rectangle-path" transform="translate(90.336283, 90.336283) rotate(135.000000) translate(-90.336283, -90.336283) " x="88.2831858" y="88.2831858" width="4.10619469" height="4.10619469"></rect>
+            <rect id="Rectangle-path" transform="translate(95.469027, 95.469027) rotate(-135.000000) translate(-95.469027, -95.469027) " x="93.4159292" y="93.4159292" width="4.10619469" height="4.10619469"></rect>
+            <rect id="Rectangle-path" transform="translate(100.601770, 100.601770) rotate(44.991897) translate(-100.601770, -100.601770) " x="98.5486726" y="98.5486726" width="4.10619469" height="4.10619469"></rect>
+        </g>
+    </g>
+</svg>

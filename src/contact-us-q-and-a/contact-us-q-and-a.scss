@@ -1,0 +1,415 @@
+@import "../util/util.scss";
+
+.contact-us-q-and-a, .contact-from-suppliers {
+	min-width: 330px;
+
+	// .nav-item-text-9 {
+	// 	background-color: rgba(255, 255, 255, 0.19);
+
+	// 		@media (min-width: $screen-lg-min) {
+	// 			border-bottom: solid 1px #1c6897; 
+	// 		 }
+	// 	}
+
+	.contact-us-q-and-a-top-sec, .contact-from-suppliers-top-sec {
+		position: relative;
+		height: auto;
+		padding: 0;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+		min-height: 205px;
+
+		@media (min-width: $screen-lg-min) {
+            background-image: url('../common/images/contact-us-header-visuals.png');
+			background-repeat: no-repeat;
+            min-height: 260px;
+            background-size: 30%;
+            background-position: left;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
+       	}
+       	
+       	.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			background-color: $cobalt;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+				//top: -7px;
+			}
+		}
+
+		.top-sec-container {
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+
+			@media (min-width: $screen-lg-min) {
+                padding: 34px 20px 0;
+    			//max-width: 1344px;
+    			max-width: 1010px;
+           	}
+
+           	@media (min-width: $screen-xl-min) {
+    			max-width: 1262px;
+           	}
+
+           	.breadcrumb-wrapper {
+				margin: 0;	
+
+				@media (min-width: $screen-lg-min) {
+					margin-bottom: 20px;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $cobalt;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.p-sec {
+				margin: 16px 0 0 0;	
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0;
+               	}
+
+				.icon-wrapper {
+					margin: 0 0 2px 0;
+
+					@media (min-width: $screen-lg-min) {
+	                    margin: 16px 0 0 24px;
+	               	}
+
+					img {
+						width: 49px;
+  						height: 51px;
+
+						@media (min-width: $screen-lg-min) {
+		                    width: 86px;
+							height: 93px;
+							object-fit: contain;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
+		                    width: 111px;
+							height: 116px;
+		               	}
+					}
+				}
+
+				.main-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $cobalt;
+					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 11px 0;
+	                    font-size: 6.2rem;
+	               	}
+				}
+
+				.main-p {
+					max-width: 594px;
+					font-size: 2rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: #4e5665;
+					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+					padding: 0;
+					margin:0 0 20px 0;
+
+					@media (min-width: $screen-lg-min) {
+	                    font-size: 3.2rem;
+	                    margin:0 0 10px 0;
+	                    color: $cobalt;
+	               	}
+
+	               	@media (min-width: $screen-xl-min) {
+						max-width: 750px;
+	               	}
+				}
+			}
+		}
+	}
+
+	.body {
+		height: fit-content;
+		padding: 0 20px;
+
+		@media (min-width: $screen-lg-min) {
+    		//height: 567px;
+    		padding: 0;
+    		margin: 0 0 144px 0;
+       	}
+
+		.body-wrapper {
+			width: 100%;
+			padding: 40px 0 0 0;
+		}
+
+		.form-wrapper {
+			margin: 25px 0 0 0;
+
+			@media (min-width: $screen-lg-min) {
+                max-width: 725px;
+				width: 100%;
+				margin: 0 0 0 25px;
+				padding: 0 20px 0 0;
+           	}
+			
+
+			.form-group {
+				width: 100%;
+				margin-bottom: 0;
+			}
+
+
+			input {
+				width: 100%;
+				height: 50px;
+				font-size: 1.5rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				color: $contact-us-input-text;
+				padding:0 23px 0 0;
+			}
+
+			.first-last-name-wrapper {
+				margin: 0 0 25px 0;
+
+				@media (min-width: $screen-lg-min) {
+					//margin: 0;
+               	}
+			}
+
+			.subject-email-wrapper {
+
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 25px 0;
+               	}
+			}
+
+			.first-name {
+
+				margin: 0 0 25px 0;
+
+				@media (min-width: $screen-lg-min) {
+                    //max-width: 205px;
+					margin: 0 0 0 10px;
+               	}
+			}
+
+		
+
+			.subject {
+				position: relative;
+
+				@media (min-width: $screen-lg-min) {
+                    
+               	}
+
+               	option {
+               		width: 100%;
+				    height: inherit;
+				    font-size: 1.5rem;
+				    font-weight: normal;
+				    font-style: normal;
+				    font-stretch: normal;
+				    line-height: normal;
+				    letter-spacing: 0.5px;
+				    color: rgba(106, 118, 138, 0.8);
+               	}
+
+				.blue-arrow {
+					width: 12px;
+					height: 12px;
+					position: absolute;
+					border: solid $header-blue;
+				    border-width: 0 1.5px 1.5px 0;
+				    display: inline-block;
+				    transform: rotate(45deg);
+				    -webkit-transform: rotate(45deg);
+				    pointer-events: none;
+				    top: 17px;
+				    left: 17px;
+				    right: auto;
+				}
+
+				#subjectSelect {
+					width: 100%;
+					height: 50px;
+					font-size: 1.5rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.2;
+					letter-spacing: 0.5px;
+					color: rgba(106,118,138,0.8);
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					padding:0 23px 0 0;
+
+					&::-ms-expand {
+			           display: none;
+			        }
+				}
+			}
+
+			.email, .subject {
+				 margin: 0 0 25px 0;
+
+				 @media (min-width: $screen-lg-min) {
+                    margin: 0;
+               	}
+			}
+
+			.email {
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0 0 0 10px;
+               	}
+			}
+
+			.save-details-button {
+				max-width: 882px;
+
+				button {
+					width: 100%;
+					height: 50px;
+					object-fit: contain;
+					border-radius: 3px;
+					background-color: $header-blue;
+					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+					font-size: 2rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					text-align: center;
+					color: $main-white;
+
+					@media (min-width: $screen-lg-min) {
+	                    width: 180px;
+	               	}
+
+					&:active, &:focus {
+			          background-color: #1c6897;
+			          color: $header-blue;
+			          border: 0;
+			        }
+				}
+			}
+
+			.subject-textarea {
+				margin: 0 0 25px 0;
+				position: relative;
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0 0 40px 0;
+               	}
+
+				textarea {
+					height: 107px;
+					min-height: 50px;
+					font-size: 1.5rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.9;
+					letter-spacing: 0.5px;
+					color: $contact-us-input-text;
+					padding: 17px 23px 5px 10px;
+				}
+
+				textarea.parsley-error {
+					border-bottom: solid 2px #d53b4a;
+				}
+			}
+
+			.input-bullet {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background-color: $header-blue;
+				border-radius: 50%;
+				right: 11px;
+				left: auto;
+				top: 21px;
+				//margin: -5px 0 0 0;
+			}
+		
+			input.parsley-error {
+				box-shadow: none;
+				border-bottom: solid 2px #d53b4a;
+			}
+
+			.form-group-password {
+				.parsley-errors-list {
+					bottom: -27px;
+
+					@media (min-width: $screen-sm-min) {
+						bottom: -20px;
+					}
+
+					@media (min-width: $screen-lg-min) {
+						bottom: -30px;
+					}
+				}
+			}
+		}
+
+		.name-wrapper, .email, .subject, {
+			position: relative;
+
+			.input-bullet {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background-color: $header-blue;
+				border-radius: 50%;
+				right: 11px;
+				left: auto;
+				top: 50%;
+				margin: -3px 0 0 0;
+			}
+		}
+
+		.recaptcha-container {
+			margin-bottom: 25px;
+		}
+	}
+
+	footer {
+			padding: 67px 0 0;
+	}
+}	
+

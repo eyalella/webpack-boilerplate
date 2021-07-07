@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תוצאות חיפוש אחרים</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <!-- add to the body "search-results-exemption" class to change the design to search results exemption design -->
+  <body class="search-for-others">
+    <!-- <link href="../search-for-others.rtl/search-for-others.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")}
+
+      <!-- top-section -->
+      <section class="search-for-others-top-sec">
+        <div class="right-line"></div>
+        <div class="search-results-container custom-container">
+          <div class="search-results-head-wrapper d-flex justify-content-start flex-column">
+              <h1 class="search-results-head d-flex justify-content-start ">
+                  תוצאות חיפוש
+              </h1>
+
+              <!-- search results main p -->
+              <p class="head-p">נמצאו 10 תוצאות לחיפוש "מחשבים" במכרזים</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="body-container">
+
+        <div class="grey-overlay d-lg-none">
+        </div> 
+
+        <!-- main-content -->
+        <section id="mainContent" class="search-for-others-body d-flex justify-content-between custom-container flex-column flex-lg-row">
+
+          <!-- open filter mobile button -->
+          <div class="filter-mobile d-lg-none"> 
+            <div class="filter-mobile-container d-flex flex-column align-items-center justify-content-center">
+              <div class="filter-mobile-wrapper d-flex flex-column align-items-center justify-content-center h-100">
+                <img src="../common/images/filter-icon.svg" class="filter-icon" alt="filter-icon">
+                <h3 class="mobile-filter-head">סנן תוצאות לפי</h3>
+                <div class="mobile-filter-arrows-wrapper d-flex flex-column">
+                  <span class="mobile-filter-arrow"></span>
+                  <span class="mobile-filter-arrow"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="options-container">
+            <div class="options-wrapper">
+              <h3 class="options-head">סנן תוצאות לפני נושא:</h3>
+
+              <!-- select all checkbox wrapper -->
+              <div class="checkbox-wrapper">
+              <label>
+
+                <!-- select all checkbox -->
+                <input type="checkbox" class="icheck others-checkbox select-all-checkbox">
+                <span class="main-label">הכל</span>
+              </label>
+              </div>
+
+              <!-- checkbox wrapper -->
+              <div class="checkbox-wrapper">
+                <label>
+
+                  <!-- search others checkbox -->
+                  <!-- add "possible-option" class to relevant inputs (example)-->
+                  <input type="checkbox" class="icheck others-checkbox possible-option">
+                  <span class="main-label">שאלות ותשובות</span>
+                </label>
+              </div>
+
+              <!-- checkbox wrapper -->
+              <div class="checkbox-wrapper">
+                <label>
+
+                  <!-- search others checkbox -->
+                  <!-- add disabled attribute to relevant inputs (example)-->
+                  <input type="checkbox" class="icheck others-checkbox" disabled>
+                  <span class="main-label">מילון מונחים</span>
+                </label>
+              </div>
+
+              <!-- checkbox wrapper -->
+              <div class="checkbox-wrapper">
+                <label>
+
+                  <!-- search others checkbox -->
+                  <input type="checkbox" class="icheck others-checkbox">
+                  <span class="main-label">רשימת ספקים</span>
+                </label>
+              </div>
+              <div class="checkbox-wrapper">
+                <label>
+
+                  <!-- search others checkbox -->
+                  <!-- add "possible-option" class to relevant input (example)-->
+                  <input type="checkbox" class="icheck others-checkbox possible-option">
+                  <span class="main-label">חדשות ועידכונים</span>
+                </label>
+              </div>
+
+              <!-- checkbox wrapper -->
+              <div class="checkbox-wrapper">
+                <label>
+
+                  <!-- search others checkbox -->
+                  <input type="checkbox" class="icheck others-checkbox">
+                  <span class="main-label">אירגונים ממשלתיים</span>
+                </label>
+              </div>
+
+              <!-- checkbox wrapper -->
+              <div class="checkbox-wrapper">
+                <label>
+
+                  <!-- search others checkbox -->
+                  <input type="checkbox" class="icheck others-checkbox">
+                  <span class="main-label">רכש ירוק</span>
+                </label>
+              </div>
+
+              <!-- checkbox wrapper -->
+              <div class="checkbox-wrapper">
+                <label>
+
+                  <!-- search others checkbox -->
+                  <input type="checkbox" class="icheck others-checkbox">
+                  <span class="main-label">רגולציה</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="results-wrapper">
+
+            <!-- q-and-a search result example-->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../q-and-a/index.html" tabindex="0">
+                    <h2>שאלות ותשובות</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/q-and-a-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">שאלות<br>ותשובות</h3>
+              </div>
+            </div>
+
+            <!-- q-and-a search result example-->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../q-and-a/index.html" tabindex="0">
+                    <h2>שאלות ותשובות</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/q-and-a-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">שאלות<br>ותשובות</h3>
+              </div>
+            </div>
+
+            <!-- q-and-a search result example-->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../q-and-a/index.html" tabindex="0">
+                    <h2>שאלות ותשובות</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/q-and-a-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">שאלות<br>ותשובות</h3>
+              </div>
+            </div>
+
+            <!-- q-and-a search result example-->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../q-and-a/index.html" tabindex="0">
+                    <h2>שאלות ותשובות</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/q-and-a-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">שאלות<br>ותשובות</h3>
+              </div>
+            </div>
+
+            <!-- q-and-a search result example-->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../q-and-a/index.html" tabindex="0">
+                    <h2>שאלות ותשובות</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/q-and-a-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">שאלות<br>ותשובות</h3>
+              </div>
+            </div>
+
+            <!-- add "results-divider" span after every group of search-results -->
+            <span class="results-divider"></span>
+
+            <!-- dictionary search result example -->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../dictionary/index.html" tabindex="0">
+                    <h2>מילון מונחים</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/dictionary-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">מילון<br>מונחים</h3>
+              </div>
+            </div>
+
+            <!-- dictionary search result example -->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../dictionary/index.html" tabindex="0">
+                    <h2>מילון מונחים</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/dictionary-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">מילון<br>מונחים</h3>
+              </div>
+            </div>
+
+            <!-- dictionary search result example -->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../dictionary/index.html" tabindex="0">
+                    <h2>מילון מונחים</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/dictionary-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">מילון<br>מונחים</h3>
+              </div>
+            </div>
+
+            <!-- dictionary search result example -->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../dictionary/index.html" tabindex="0">
+                    <h2>מילון מונחים</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/dictionary-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">מילון<br>מונחים</h3>
+              </div>
+            </div>
+
+            <!-- add "results-divider" span after every group of search-results -->
+            <span class="results-divider"></span>
+
+            <!-- sapakim search result example -->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../sapakim/index.html" tabindex="0">
+                    <h2>רשימת ספקים</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/sapakim-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">רשימת<br>ספקים</h3>
+              </div>
+            </div>
+
+            <!-- news search result example -->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../news/index.html" tabindex="0">
+                    <h2>חדשות ועידכונים</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/news-card-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">חדשות<br>ועידכונים</h3>
+              </div>
+            </div>
+
+            <!-- add "results-divider" span after every group of search-results -->
+            <span class="results-divider"></span>
+
+            <!-- green-rechesh search result example -->
+            <div class="result-container green-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../green-rechesh/index.html" tabindex="0">
+                    <h2>רכש ירוק</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/green-top-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> between evry two words! -->
+                <h3 class="search-result-sub-head">רכש<br>ירוק</h3>
+              </div>
+            </div>
+
+            <!-- regulation search result example -->
+            <div class="result-container page-result d-flex justify-content-start align-items-start">
+              <div class="right-line"></div>
+              
+              <!-- search result details-->
+              <div class="details-main-wrapper">
+                <div>
+
+                  <!-- result othres link -->
+                  <a class="result-othres-link" href="../regulation/index.html" tabindex="0">
+                    <h2>רגולציה</h2>
+                  </a>
+                  <p>מתודולוגיה לפיתוח ולתחזוקה של טכנולוגיית המידע …</p>
+                  
+                </div> 
+              </div>
+              <div class="logo-container d-lg-flex flex-column align-items-center">
+                <img src="../common/images/regulation-card-icon.svg" class="result-logo" alt="search-result-logo">
+
+                <!-- add <br> after evry word! -->
+                <h3 class="search-result-sub-head">רגולציה</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="search-results-footer d-flex justify-content-center">
+            ${require("../common/footer/footer.html")}
+        </footer>
+      </div>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

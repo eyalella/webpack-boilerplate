@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>שגיאה</title>
+      ${require("../common/common-stylesheet.html")}
+      <link rel="stylesheet" href="/common/common.css">
+      <link rel="stylesheet" href="/common/fonts.css">
+      <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="error-page">
+    <!-- <link href="../websites-links-2.rtl/websites-links-2.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")}
+
+      <div class="main-content d-flex flex-column align-items-center justify-content-start">
+        <div class="img-container d-flex align-items-center justify-content-center">
+            <img src="../common/images/404-arrow.svg" class="error-arrow" alt="arrow">
+            <img src="../common/images/404.svg" class="error-img" alt="error-icon">
+        </div> 
+        <h1>העמוד שחיפשת לא נמצא</h1>
+      </div>
+
+      <!-- footer -->
+      <footer class="websites-links-2-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>
+

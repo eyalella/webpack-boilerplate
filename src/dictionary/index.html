@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>מילון מונחים</title>
+      ${require("../common/common-stylesheet.html")}
+      <link rel="stylesheet" href="/common/common.css">
+      <link rel="stylesheet" href="/common/fonts.css">
+      <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="dictionary">
+    <!-- <link href="../dictionary.rtl/dictionary.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")}
+
+      <!-- top-section -->
+      <section class="dictionary-top-sec d-flex align-items-lg-center">
+        <div class="right-line"></div>
+          <div class="top-sec-container d-flex flex-column justify-content-start mx-auto">
+
+            <!-- breadcrumbs -->
+            <div class="dictionary-breadcrumb-wrapper d-none d-lg-block">
+              <nav class="breadcrumb d-flex align-items-center justify-content-start">
+                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מנהל הרכש הממשלתי <span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="#">מידע מקצועי <span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">מילון מונחים <!-- <span>››</span> --></a>
+              </nav>
+            </div>
+            <div class="dictionary-p-sec d-flex align-items-start flex-column flex-lg-row">
+              <img src="../common/images/dictionary-icon.svg" class="dictionary-top-icon" alt="magnifying-glass-icon">
+              <div class="dictionary-p-container d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
+                  <div class="dictionary-p-wrapper d-flex flex-column">
+                    <h1 class="dictionary-head">
+                        מילון מונחים
+                    </h1>
+                    <!-- <p class="dictionary-top-p d-lg-none">
+                        מנגנון שאלות ותשובות שלפניכם, מאפשר נגישות גבוהה לעובדי מינהל הרכש הממשלתי לצורך הפצה של מידע רלוונטי והעלאת סוגיות שונות ע"י המשתתפים.  
+                    </p> -->
+                  </div>
+              </div>
+            </div>
+
+            <!--desktop alphabet navbar -->
+            <div class="alphabet-lg d-none d-lg-block">
+                ${require("dictionary-alphabet-nav.html")} 
+            </div>
+          </div>
+      </section>
+
+      <!-- main-content -->
+      <section id="mainContent" class="dictionary-body d-flex flex-column align-items-start align-items-lg-center custom-container">
+
+        
+
+        <div class="body-p-wrapper">
+
+          <!-- body top head -->
+          <h3 class="body-head">חובת הפרסום - רשימות מציעים</h3>
+
+          <!-- body-top-p -->
+          <p class="body-top-p">
+            במסגרת הרפורמה בתקנות חובת המכרזים, תשנ"ג-1993 תוקנה תקנה 16 לתח"ם העוסקת ברשימת מציעים. התיקון נכנס לתוקפו ביום 1.01.12 (לאחר תקופת הסתגלות), לעניין הקמה, ניהול ופרסום של מאגרים באתר האינטרנט הממשלתי.
+            ע"פ התקנות, על ועדת המכרזים לנהל מאגרים (מאגרי יועצים, מתכננים, נותני שירותים, ספקים וכו') לפי סוגי ההתקשרות עם ספקים פוטנציאליים, לצורך התקשרות של משרד באחד מההליכים הבאים: מכרז סגור על פי תקנה 4 לתקנות, פנייה תחרותית לקבלת הצעות על פי תקנה 5 לתקנות, ופנייה תחרותית לקבלת הצעות על פי תקנה 5א(ב)(1) ו-5א(ב)(2) לתקנות.
+          </p>
+        </div>
+
+        <div class="w-100 d-flex">
+
+          <!--mobile alphabet navbar -->
+          <div class="alphabet-mobile d-lg-none">
+              ${require("dictionary-alphabet-nav.html")} 
+          </div>
+
+          <!-- expressions container -->
+          <div class="cards-wrapper d-inline-block" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="card expression-container" data-letter="a">
+
+              <!-- A collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1A"
+                href="#collapse1A"
+                aria-expanded="false" aria-controls="collapse1A">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      אומדן
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+              <div id="collapse1A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+
+                <!-- A expression collapsed answer -->
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="a">
+
+              <!-- A collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2A"
+                href="#collapse2A"
+                aria-expanded="false" aria-controls="collapse2A">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      אומדן
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+              <div id="collapse2A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+
+                <!-- A expression collapsed answer -->
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="a">
+
+              <!-- A collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3A"
+                href="#collapse3A"
+                aria-expanded="false" aria-controls="collapse3A">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      אומדן
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+
+              <!-- A expression answer-->
+              <div id="collapse3A" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block answer">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                    לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                    הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                  </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="b">
+
+              <!-- B collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1B" href="#collapse1B"
+                aria-expanded="false" aria-controls="collapse1B">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      בבב
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+
+              <!-- B expression answer--> 
+              <div id="collapse1B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="b">
+
+              <!-- B collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2B"
+                href="#collapse2B"
+                aria-expanded="false" aria-controls="collapse2B">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      בבב
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+
+              <!-- B expression answer-->
+              <div id="collapse2B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block answer">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                    לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                    הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                  </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="b">
+
+              <!-- B collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3B"
+                href="#collapse3B"
+                aria-expanded="false" aria-controls="collapse3B">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      בבב
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+
+              <!-- B expression answer-->
+              <div id="collapse3B" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block answer">
+                    לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                    לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                    הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                  </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="c">
+              
+              <!-- C collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse1C"
+                href="#collapse1C"
+                aria-expanded="false" aria-controls="collapse1C">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      גגג
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+              <div id="collapse1C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  
+                <!-- C expression collapsed answer -->
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="c">
+              
+              <!-- C collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse2C"
+                href="#collapse2C"
+                aria-expanded="false" aria-controls="collapse2C">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      גגג
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+              <div id="collapse2C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  
+                <!-- C expression collapsed answer -->
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
+              </div>
+            </div>
+            <div class="card expression-container" data-letter="c">
+              
+              <!-- C collapse expression -->
+              <a class="collapsed d-flex flex-column collapsed-p panel-collapse" data-parent="#accordion" data-toggle="collapse" data-target="#collapse3C"
+                href="#collapse3C"
+                aria-expanded="false" aria-controls="collapse3C">
+                <div class="card-header d-flex align-items-center align-items-lg-center" role="tab" id="heading1">
+                  <span class="closed-symbol">+</span>
+                  <span class="open"></span>
+                  <div class="expression-wrapper d-lg-flex flex-column justify-content-center">
+                      <h3 class="expression">​
+                      גגג
+                      </h3>
+                  </div>
+                  <img src="../common/images/collapse-arrow.svg" alt="arrow" class="collapse-arrow d-lg-none">
+                </div>
+              </a>
+              <div id="collapse3C" class="collapse panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                  
+                <!-- C expression collapsed answer -->
+                <div class="card-block answer">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. 
+
+                  לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+                  הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- open/close/all buttons-->
+        <div class="collapse-buttons-wrapper d-none d-lg-flex ">
+
+          <!-- show all button-->
+          <button class="collapse-button collapse-button-show-all button-active" role="button" tabindex="0">כל המונחים |</button>
+
+          <!-- open all button-->
+          <button class="collapse-button collapse-button-open" role="button" tabindex="0">&nbspפתח הכל |</button>
+
+          <!-- close all button-->
+          <button class="collapse-button collapse-button-close" role="button" tabindex="0">&nbspסגור הכל</button>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="dictionary-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>
+

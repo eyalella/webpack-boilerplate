@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="218px" height="218px" viewBox="0 0 218 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>EED93487-B672-4A09-BF0E-A785E91815B2</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-9.4%" y="-9.4%" width="118.8%" height="118.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.170148324 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="profile-details_confirm-pop-up" transform="translate(-692.000000, -233.000000)">
+            <g id="Group-13" filter="url(#filter-1)" transform="translate(705.000000, 246.000000)">
+                <circle id="Oval-2" stroke="#0A7BB6" stroke-width="5" fill="#FFFFFF" cx="96" cy="96" r="96"></circle>
+                <polygon id="Page-1-Copy" fill="#0A7BB6" points="129.731747 58 81.5231574 105.368418 60.4787241 88.7578877 47 106.565243 75.6091718 129.088383 83.1739105 135 89.98169 128.314669 145 74.2589325"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

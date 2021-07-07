@@ -1,0 +1,223 @@
+@import "../util/util.scss";
+
+.sitemap {
+	min-width: 330px;
+
+	#searchInput {
+		 //padding: 0 0 0 22px;
+	}
+
+	.custom-container {
+		padding: 0 20px;
+	}
+
+	.nav-item-text-2 {
+		background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		 }
+	}
+
+	.sitemap-top-sec {
+		position: relative;
+		height: 205px;
+		background-color: $main-white;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+		@media (min-width: $screen-lg-min) {
+			height: auto;
+			min-height: 260px;
+			background-size: 30%;
+			background-image: url('../common/images/site-map-header-visuals.png');
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			min-height: 308px;
+		}
+
+		.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			top: 0;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			background-color: $cobalt;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+			}
+		}
+
+		.top-sec-container {
+			width: 100%;
+			padding: 0;
+			height: auto;
+			margin: 0;
+
+			@media (min-width: $screen-lg-min) {
+				max-width: 1010px;
+				padding: 0 20px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
+			}
+
+			.sitemap-breadcrumb-wrapper {	
+
+				@media (min-width: $screen-lg-min) {
+					 margin: 26px 0 23px 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					 margin: 32px 0 29px 0;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $header-blue;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.sitemap-p-sec {
+				margin: 73px 20px 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+				}	
+
+				.sitemap-p-container {
+
+					@media (min-width: $screen-lg-min) {
+						//margin:29px 20px 116px 0;
+					}	
+				}
+
+				.sitemap-p-wrapper {
+					order: 2;
+					margin: 0;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0;
+					}
+				}
+
+				.sitemap-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.83;
+					letter-spacing: normal;
+					color: $cobalt;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 6.2rem;
+						font-weight: 500;
+						line-height: normal;
+						margin: 0 0 3px 0;
+					}	
+				}
+
+				.sitemap-top-p {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.25;
+					letter-spacing: normal;
+					color: #4e5665;
+					margin: 0 0 0 40px;
+					max-width: 500px;
+
+					@media (min-width: $screen-lg-min) {
+						max-width: 757px;
+						font-size: 3.2rem;
+						line-height: normal;
+						letter-spacing: normal;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 800px;
+					}	
+				}
+			}
+		}
+	}
+
+	.sitemap-body {
+
+		padding: 0 10px;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 70px auto 200px;
+			padding: 0 20px;
+		}
+
+		.sitemap-items-wrapper {
+			width: 100%;
+			margin: 20px 0 95px 0;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 95px 0;
+			}
+		}
+
+		.sitemap-item {
+
+			font-size: 3.2rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 0.78;
+			letter-spacing: normal;
+			color: $cobalt;
+			background-color: rgba(233, 235, 240, 0.5);
+			padding: 0 10px 0 0;
+			height: 67px;
+			
+			@media (min-width: $screen-lg-min) {
+				width: 460px;
+				object-fit: contain;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				width: 591px;
+			}
+		}
+
+		.sitemap-sub-items-wrapper {
+			padding: 0 10px 0 0;
+			margin: 10px 0 30px 0;
+
+			a {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				color: $cobalt;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.sitemap-footer {
+		
+	}
+}	

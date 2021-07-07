@@ -1,0 +1,37 @@
+@import "../signin/signin.scss";
+
+.signin-p-bold, .signin-p {
+	font-size: 1.6rem;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.13;
+	letter-spacing: normal;
+	color: $text-dark-grey;
+}
+
+.signin-p-bold {
+	font-weight: 500;
+	margin-bottom: 19px;
+}
+
+.signin-p {
+	margin-bottom: 10px;
+}
+
+.forgot-password-link {
+	font-size: 1.6rem;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.75;
+	letter-spacing: normal;
+	color: $header-blue;
+}
+
+.signin-sec-head {
+
+	@media (min-width: $screen-lg-min) {
+		margin-bottom: 19px !important;
+	}	
+}

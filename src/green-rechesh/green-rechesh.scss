@@ -1,0 +1,224 @@
+@import "../util/util.scss";
+
+.green-rechesh {
+	min-width: 330px;
+
+	.custom-container {
+		padding: 0 20px;
+	}
+
+	.nav-item-text-6 {
+		background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px $rechesh-green; 
+		}
+	}
+
+	.nav-item-text-2 {
+		background-color: transparent !important;
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: none !important; 
+		}
+	}
+
+	.green-rechesh-top-sec {
+		position: relative;
+		min-height: 205px;
+		background-color: $main-white;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+		@media (min-width: $screen-lg-min) {
+			background-image: url('../common/images/green-rechesh-header-visuals.png');
+			height: 260px;
+			background-position: left;
+			background-size: 30%;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			height: 308px;
+		}
+
+		@media (ma2018x-width: 340px) {
+			height: 240px;
+			box-shadow: none;
+		}
+	}
+
+	.p-wrapper {
+		margin: 0 !important;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 116px 0 !important;
+		}
+	}
+
+	.main-p-sec {
+		margin: 20px 20px 0 !important;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 !important;
+		}
+	}
+
+	.green-top-icon {
+		width: 36px;
+		height: 47px;
+		object-fit: contain;
+		margin: 0 0 6px 0;
+
+		@media (min-width: $screen-lg-min) {
+			width: 70px;
+			height: 93px;
+			order: -1;
+			margin: 0 0 0 35px !important;
+			//margin-top: -85px;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			width: 88px;
+			height: 116px;
+		}
+	}
+
+	.head, .breadcrumb-item, .related-document-content, .link {
+		color: $rechesh-green !important;
+	}
+
+	.right-line {
+		background-color: $rechesh-green !important; 
+	}
+
+	.link {
+		border-color: $rechesh-green !important;
+	}
+
+	.card {
+		border-color: $rechesh-green !important;
+		padding: 0 10px 0 0 !important;
+
+		.card-p-with-bullet::before {
+			background-color: $rechesh-green !important;
+		}
+
+		h2 {
+			color: $rechesh-green !important;
+		}
+
+		img.icon-first-collaps-p {
+			width: 46px !important;
+ 			height: 41px !important;
+
+ 			@media (min-width: $screen-lg-min) {
+				width: 125px !important;
+				height: 112px !important;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				width: 156px !important;
+				height: 140px !important;
+			}
+		}
+	}
+}
+
+.content {
+	margin: 44px 18px 37px;
+	flex-grow: 1;
+
+	@media (min-width: $screen-lg-min) {
+		margin: 97px 80px 69px;
+	}
+
+	* {
+		font-size: 15px !important;
+		line-height: 1.75 !important;
+		text-align: right !important;
+		color: #4e5665 !important;
+
+		@media (min-width: $screen-lg-min) {
+			font-size: 16px !important;
+		}
+	}
+
+	h1 {
+		font-size: 20px !important;
+		line-height: 0.78 !important;
+		color: $rechesh-green !important;
+		font-weight: normal !important;
+		font-style: normal !important;
+		font-stretch: normal !important;
+		letter-spacing: normal !important;
+		margin-bottom: 10px !important;
+
+		@media (min-width: $screen-lg-min) {
+			margin-bottom: 20px !important;
+			font-size: 32px !important;
+		}
+	}
+
+	h2 {
+		font-size: 16px !important;
+		font-weight: 500 !important;
+		line-height: 1.4 !important;
+		font-style: normal !important;
+		font-stretch: normal !important;
+		letter-spacing: normal !important;
+		margin-bottom: 10px !important;
+		
+		@media (min-width: $screen-lg-min) {
+			margin-bottom: 20px !important;
+			font-size: 20px !important;
+		}
+	}
+	
+	b, strong {
+		font-weight: 500 !important;
+	}
+
+	ul {
+		li {
+			align-items: center;
+			line-height: 1.75;
+			margin: 0;
+
+			ul {
+				padding: 0 15px 0 0;
+				display: flex;
+				flex-direction: column;
+	
+				li:before {
+					content: '';
+					width: 4px;
+					height: 2px;
+					background-color: #4e5665;
+					margin: 0 0 3px 5px;
+					display: inline-block;
+	
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 1px 8px;
+					}
+				}
+			}
+
+			&:before {
+				content: '';
+				width: 6px;
+				height: 6px;
+				background-color: $cobalt;
+				border-radius: 50%;
+				display: inline-block;
+				margin: 0 0 1px 5px;
+		
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 1px 8px;
+				}
+			}
+		}
+	}
+}
+
+.green-rechesh .card .content h2 {
+	color: #4e5665 !important;
+}

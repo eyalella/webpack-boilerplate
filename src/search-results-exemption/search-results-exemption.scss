@@ -1,0 +1,69 @@
+@import "../search-results/search-results.scss";
+
+.result-container {
+	.right-line {
+		background-color: $exemption-orange !important;
+	}
+
+	h2 {
+
+		max-width: 280px !important;
+
+		@media (min-width: $screen-lg-min) {
+			max-width: 520px !important;
+		}
+	}
+}
+
+.search-result-sub-head {
+	color: $exemption-orange !important;
+}
+
+.logo-container {
+
+	@media (min-width: $screen-lg-min) {
+		position: absolute !important;
+		top: 20px !important;
+		left: 20px !important;
+		right: auto !important;
+		margin: 0 !important;
+	}
+}
+
+.exemption-card-icon {
+	height: 52px;
+	width: 52px;
+
+	@media (min-width: $screen-lg-min) {
+		height: 92px;
+    	width: 83px;
+	}
+}
+
+.content-wrapper {
+	width: 100% !important;
+
+	.details-main-wrapper {
+		width: 100% !important; 
+	}
+
+	.details-wrapper {
+		max-width: 100% !important;
+	}
+}
+
+.last-date {
+	color: $exemption-orange !important;
+}
+
+.show-more-link {
+	font-size: 3.2rem;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.78;
+	letter-spacing: normal;
+	color: #0a7bb6;
+	text-align: center;
+}
+

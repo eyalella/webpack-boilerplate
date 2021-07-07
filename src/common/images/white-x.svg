@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>EDA106D1-793B-40D6-9612-6F2DD6CCEA67</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="335" height="50" rx="3"></rect>
+        <filter x="-3.6%" y="-18.0%" width="107.2%" height="148.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="04_my-list_open" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-39.000000, -1388.000000)">
+        <g id="btn-copy" transform="translate(20.000000, 1370.000000)">
+            <g id="Rectangle-511">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#0A7BB6" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group-6" transform="translate(20.000000, 19.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1">
+                <g id="x">
+                    <polyline id="Path-532" points="0 0 5.45135702 5.5 11 0.0550673168"></polyline>
+                    <polyline id="Path-532" transform="translate(5.500000, 8.250000) scale(1, -1) translate(-5.500000, -8.250000) " points="0 5.5 5.45135702 11 11 5.55506732"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שכחתי סיסמא</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="forgot-password-a">
+    <!-- <link href="../forgot-password-a.rtl/forgot-password-a.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- main-content -->
+      <section id="mainContent" class="d-flex align-items-center justify-content-center">
+        <div class="forgot-password-a-container d-flex custom-container">
+          <div class="forgot-password-a-wrapper d-flex flex-column align-items-center">
+
+            <!-- forgot password a head -->
+            <div class="forgot-password-a-p-wrapper">
+              <h1 class="forgot-password-a-head">
+                שכחת את הסיסמא שלך?
+              </h1>
+              <p class="forgot-password-a-p">
+                הקלד את כתובת האימייל שלך ונשלח לך מייל חוזר  לאיפוס הסיסמא 
+              </p>
+            </div>
+
+            <!-- form wrapper -->
+            <div class="forgot-password-a-form-wrapper">
+
+              <!-- forgot password a form -->
+              <form id="forgot-password-a-Form" data-parsley-validate  class="d-flex flex-column align-items-center">
+                
+                <div class="form-group email-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
+                  <div class="form-group email">
+
+                    <!-- email input -->
+                    <input type="email" class="form-control" id="inputEmailForgotPassword" class="form-control email-input" placeholder="כתובת דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                    <label id="emailAddressLabel" class="sr-only" for="inputEmailForgotPassword">
+                      אימייל חייב להכיל @
+                    </label>
+                  </div>
+                </div>    
+                <div class="forgot-password-a-button">
+
+                  <!-- forgot password a button -->
+                  <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal">שלח</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- back to registration link -->
+            <div class="back-to-registration-link-wrapper">
+              <a  href="../registration/index.html" class="back-to-registration-link">
+                חזור להרשמה לשרות
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- footer -->
+      <footer>
+        ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    <!-- email sent message 
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" required>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../common/images/profile-modal-icon.svg"
+              class="dialog-icon" alt="dialog-success-icon">
+            <h4>אימייל נשלח לתיבת הדואר שלך</h4>
+            <p>נא היכנס לקישור במייל ואפס סיסמא</p>
+            <button class="btn close-btn" type="submit" form="forgot-password-a-Form" value="Submit" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

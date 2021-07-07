@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="116px" viewBox="0 0 136 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>1F0E5972-06AA-4D3A-81C9-9F217F3C7219</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1600" height="308"></rect>
+        <filter x="-0.5%" y="-2.1%" width="101.1%" height="105.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Q&amp;A" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1335.000000, -332.000000)">
+        <g id="Group-11" transform="translate(0.000000, 230.000000)">
+            <g id="stock-vector-thin-line-flat-design-concept-for-contact-banner-concept-for-website-banners-and-promotional-293651963">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+        <g id="Group-13" transform="translate(1335.000000, 332.000000)" fill="#6266A6">
+            <g id="Group-14">
+                <g id="Group-12" fill-rule="nonzero">
+                    <path d="M83.3669291,26.3233644 L83.3669291,5.97881422 C61.1732283,-0.526088009 33.9464567,-3.33684823 0,5.97881422 L0,53.1995859 C0,53.1995859 6.26456693,54.8860421 8.78110236,55.421425 L8.78110236,74.3472104 L25.0047244,58.1251086 C26.9055118,58.3392618 28.8062992,58.4998766 30.7070866,58.6337224 L30.7070866,92.737613 C30.7070866,92.737613 68,102.026506 108.47874,97.2615985 L127.218898,116 L127.218898,94.5043766 C129.84252,94.022532 136,92.737613 136,92.737613 L136,32.2125763 C136,32.2125763 112.280315,26.3233644 83.3669291,26.3233644 Z M30.7070866,32.2125763 L30.7070866,54.2703517 C28.6188976,54.1097369 23.3984252,53.5475848 23.3984252,53.5475848 L13.1716535,63.7733982 L13.1716535,51.8878978 C13.1716535,51.8878978 6.63937008,50.442364 4.39055118,49.8534428 L4.39055118,9.32495734 C28.8330709,2.84682426 54.5338583,2.84682426 78.976378,9.32495734 L78.976378,26.3769027 C54.7212598,26.5642867 30.7070866,32.2125763 30.7070866,32.2125763 Z M131.609449,89.230855 C129.52126,89.6591614 122.828346,90.890542 122.828346,90.890542 L122.828346,105.452957 L110.085039,92.7108439 C110.085039,92.7108439 75.0677165,97.904058 35.0976378,89.230855 L35.0976378,35.7461034 C67.1433071,29.027048 99.5905512,29.027048 131.609449,35.7461034 L131.609449,89.230855 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="44" y="43" width="57" height="4"></rect>
+                    <rect id="Rectangle-path" x="107" y="43" width="15" height="4"></rect>
+                    <rect id="Rectangle-path" x="44" y="60" width="11" height="4"></rect>
+                    <rect id="Rectangle-path" x="61" y="60" width="61" height="4"></rect>
+                    <rect id="Rectangle-path" x="81" y="78" width="4" height="4"></rect>
+                    <rect id="Rectangle-path" x="90" y="78" width="4" height="4"></rect>
+                    <rect id="Rectangle-path" x="72" y="78" width="4" height="4"></rect>
+                </g>
+                <text id="?" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="39" font-weight="bold">
+                    <tspan x="11.316" y="39">?</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

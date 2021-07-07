@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="218px" height="218px" viewBox="0 0 218 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>2E4A88F2-35B6-413B-AF2A-685B9D41DA81</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-9.4%" y="-9.4%" width="118.8%" height="118.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.170148324 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="profile-details_change-pass" transform="translate(-692.000000, -233.000000)">
+            <g id="Group-13" filter="url(#filter-1)" transform="translate(705.000000, 246.000000)">
+                <circle id="Oval-2" stroke="#0A7BB6" stroke-width="5" fill="#FFFFFF" cx="96" cy="96" r="96"></circle>
+                <g id="noun_1199689_0A7BB6" transform="translate(65.000000, 49.000000)">
+                    <path d="M31,49.084 C25.581,49.084 21.202,53.49 21.202,58.909 C21.202,62.795 23.446,66.134 26.703,67.694 L26.703,82.09 L35.297,82.09 L35.297,67.695 C38.553,66.135 40.798,62.796 40.798,58.91 C40.797,53.491 36.419,49.084 31,49.084 Z" id="Shape"></path>
+                    <path d="M52.046,32.527 L9.954,32.527 C4.562,32.527 0.211,36.878 0.211,42.27 L0.211,80.257 C0.211,85.648 4.562,90 9.954,90 L52.046,90 C57.437,90 61.789,85.648 61.789,80.257 L61.789,42.27 C61.789,36.878 57.437,32.527 52.046,32.527 Z M35.297,67.695 L35.297,82.09 L26.703,82.09 L26.703,67.695 C23.446,66.135 21.202,62.796 21.202,58.91 C21.202,53.491 25.581,49.085 31,49.085 C36.419,49.085 40.797,53.491 40.797,58.91 C40.797,62.796 38.553,66.135 35.297,67.695 Z" id="Shape" fill="#0A7BB6" fill-rule="nonzero"></path>
+                    <path d="M12.298,28.509 C15.321,28.509 17.772,26.058 17.772,23.036 L17.772,20.613 C17.772,15.275 22.099,10.948 27.437,10.948 L34.563,10.948 C39.901,10.948 44.228,15.275 44.228,20.613 L44.228,23.036 C44.228,26.059 46.679,28.509 49.702,28.509 C52.725,28.509 55.175,26.058 55.175,23.036 L55.175,20.613 C55.175,9.229 45.947,0 34.563,0 L27.437,0 C16.053,0 6.824,9.229 6.824,20.613 L6.824,23.036 C6.824,26.059 9.275,28.509 12.298,28.509 Z" id="Shape" fill="#0A7BB6" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

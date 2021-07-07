@@ -1,0 +1,304 @@
+@import "../util/util.scss";
+
+.reporting {
+	min-width: 330px;
+
+	.nav-item-text-7 {
+		background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		}
+	}
+
+	.custom-container {
+		padding: 0 20px;
+
+		@media (min-width: $screen-lg-min) {
+			max-width: 1010px; 
+			//margin: 0 auto;
+		}
+
+		 @media (min-width: $screen-xl-min) {
+			max-width: 1262px; 
+			//margin: 0 auto;
+		}
+	}
+
+	.reporting-top-sec {
+		position: relative;
+		padding: 0;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+		min-height: 205px;
+
+		@media (min-width: $screen-lg-min) {
+            background-image: url('../common/images/reporting-header-visuals.png');
+            min-height: 260px;
+            background-position: left;
+            background-repeat: no-repeat;
+			background-size: 30%;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
+       	}
+
+       	.reporting-breadcrumb-wrapper {	
+
+			@media (min-width: $screen-lg-min) {
+				 margin: 26px 0 23px 0;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				 margin: 32px 0 29px 0;
+			}
+
+			.breadcrumb {
+				margin: 0;	
+			}
+
+			.breadcrumb-item  {
+				color: $cobalt;
+				font-size: 1.6rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+			}
+		}
+
+       	.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px;
+			background-color: $cobalt;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+			}
+		}
+
+		.top-sec-container {
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+
+			@media (min-width: $screen-lg-min) {
+                padding: 0 20px;
+    			max-width: 1010px;
+           	}
+
+           	@media (min-width: $screen-xl-min) {
+    			max-width: 1262px;
+           	}
+
+			.reporting-p-sec {
+				margin: 16px 0 0 0;	
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0;
+               	}
+
+				.reporting-icon-wrapper {
+					margin: 0 0 7px 0;
+
+					@media (min-width: $screen-lg-min) {
+	                    margin: 0 0 0 24px;
+	               	}
+
+					img {
+						width: 37px;
+  						height: 51px;
+						object-fit: contain;
+
+						@media (min-width: $screen-lg-min) {
+		                    width: 80px;
+							height: 112px;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
+		                    width: 100px;
+							height: 140px;
+		               	}
+					}
+				}
+
+				.reporting-p-wrapper {
+
+
+					@media (min-width: $screen-lg-min) {
+	                    margin: 10px 0 0 0;
+	               	}
+				}
+
+				.reporting-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $cobalt;
+					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 11px 0;
+	                    font-size: 6.2rem;
+	               	}
+				}
+
+				.reporting-p {
+					max-width: 500px;
+					font-size: 2rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: #4e5665;
+					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+					padding: 0;
+					margin:0 0 20px 0;
+
+					@media (min-width: $screen-lg-min) {
+	                    font-size: 3.2rem;
+	                    margin:0 0 10px 0;
+	                    max-width: 600px;
+	               	}
+
+	               	@media (min-width: $screen-xl-min) {
+	                    max-width: 800px;
+	               	}
+				}
+			}
+		}
+	}
+
+	.reporting-body {
+		height: auto;
+		padding: 0;
+
+		@media (min-width: $screen-lg-min) {
+    		//height: 567px;
+    		margin: 0 20px 149px;
+    		padding: 32px 0 0 0;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+    		padding: 40px 0 0 0;
+       	}
+
+       	.mobile-p {
+			font-size: 2rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1;
+			letter-spacing: normal;
+			color: #0a7bb6;
+			padding: 0 20px;
+			margin: 34px 0 166px 0;
+       	}
+
+       	.main-p {
+       		max-width: 970px;
+			font-size: 1.6rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.75;
+			letter-spacing: normal;
+			color: $text-dark-grey;
+			margin: 0 0 36px 0;
+			padding: 0 0 0 40px;
+
+			@media (min-width: $screen-xl-min) {
+	    		max-width: 1222px;
+	    		margin: 0 0 45px 0;
+	       	}
+       	}
+
+		.reporting-body-wrapper {
+			width: 100%;
+			background-color: rgba(233, 235, 240, 0.6);
+			min-height: 200px;
+			padding: 0;
+			padding: 0 30px 52px;
+
+			@media (min-width: $screen-lg-min) {
+	    		padding: 0 49px 52px;
+	    		max-width: 970px;
+	       	}
+
+	       	@media (min-width: $screen-xl-min) {
+	       		max-width: 1222px;
+	       	}
+		}
+	}
+ 
+	.buttons-wrapper {
+
+		margin: 39px 0 49px;
+		width: 100%;
+
+		@media (min-width: $screen-lg-min) {
+    		width: auto;
+       	}
+	}
+
+	.reporting-button {
+		width: 100%;
+		height: auto;
+		margin: 0 0 0 40px;
+		height: 50px;
+
+		@media (min-width: $screen-lg-min) {
+			width: auto;
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+
+		button {
+			height: 100%;
+			width: 100%;
+			border-radius: 3px;
+			background-color: #0a7bb6;
+			box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+			font-size: 2rem;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			text-align: center;
+			color: $main-white;
+
+			&:active, &:focus {
+	          background-color: #1c6897;
+	          color: $header-blue;
+	          border: 0;
+	        }
+
+			@media (min-width: $screen-lg-min) {
+				width: 180px;
+			}
+		}
+	}
+
+	.inner-iframe{
+    	background-color: $main-white;
+    	margin: 0;
+    	border: 0;
+	}
+
+	.reporting-footer {
+		padding: 0;
+	}
+}	
+

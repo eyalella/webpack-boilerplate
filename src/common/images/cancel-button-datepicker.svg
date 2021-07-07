@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>98684C42-4496-441D-B2DE-6EE945953F63</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="449" height="313" rx="4"></rect>
+        <filter x="-4.0%" y="-5.8%" width="108.0%" height="111.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.832296981   0 0 0 0 0.832296981   0 0 0 0 0.832296981  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="תוצאות-חיפוש" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_search" transform="translate(-981.000000, -1990.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1600" height="2881"></rect>
+            <g id="יומן" transform="translate(961.000000, 1716.000000)">
+                <g id="Group">
+                    <g id="Rectangle-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <rect stroke="#DDDDDD" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.5" y="0.5" width="448" height="312" rx="4"></rect>
+                    </g>
+                    <g id="Icon/Cancel" transform="translate(20.000000, 274.000000)" fill="#D53B4A">
+                        <g id="Group">
+                            <path d="M17.8125,9.73353977 C17.8125,5.42209388 14.3148699,1.92674381 10,1.92674381 C5.68513015,1.92674381 2.1875,5.42209388 2.1875,9.73353977 C2.1875,14.0449856 5.68513015,17.5403357 10,17.5403357 C14.3148699,17.5403357 17.8125,14.0449856 17.8125,9.73353977 Z M19.6875,9.73353977 C19.6875,15.0807934 15.3501301,19.4153357 10,19.4153357 C4.64986985,19.4153357 0.3125,15.0807934 0.3125,9.73353977 C0.3125,4.38628617 4.64986985,0.051743807 10,0.051743807 C15.3501301,0.051743807 19.6875,4.38628617 19.6875,9.73353977 Z M7.56967857,8.63019578 L11.1046786,12.1628913 C11.4709144,12.5288885 12.0645066,12.5286949 12.4305037,12.1624591 C12.7965008,11.7962232 12.7963073,11.202631 12.4300714,10.8366339 L8.89507143,7.30393835 C8.52883555,6.93794122 7.93524342,6.93813476 7.56924628,7.30437063 C7.20324915,7.67060651 7.20344269,8.26419865 7.56967857,8.63019578 Z M11.1049286,7.30393835 L7.56992857,10.8366339 C7.20369269,11.202631 7.20349915,11.7962232 7.56949628,12.1624591 C7.93549342,12.5286949 8.52908555,12.5288885 8.89532143,12.1628913 L12.4303214,8.63019578 C12.7965573,8.26419865 12.7967508,7.67060651 12.4307537,7.30437063 C12.0647566,6.93813476 11.4711644,6.93794122 11.1049286,7.30393835 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עידכון פרטים</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="profile">
+    <!-- <link href="../profile.rtl/profile.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- top-section -->
+      <section class="profile-top-sec d-flex flex-column align-items-center">
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-lg-start justify-content-center">
+
+          <!-- breadcrumbs -->
+          <div class="profile-breadcrumb-wrapper d-none d-lg-block">
+            <nav class="breadcrumb d-flex align-items-center justify-content-start">
+              <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מנהל הרכש הממשלתי <span>››</span></a>
+              <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">דיוור אישי <span>››</span></a>
+              <a class="breadcrumb-item breadcrumb-item-3 d-flex align-items-center justify-content-center" href="#">עדכון פרטים </a>
+            </nav>
+          </div>
+          <div class="profile-p-sec flex-column flex-lg-row d-flex align-items-start">
+            <div class="profile-icon-wrapper">
+              <img src="../common/images/icon.svg" class="clipboard-icon" alt="clipboard-icon">
+            </div>
+            <div class="profile-p-wrapper">
+              <h1 class="profile-head">
+                שלום שמעון
+              </h1>
+              <p class="profile-p">
+                הגעת לאיזור האישי שלך בו תוכל להגדיר את הפרטים האישיים שלך.<br class="d-none d-lg-static">
+                לורם איפסום דולור סיט אמט, ונסקטורר אדיפיסינג אלית קונסקטורר אדיפיסינג 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-content -->
+      <section id="mainContent"  class="profile-body d-flex flex-column align-items-center">
+        <div class="profile-body-wrapper custom-container">
+
+          <!-- profile form -->
+          <form class="profile-form-wrapper" id="profileForm" data-parsley-validate>
+            <div class="d-flex flex-column flex-lg-row name-lng-wrapper">
+              <div class="form-group name d-flex">
+
+                <!-- first name input -->
+                <div class="first-name-wrapper form-group d-none">
+                  <input class="form-control" type="text" placeholder="שם פרטי" id="firstNameInputProfile" name="firstName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="first-name" aria-describedby="firstNameLabel">
+                  <label id="firstNameLabel" class="sr-only" for="firstNameInputProfile">
+                    שדה חובה
+                  </label>
+                  <div class="input-bullet"></div>
+                </div>
+
+                <!-- last name input -->
+                <div class="last-name-wrapper form-group">
+                  <input class="form-control" type="text" placeholder="שם פרטי ומשפחה" id="lastNameInputProfile" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
+                  <label id="lastNameLabel" class="sr-only" for="lastNameInputProfile">
+                    שדה חובה                  
+                  </label>
+                  <div class="input-bullet"></div>
+                </div>
+              </div>
+              <div class="form-group language">
+                <div class="blue-arrow"></div>
+
+                <!-- language select -->
+                <label id="languageSelectLabel" class="sr-only" for="languageReg">
+                  שדה חובה 
+                </label>
+                <select class="form-control language-select" id="languageReg" placeholder= "שפה" required data-parsley-error-message="שדה חובה" aria-label="language-select" aria-describedby="languageSelectLabel">
+
+                  <!-- language options -->
+                  <option value="0" disabled selected hidden>שפה</option>
+                  <option>עברית</option>
+                  <option>אנגלית</option>
+                </select>
+                <div class="input-bullet"></div>
+              </div>
+            </div> 
+            <div class="form-group email-wrapper d-flex flex-column flex-lg-row">
+              <div class="form-group email">
+
+                <!-- email input -->
+                <input type="email" class="form-control" id="inputEmailProfile" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                <label class="sr-only" for="inputEmailProfile">
+                  אימייל חייב להכיל @
+                </label>
+                <div class="input-bullet"></div>
+              </div>
+              <div class="form-group email-confirm">
+
+                <!-- email confirm input -->
+                <input type="email" class="form-control" id="inputEmailConfirmProfile" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailProfile" required aria-label="confirm-email-address" aria-describedby="confirmEmailAddressLabel">
+                <label id="confirmEmailAddressLabel" class="sr-only" for="inputEmailConfirmProfile">
+                  אימות דוא״ל
+                </label>
+                <div class="input-bullet"></div>
+              </div>
+            </div>    
+            <div class="form-group password-wrapper d-flex flex-column flex-lg-row">
+
+              <div class="form-group password form-group-password">
+                <div class="input-bullet"></div>
+
+                <!-- show password button -->
+                <div id="showPasswordEye" class="password-eye" role="button" tabindex="0">
+                  <img src="../common/images/password-eye-disabled.svg">
+                </div>
+                <label class="sr-only" for="showPasswordEye"></label>
+
+                <div id="showPasswordEyeShow" class="d-none password-eye" role="button" tabindex="0">
+                  <img src="../common/images/password-eye-show.svg">
+                </div>
+                <label class="sr-only" for="showPasswordEyeShow"></label>
+
+                <!-- password input -->
+                <label class="sr-only" for="inputPasswordAcc">
+                  סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה
+                </label>
+                <input type="password" id="inputPasswordAcc" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה" aria-label="password-input" aria-describedby="hint">
+                <p id="hint">
+                  סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
+                </p>
+              </div>
+
+              <div class="form-group password-confirm form-group-password">
+                <div class="input-bullet"></div>
+
+                <!-- show confirm password button -->
+                <!-- <div id="showPasswordConfirm" role="button" tabindex="0">הצג סיסמא</div> -->
+                <div id="showPasswordEyeConfirm" class="password-eye" role="button" tabindex="0">
+                  <img src="../common/images/password-eye-disabled.svg">
+                </div>
+                <label class="sr-only" for="showPasswordEyeConfirm"></label>
+
+                <div id="showPasswordEyeConfirmShow" class="d-none password-eye" role="button" tabindex="0">
+                  <img src="../common/images/password-eye-show.svg">
+                </div>
+                <label class="sr-only" for="showPasswordEyeConfirmShow"></label>
+
+                <!-- confirm password input -->
+                <input type="password" class="form-control" id="inputPasswordConfirmAcc"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPasswordAcc" required aria-label="confirm-password-input" aria-label="confirm-password" aria-describedby="confirmPasswordlabel">
+                <label class="sr-only" for="inputPasswordConfirm" id="confirmPasswordlabel">
+                  אימות סיסמא
+                </label>
+              </div>
+              
+            </div>
+
+            <!-- phone number input -->
+            <div class="form-group phone-number">
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" aria-label="phone-number" aria-describedby="phoneNumberlabel">
+              <label id="phoneNumberlabel" class="sr-only" for="phoneNumber">
+                טלפון
+              </label>
+              <!-- <div class="input-bullet"></div> -->
+            </div>
+
+            <div class="checkbox-active-account-wrapper d-flex">
+
+              <!-- active checkbox input -->
+              <div class="checkbox-input-wrapper">
+                <input type="checkbox" class="form-checkbox" id="activeAccount" name="check"aria-label="active-account-checkbox" aria-describedby="activeAccountLabel">
+                <label id="activeAccountLabel" class="sr-only" for="activeAccount">
+                  סימון חשבונך כלא פעיל יחסום את חשבונך מלקבל עדכונים שוטפים בנושאים שבחרת.  
+                </label>
+              </div>
+              <div class="input-label">
+
+                <!-- not active label wrapper-->
+                <div class="input-label-not-active-wrapper">   
+                  <span class="input-first-label-not-active">חשבון לא פעיל</span>
+                  <span class="input-second-label-not-active">לחץ להפוך לפעיל</span>
+                </div>
+
+                <!-- active label wrapper -->
+                <div class="input-label-active-wrapper d-none">
+                  <span class="input-first-label-active">חשבון פעיל</span>
+                  <span class="input-second-label-active">לחץ להפוך ללא לפעיל</span>
+                 </div>
+                <p class="checkbox-input-p">
+                  סימון חשבונך כלא פעיל יחסום את חשבונך מלקבל עדכונים שוטפים בנושאים שבחרת.
+                </p>
+              </div>
+            </div>   
+
+            <!-- save details button wrapper --> 
+            <div class="save-details-button d-flex justify-content-end">
+
+              <!-- save details button -->
+              <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" form="profileForm">
+                שמור
+              </button>
+            </div>
+
+           <!--  <div class="save-details-favorites-button d-flex justify-content-end">
+
+              save details favorites button
+              <button class="btn btn-primary" type="submit">שמור וערוך מועדפים</button>
+            </div> -->
+          </form>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="profile-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+
+    <!-- error message 
+    <div class="modal fade error" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-column align-items-center justify-content-end">
+            <div class="mark-container d-flex align-items-center justify-content-center">
+              <img src="../common/images/error-icon.svg"
+              class="dialog-icon-error" alt="dialog-error-icon">
+            </div>
+            <h4>הודעת שגיאה</h4>
+            <p>לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.</p>
+            <button class="btn btn-primary close-btn" type="button" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- success message 
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../common/images/profile-modal-icon.svg"
+              class="dialog-icon" alt="dialog-success-icon">
+            <h4>הרשמתך הסתיימה בהצלחה</h4>
+            <p>בקרוב תקבל אימייל עם פרטים נוספים</p>
+            <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- change password message 
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../common/images/lock-icon.svg"
+              class="dialog-icon" alt="dialog-success-icon">
+            <h4>שלום שמעון</h4>
+            <p>תוקף הסיסמא שלך ל-180 ימים יש לעדכן סיסמא</p>
+            <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

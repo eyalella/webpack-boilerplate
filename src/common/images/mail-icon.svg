@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>DAE5B387-D16F-41BB-958B-54509E1A85CE</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="job-owners" transform="translate(-233.000000, -751.000000)" stroke="#4E5665">
+            <g id="Group-14" transform="translate(200.000000, 608.000000)">
+                <g id="Group-13" transform="translate(33.000000, 143.000000)">
+                    <rect id="Rectangle-13" fill="#F4F5F7" transform="translate(12.000000, 8.735294) scale(1, -1) translate(-12.000000, -8.735294) " x="0.5" y="0.5" width="23" height="16.4705882" rx="1"></rect>
+                    <path d="M1,10 L12,1 L1,10 Z" id="Triangle" fill="#D8D8D8" stroke-linecap="round" stroke-linejoin="round" transform="translate(6.500000, 5.500000) scale(-1, 1) translate(-6.500000, -5.500000) "></path>
+                    <path d="M12,10 L23,1 L12,10 Z" id="Triangle" fill="#D8D8D8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

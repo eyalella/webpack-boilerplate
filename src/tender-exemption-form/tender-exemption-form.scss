@@ -1,0 +1,629 @@
+@import "../util/util.scss";
+
+.tender-exemption-form {
+	min-width: 330px;
+
+	.nav-item-text-4 {
+		background-color: rgba(255, 255, 255, 0.19);
+
+			@media (min-width: $screen-lg-min) {
+				border-bottom: solid 1px #1c6897; 
+			 }
+		}
+
+	.tender-exemption-form-top-sec {
+		position: relative;
+		height: fit-content;
+		padding: 0;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+		min-height: 205px;
+
+		@media (min-width: $screen-lg-min) {
+            background-image: url('../common/images/exemption-header-visuals.png');
+            min-height: 260px;
+            background-size: 30%;
+            background-position: left;
+            background-repeat: no-repeat;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
+       	}
+       	
+       	.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			opacity: 0.97;
+			background-color: $main-orange;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+				//top: -7px;
+			}
+		}
+
+		.top-sec-container {
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+
+			@media (min-width: $screen-lg-min) {
+                padding: 0 20px 0;
+    			max-width: 1010px;
+           	}
+
+           	@media (min-width: $screen-xl-min) {
+    			max-width: 1262px;
+           	}
+
+           	.breadcrumb-wrapper {
+
+				@media (min-width: $screen-lg-min) {
+					margin: 24px 0 34px 0px;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					margin: 30px 0 42px 0px;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $main-orange;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.p-sec {
+				margin: 20px 0 0 0;	
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0;
+               	}
+
+				.icon-wrapper {
+					margin: 0 0 4px 0;
+
+					@media (min-width: $screen-lg-min) {
+	                    margin: 0 0 0 14px;
+	               	}
+
+					img {
+						width: 49px;
+  						height: 51px;
+
+						@media (min-width: $screen-lg-min) {
+		                    width: 78px;
+  							height: 95px;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
+		                    width: 97px;
+  							height: 119px;
+		               	}
+					}
+				}
+
+				.p-wrapper {
+					padding-top: 4px;
+				}
+
+				.main-head {
+					font-size: 3rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					letter-spacing: normal;
+					color: $text-dark-grey;
+					font-size: 16px;
+  					line-height: 1.25;
+  					margin-bottom: 0;
+
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 3px 0;
+	                    font-size: 3.5rem;
+						line-height: normal;
+	               	}
+				}
+
+				.main-p {
+					max-width: 594px;
+					font-size: 2.5rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					padding: 0;
+					margin:0 0 20px 0;
+	                color: $main-orange;
+
+					@media (min-width: $screen-lg-min) {
+	                    font-size: 4rem;
+	                    margin:0 0 10px 0;
+	                    max-width: 595px;
+	               	}
+				}
+			}
+		}
+	}
+
+	.body {
+		height: fit-content;
+		padding: 0 20px;
+
+		@media (min-width: $screen-lg-min) {
+    		//height: 567px;
+    		padding: 0;
+    		margin: 0 0 115px 0;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+    		margin: 0 0 144px 0;
+       	}
+
+		.body-wrapper {
+			width: 100%;
+			padding: 25px 0 0 0;
+
+			@media (min-width: $screen-lg-min) {
+	    		padding: 40px 20px 0;
+	       	}
+		}
+
+		.details-wrapper {
+			width: 100%;
+			font-size: 1.5rem;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: 0.5px;
+			color: #9a9a9a;
+
+			@media (min-width: $screen-lg-min) {
+	    		height: 50px;
+	    		margin-bottom: 25px;
+	    		max-width: 850px;
+				width: 100%;
+				opacity: 0.45;
+				color: #6a768a;
+				letter-spacing: 0.7px;
+				font-size: 2rem;
+	       	}
+
+	       	.tender-number {
+	       		margin: 0 0 25px 0;
+
+	       		@media (min-width: $screen-lg-min) {
+		    		margin: 0 0 0 10px;
+		       	}
+	       	}
+
+	       	.tender-number, .type {
+	       		width: 100%;
+	       		padding: 0 23px 0 0;
+	       		border-radius: 3px;
+				background-color: #ffffff;
+				background-color: var(--white);
+				height: 50px;
+				border: solid 1px #d4d4d4;
+
+				@media (min-width: $screen-lg-min) {
+		    		height: auto;
+		    		border: solid 1px #e9ebf0;
+		    		padding: 0 25px 0 0;
+		       	}
+	       	}
+		}
+
+		.form-wrapper {
+			margin: 25px 0 0 0;
+
+			@media (min-width: $screen-lg-min) {
+                max-width: 850px;
+				width: 100%;
+				margin: 0 0 0 25px;
+           	}
+			
+
+			.form-group {
+				width: 100%;
+				margin-bottom: 0;
+			}
+
+
+			input {
+				width: 100%;
+				height: 50px;
+				font-size: 1.5rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				color: $contact-us-input-text;
+				padding:0 23px 0 0;
+			}
+
+			.name-number-wrapper {
+				margin-bottom: 25px;
+
+				input {
+					width: 100%;
+					 
+					@media (min-width: $screen-lg-min) {
+	                   	width: 205px;
+	                   
+	               	}
+               	}
+
+               	.form-group {
+
+               		margin-bottom: 25px;
+
+               		@media (min-width: $screen-lg-min) {
+	                   	margin: 0 0 0 10px;
+	               	}
+
+	               	&:last-child {
+	               		margin: 0;
+
+	               		@media (min-width: $screen-lg-min) {
+		                   	
+		               	}
+	               	}
+               	}
+			}
+
+			.email-phone-wrapper {
+				margin-bottom: 25px;
+
+				.form-group {
+					margin: 0 0 25px 0;
+
+               		@media (min-width: $screen-lg-min) {
+	                   	margin: 0 0 0 10px;
+	               	}
+
+	               	&:last-child {
+	               		margin: 0;
+
+	               		@media (min-width: $screen-lg-min) {
+		                   	
+		               	}
+	               	}
+               	}
+			}
+
+			.save-details-button {
+				max-width: 882px;
+
+				button {
+					width: 100%;
+					height: 50px;
+					object-fit: contain;
+					border-radius: 3px;
+					background-color: $header-blue;
+					box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+					font-size: 2rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					text-align: center;
+					color: $main-white;
+
+					@media (min-width: $screen-lg-min) {
+	                    width: 180px;
+	               	}
+
+					&:active, &:focus {
+			          background-color: #1c6897;
+			          color: $header-blue;
+			          border: 0;
+			        }
+				}
+			}
+
+			.subject-textarea {
+				margin: 0 0 25px 0;
+				position: relative;
+
+				textarea {
+					min-height: 50px;
+					height: 107px;
+					font-size: 1.5rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.9;
+					letter-spacing: 0.5px;
+					color: $contact-us-input-text;
+					padding: 17px 23px 5px 10px;
+				}
+
+				textarea.parsley-error {
+					border-bottom: solid 2px #d53b4a;
+				}
+			}
+
+			.input-bullet {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background-color: $header-blue;
+				border-radius: 50%;
+				right: 11px;
+				left: auto;
+				top: 21px;
+				//margin: -5px 0 0 0;
+			}
+		
+			.upload-file-wrapper {
+				width: 100%;
+				min-height: 43px;
+				border: solid 1px #d4d4d4;
+				margin: 0 0 48px 0;
+				padding: 0;
+
+				@media (min-width: $screen-lg-min) {
+                    min-height: 102px;
+					border-radius: 3px;
+					background-color: $main-white;
+					border: dashed 1px #d4d4d4;
+					color: #6a768a;
+					padding: 0px 23px 4px;
+					margin: 0 0 40px 0;
+				}
+				
+				#selectedFiles {
+				  font-size: 1.5rem;
+				  font-weight: bold;
+				  font-style: normal;
+				  font-stretch: normal;
+				  line-height: 1.6;
+				  letter-spacing: normal;
+				  color: #0a7bb6;
+
+				  .file-name {
+				    margin-bottom: 24px;
+
+				    @media (min-width: $screen-lg-min) {
+				      margin-bottom: 15px;
+				    }
+				  }
+
+				  button {
+				    border: 0 !important;
+				    background-color: none !important;
+				    height: 12px;
+				    width: 8px;
+				    background-size: 100% !important;
+				    background-repeat: no-repeat !important;
+				    background-position: center !important;
+				    margin: 0 5px 0 0;
+				  }
+				}
+
+			
+				.file-input-wrapper {
+					height: 100%;
+					width: 100%;
+					padding: 0 18px 0 0;
+
+					@media (min-width: $screen-lg-min) {
+			            //padding: 12px 23px 0 0;
+			            padding: 0;
+			       	}
+
+					small {
+						position: absolute;
+						opacity: 0.6;
+						font-size: 1.2rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.3px;
+						color: #4e5665;
+						margin: 0 0 13.5px 0;
+						display: block;
+						top: 15px;
+						right: 23px;
+						left: auto;
+						width: 100%;
+					}
+				}
+
+				.file-button-wrapper {
+					position: relative;
+					height: 43px;
+					width: 100%;
+					padding: 0;
+					display: flex;
+    				align-items: center;
+
+					@media (min-width: $screen-lg-min) {
+	                    padding: 0;
+	                    flex-direction: column;
+	                    align-items: start;
+	                    height: 100%;
+	               	}
+
+	               	.three-upload-file-dots { 
+	               		width: 20px;
+	               		height: auto;
+						pointer-events: none;
+						width: 20px;
+					    height: auto;
+					    margin: 0 auto 0 11px;
+					    pointer-events: none;
+					    order: 3;
+
+                    	.upload-file-dot {
+							width: 4px;
+							height: 4px;
+							background-color: $header-blue;
+							border-radius: 50%;	
+                    	}
+					}
+
+					.file-button-text {
+						font-size: 1.5rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5;
+						//color: rgba(106,118,138,.6);
+						color: #6a768a;
+						padding: 0;
+						margin: 0 0 0 5px;
+						z-index: 20;
+    					background-color: transparent;
+    					text-align: center;
+    					display: inline-block;
+    					width: 63px;
+    					white-space: nowrap;
+    					order: 1;
+
+						@media (min-width: $screen-lg-min) {
+		                    padding: 7px 0 0 0;
+		                    top: 54px;
+		                    left: auto;
+							right: 0;
+							box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+							border: solid 1px rgba(78, 86 ,101,.6);
+							border-radius: 4px;
+							pointer-events: none;
+    						cursor: pointer;
+							background-color: $main-white;
+							color: rgba(106,118,138,.6);
+							width: 100px;
+							height: 30px;
+							position: absolute;
+							//opacity: 0.6;
+		               	}	
+					}
+
+					.file-button-light-text {
+						font-size: 1.3rem;
+						font-weight: 300;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						color: #6a768a;	
+  						opacity: 0.6;
+  						display: inline-block;
+  						white-space: nowrap;
+  						order: 2;
+					}
+
+					.custom-file-input {
+						cursor: pointer;
+						background-color: transparent;
+						height: 43px;
+						position: absolute;
+						left: 0;
+						z-index: 10;
+						width: 140px;
+						padding: 0;
+
+						@media (min-width: $screen-lg-min) {
+							height: 100%;
+							width: 100%;
+							padding: 0;
+							opacity: 0;
+							padding: 74px 26px 0 0;
+							position: static;
+		               	}
+					}
+
+					.custom-file-input:focus + .file-button-text {
+						//color: #495057;
+					    background-color: #fff;
+					    border-color: #80bdff;
+					    outline: 0;
+					    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+					}
+				}
+
+				.dropzone-previews {
+					position: absolute;
+					left: 20px;
+					right: auto;
+					z-index: 100;
+					top: 50%;
+					margin-top: -35px;	
+				}
+			}
+	
+			.recaptcha-container {
+				margin: 0 0 48px 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+				}
+
+				@media (max-width: 375px) {
+					transform: scale(0.9);
+					margin: 0 -17px 0 0;
+				}
+			}
+			
+			input.parsley-error {
+				box-shadow: none;
+				border-bottom: solid 2px #d53b4a;
+			}
+
+			.form-group-password {
+				.parsley-errors-list {
+					bottom: -27px;
+
+					@media (min-width: $screen-sm-min) {
+						bottom: -20px;
+					}
+
+					@media (min-width: $screen-lg-min) {
+						bottom: -30px;
+					}
+				}
+			}
+		}
+
+		.name-and-email-wrapper, .email, .subject, {
+			position: relative;
+
+			.input-bullet {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background-color: $header-blue;
+				border-radius: 50%;
+				right: 11px;
+				left: auto;
+				top: 50%;
+				margin: -3px 0 0 0;
+			}
+		}
+	}
+	.footer {
+			padding: 67px 0 0;
+	}
+}	
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ברוך הבא</title>
+      ${require("../common/common-stylesheet.html")}
+      <link rel="stylesheet" href="/common/common.css">
+  </head>
+  <body class="mailing-welcome-to-site">
+    <div class="main-content-wrapper">
+      <section class="mailing-welcome-top-sec">
+        <div class="mailing-logo-sec w-100 d-flex align-items-center">
+          <a href="../home/index.html">
+            <div class="logo d-flex">
+                <img src="../common/images/logo-mobile.png">
+                <div class="logo-head-container d-flex flex-column justify-content-center">
+                     <div class="first-head">
+                        מינהל הרכש הממשלתי
+                     </div>
+                     <div class="second-head">
+                        Government Grocurement Administration
+                     </div>
+                </div>
+            </div>
+          </a>
+        </div>
+        <div class="head-sec d-flex align-items-end">
+          <h1>שלום שמעון,</h1>
+          <div class="background-img"></div>
+        </div>
+      </section>
+      <section class="mailing-welcome-body">
+        <div class="main-p-wrapper">
+          <p>
+            ברוך הבא לאתר החדש של מינהל הרכש הממשלתי.
+          </p>
+          <p>  
+            יש ללחוץ על הלינק הבא על מנת לאפס את הסיסמא שלך:
+          </p>
+          <!-- <a href="../profile/index.html">עדכון פרטים</a> -->
+          <a href="http://xxx.wwwzxccxzc.gov.il">http://xxx.wwwzxccxzc.gov.il</a>
+          <p class="bottom-p">
+            בברכה,<br>
+            צוות אתר מינהל הרכש הממשלתי
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer class="mailing-footer d-flex justify-content-center">
+      <div class="footer-nav-wrapper-mailing d-flex justify-content-center align-items-center flex-column flex-lg-row">
+        ${require("../common/mailing-footer-nav/mailing-footer-nav.html")}
+      </div>
+    </footer>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="19px" viewBox="0 0 15 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>CEEEDD47-0780-4E90-BDE1-51E97FB1B788</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="293" height="160" rx="2.1"></rect>
+        <filter x="-2.0%" y="-3.8%" width="104.1%" height="107.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Home.Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="רגולציה" transform="translate(-547.000000, -2679.000000)">
+            <g id="Group-26-Copy-7" transform="translate(502.000000, 2548.000000)">
+                <g id="Group-17">
+                    <g id="צור-קשר-copy">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Rectangle-510">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                    <g id="Group-24" transform="translate(45.000000, 132.000000)">
+                        <g id="Group-22" transform="translate(3.000000, 0.000000)" stroke="#4E5665" stroke-linecap="round">
+                            <path d="M5.05882353,0.489012896 L5.05882353,14.7058824" id="Line"></path>
+                            <polyline id="Path-532-Copy-2" stroke-linejoin="round" transform="translate(5.058824, 12.941176) rotate(-360.000000) translate(-5.058824, -12.941176) " points="0.352941176 10.5882353 5.01720387 15.2941176 9.76470588 10.6353517"></polyline>
+                        </g>
+                        <rect id="Rectangle-3" fill="#4E5665" x="0" y="17" width="15" height="1" rx="0.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

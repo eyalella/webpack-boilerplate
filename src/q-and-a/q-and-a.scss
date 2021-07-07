@@ -1,0 +1,495 @@
+@import "../util/util.scss";
+
+.q-and-a {
+	min-width: 330px;
+
+	#searchInput {
+		 //padding: 0 0 0 22px;
+	}
+
+	.custom-container {
+		padding: 0 20px;
+
+		@media (min-width: $screen-lg-min) {
+			max-width: 1010px; 
+		} 
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px; 
+		}
+	}
+
+	.nav-item-text-6 {
+      background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		 } 
+	}
+
+	.q-and-a-top-sec {
+		position: relative;
+		background-color: $main-white;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+		margin: 0;
+
+		@media (min-width: $screen-lg-min) {
+			height: auto;
+			margin: 0 0 53px 0;
+			padding: 0;
+			background-position: left;
+			background-repeat: no-repeat;
+			background-size: 30%;
+			background-image: url('../common/images/q-and-a-header-visuals.png');
+		}
+
+		.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			top: 0;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			background-color: $main-purple;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+			}
+		}
+
+		.top-sec-container { 
+			width: 100%;
+			padding: 0;
+			height: auto;
+			min-height: 205px;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0 20px 29px;
+				height: 260px;
+				margin: 0 auto;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				height: 308px;
+			}
+
+			.q-and-a-breadcrumb-wrapper {
+
+				@media (min-width: $screen-lg-min) {
+					 margin: 26px 0 23px 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					 margin: 32px 0 29px 0;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $main-purple;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.q-and-a-p-sec {
+				margin: 20px 0 0 0;
+				padding: 0 20px;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+					padding: 0;
+				}	
+
+				.q-and-a-p-container {
+
+					@media (min-width: $screen-lg-min) {
+						position: relative;
+					}	
+				}
+
+				.q-and-a-p-wrapper {
+					order: 2;
+					margin: 0;
+
+
+					@media (min-width: $screen-lg-min) {
+						
+					}
+				}
+
+				.q-and-a-top-icon {
+					order: 1;
+					width: 55px;
+					height: 47px;
+					margin: 0 0 6px 0;
+
+					@media (min-width: $screen-lg-min) {
+						width: 109px;
+						height: 93px;
+						margin: 0 0 0 24px;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						width: 136px;
+						height: 116px;
+					}
+				}	
+
+				.q-and-a-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.83;
+					letter-spacing: normal;
+					color: $main-purple;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 6.2rem;
+						font-weight: 500;
+						line-height: normal;
+						margin: 0 0 3px 0;
+					}	
+				}
+
+				.q-and-a-top-p {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.25;
+					letter-spacing: normal;
+					color: #4e5665;
+					margin: 0 0 0 40px;
+					max-width: 500px;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 3rem;
+						line-height: normal;
+						letter-spacing: normal;
+						margin: 0;
+						max-width: 560px;
+					}	
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 700px;
+					}	
+				}
+			}
+		}
+	}
+
+	.q-and-a-body {
+		margin: 0 0 70px 0;
+		padding: 15px 0 0 0;
+		position: relative;
+		
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0 20px 0;
+			margin: 0px auto 107px;
+			max-width: 1010px;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px;
+		}	
+
+		.body-p-wrapper {
+			padding: 0 20px;
+			margin: 0 0 63px 0;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0;
+				max-width: 1222px;
+				margin: 0 0 40px 0;
+			}	
+
+			.body-head {
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 2.7;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				margin: 0;
+			}
+
+			.body-top-p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				margin: 0 0 48px 0;
+				max-width: 1262px;
+				padding: 0;
+
+				@media (min-width: $screen-lg-min) {
+	                padding: 0 0 0 40px;
+	                margin: 0 0 20px 0;
+	           	}
+			}
+
+			button {
+				width: 100%;
+				height: 50px;
+				object-fit: contain;
+				border-radius: 3px;
+				background-color: $header-blue;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $main-white;
+
+
+				@media (min-width: $screen-lg-min) {
+	                width: 180px;
+	           	}
+
+				&:active, &:focus {
+		          background-color: #1c6897;
+		          color: $header-blue;
+		          border: 0;
+		        }
+			}
+		}	
+
+		.cards-wrapper {
+			width: 100%;
+			border: solid #e1e1e1;
+			border-width: 1px 0 0 0;
+
+			@media (min-width: $screen-lg-min) {
+                padding: 39px 0 0 0;
+                border: 0;
+           	}
+
+		}
+
+		.card {
+			border: 0;
+			width: 100%;
+			padding: 0;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0 0 35px 0;
+			}
+		}
+
+		.question {
+
+			.card-header {
+				background-color: $main-white;
+				padding: 0 20px;
+				min-height: 59px;
+				border: solid $main-purple;
+				border-width: 0 0 1px 0;
+				font-weight: 500;
+		
+			    @media (min-width: $screen-lg-min) {
+					padding: 0 10px 0 0;
+				    margin: 0;
+				    border: 0;
+				    height: fit-content;
+				}
+
+				// .collapse-arrow {
+				// 	width: auto;
+  		// 			height: 8px;
+  		// 			margin: 0;
+				// }
+			}
+
+			.collapsed .card-header {
+				font-weight: normal;
+			}
+
+			.collapsed .card-header,  .collapsed .question-p {
+				font-weight: normal;
+			}
+
+			.question-p {
+				font-weight: 500;
+			}
+
+			.closed-icon {
+				display: none;
+			}
+
+			.question-wrapper {
+				width: 100%;
+
+				.question-p {
+	   				font-size: 1.6rem;
+					line-height: normal;
+					letter-spacing: normal;
+					color: #4e5666;
+					font-style: normal;
+					font-stretch: normal;
+					letter-spacing: normal;
+					padding: 0 0 0 15px;
+					margin: 0;
+					padding: 12px 0 12px 12px;
+					
+
+	   				@media (min-width: $screen-lg-min) {
+						padding: 0 12px 12px 0;
+						line-height: 1.25;
+						color: #4e5665;
+						font-size: 2rem;
+					}
+	 			}
+
+	 			.collapsed p {
+					font-weight: bold;
+				}
+			}
+
+			.card-block {
+				background-color: $background-answer-mobile;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 0 38px 36px 0;
+					background-color: $main-white;
+				}
+			}	
+		}
+
+		.answer {
+			font-size: 1.5rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #4e5665;
+			border-bottom: solid 1px $bottom-border-question;
+			padding: 20px;
+
+			@media (min-width: $screen-lg-min) {
+				font-size: 2rem;
+				line-height: 1.25;
+				border-bottom: solid 3px $main-purple;
+				padding: 0;
+			}
+		}
+
+		.collapsed {
+
+		   .card-header {
+		   		width: 100%;
+				border-bottom: solid 1px $bottom-border-question;
+			}	
+
+			.open {
+				display: none;
+			}
+
+			.closed-icon {
+				display: none;
+
+				@media (min-width: $screen-lg-min) {
+					display: block;
+				}
+			}
+
+			.question-p {
+				padding: 0;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 0 12px 32px 0!important;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					padding: 0 12px 40px 0!important;
+				}
+			}
+
+			.collapse-arrow {
+				transform: rotate(180deg);
+			}
+		}
+
+		.closed-icon  {
+			font-size: 3.5rem;
+			height: 24px;
+			line-height: 0;
+			padding: 9px 0 0 0;
+			font-family: FbReforma-sign!important;
+			font-weight: lighter;
+			color: #0a7bb6;
+			//font-weight: normal;
+		}
+
+		.open {
+			display: none;
+			
+			@media (min-width: $screen-lg-min) {
+				display: block;
+				width: 12px;
+				height: 1.5px;
+				background-color: #0a7bb6;
+				margin: 9px 0 0 0;
+			}
+		}
+
+		.collapse-buttons-wrapper {
+			position: absolute;
+			left: 0;
+			right: auto;
+			top: -41px;
+			padding: 0 10px;
+			margin:0 0 0 10px;
+
+			.collapse-button-open, .collapse-button-close {
+				font-size: 1.6rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				text-align: left;
+				color: $main-purple;
+				background-color: transparent;
+				border: 0;
+				padding: 0;
+				
+			}
+		}
+	}
+
+
+	// .q-and-a-footer {
+	// 	padding: 0;
+	// 	margin: 0 46px 0;
+	// 	border-top: 0;
+
+	// 	@media (min-width: $screen-lg-min) {
+	// 		margin: 0 auto 0;
+	// 		padding: 38px 0 0 0;
+	// 		border-top: solid 1px #dddddd;
+	// 		max-width: 1311px;
+	// 	}
+
+	// 	.footer-nav-wrapper	{
+	// 		margin:0 0 44px 0;
+	// 	}
+	// }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="140px" viewBox="0 0 100 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>6687612A-0979-420E-8A37-45A16463849C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1600" height="308" rx="3"></rect>
+        <filter x="-0.5%" y="-2.1%" width="101.1%" height="105.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Home.Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="006b_Reporting-Screen_buttons" transform="translate(-1310.000000, -310.000000)">
+            <g id="Group-11" transform="translate(0.000000, 230.000000)">
+                <g id="vector-header">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-19" transform="translate(1310.000000, 310.000000)" fill="#1C6897" fill-rule="nonzero">
+                <g id="noun_528426_70C041">
+                    <path d="M74.492126,20.3110236 C71.9015748,10.2244094 62.1732283,11.2992126 62.1732283,11.2992126 C61.6496063,4.98818898 56.3307087,0 49.8818898,0 C43.4330709,0 38.1141732,4.98818898 37.5905512,11.2992126 C37.5905512,11.2992126 27.8070866,10.1692913 25.2716535,20.3385827 L0.192913386,20.3385827 L0.192913386,140 L99.5433071,140 L99.5433071,20.3110236 L74.492126,20.3110236 Z M29.5708661,22.5708661 C29.5708661,18.8228346 32.6023622,15.7913386 36.3503937,15.7913386 L42.496063,15.7913386 C42.496063,15.7913386 42.0826772,12.5393701 42.0826772,12.3188976 C42.0826772,8.01968504 45.5826772,4.51968504 49.8818898,4.51968504 C54.1811024,4.51968504 57.6811024,8.01968504 57.6811024,12.3188976 C57.6811024,12.511811 57.2677165,15.7913386 57.2677165,15.7913386 L63.4133858,15.7913386 C67.1614173,15.7913386 70.1929134,18.8228346 70.1929134,22.5708661 L70.1929134,27.0905512 L29.5708661,27.0905512 L29.5708661,22.5708661 Z M95.0511811,135.480315 L4.71259843,135.480315 L4.71259843,24.8307087 L25.023622,24.8307087 L25.023622,31.6102362 L74.7125984,31.6102362 L74.7125984,24.8307087 L95.023622,24.8307087 L95.023622,135.480315 L95.0511811,135.480315 Z" id="Shape"></path>
+                    <path d="M11.492126,70 L38.5826772,70 L38.5826772,42.9094488 L11.492126,42.9094488 L11.492126,70 Z M16.011811,47.4291339 L34.0629921,47.4291339 L34.0629921,65.480315 L16.011811,65.480315 L16.011811,47.4291339 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="45.3622047" y="42.9094488" width="42.9094488" height="4.51968504"></rect>
+                    <rect id="Rectangle-path" x="45.3622047" y="54.1811024" width="42.9094488" height="4.51968504"></rect>
+                    <rect id="Rectangle-path" x="45.3622047" y="65.480315" width="42.9094488" height="4.51968504"></rect>
+                    <rect id="Rectangle-path" x="11.492126" y="94.8307087" width="27.0905512" height="4.51968504"></rect>
+                    <rect id="Rectangle-path" x="11.492126" y="106.129921" width="27.0905512" height="4.51968504"></rect>
+                    <rect id="Rectangle-path" x="11.492126" y="117.429134" width="27.0905512" height="4.51968504"></rect>
+                    <polygon id="Shape" points="63.9645669 113.901575 58.5905512 104.972441 54.7322835 107.287402 62.8897638 120.929134 87.5275591 98.7716535 84.496063 95.4094488"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

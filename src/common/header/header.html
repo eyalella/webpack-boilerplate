@@ -1,0 +1,145 @@
+
+<header>
+    <div class="gery-line d-lg-block d-none"></div>
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between custom-container top-sec-main-container">
+        <div class="top-sec d-flex">
+            <div class="top-sec-container d-flex justify-content-between flex-lg-column">
+                <a href="../home/index.html">
+                    
+                    <!-- logo -->
+                    <div class="logo d-flex">
+                        <!-- <img src="../images/logo-mobile.png">
+                        <div class="logo-head-container d-flex flex-column justify-content-center">
+                             <div class="first-head">
+                                מינהל הרכש הממשלתי
+                             </div>
+                             <div class="second-head">
+                                Government Grocurement Administration
+                             </div>
+                        </div> -->
+                        <img src="../images/logo.png" alt="logo" class="d-none d-lg-block">
+                        <img src="../images/logo-mobile.png" alt="logo" class="d-lg-none">
+                    </div>
+                </a>
+                <div class="main-mobile-nav-wrapper dropdown d-lg-none d-flex justify-content-center align-items-center justify-content-lg-start">
+
+                    <!-- open/close nav mobile button -->
+                    <button id="mainMobileNavTrigger" type="button" aria-haspopup="true" aria-expanded="false" class="btn nav-button">
+                          <img src="../images/menu.svg" alt="open-menu-button" id="menuButton">
+                          <img src="../images/menu-x-close.svg" alt="close-menu-button" id="closeMenuButton">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="middle-sec d-flex align-items-center flex-lg-row align-items-lg-start">
+            <div class="middle-sec-container d-flex align-items-lg-center justify-content-between align-items-start flex-lg-wrap">
+                <!--<div class="font-size-container font-size-container-mobile d-flex align-items-end d-lg-none">
+
+                     font size buttons mobile 
+                    <a href=""><div class="font-size Abig">א</div></a>
+                    <a href=""><div class="font-size Asmall">א</div></a>
+                </div>-->
+
+                <!-- skip to main contant link -->
+                <a id="mainContentLink" href="#mainContent">עבור לתוכן המרכזי</a>
+
+                <!-- language dropdown -->
+                <div class="dropdown lng-dropdown">
+
+                    <!-- hebrew option (default) -->
+                    <button class="btn btn-secondary dropdown-toggle lng-btn d-flex align-items-center justify-content-center justify-content-lg-end" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        עברית
+                    </button>
+
+                    <!-- english option -->
+                    <div class="dropdown-menu lng-dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item lng-dropdown-item-1" href="#" lang="en" role="button" tabindex="0">En</a>
+                    </div>
+                </div>
+                <!--<div class="font-size-container font-size-container-desktop d-lg-flex align-items-baseline d-none">
+
+                     font size buttons lg 
+                    <a href=""><div class="font-size Abig">א</div></a>
+                    <a href=""><div class="font-size Asmall">א</div></a>
+                </div>-->
+
+                <div class="ent-container">
+
+                    <!-- entrance button when user is not logged in -->
+                    <a href="../signin/index.html" class="ent-btn d-none" role="button" tabindex="0">
+                        כניסה
+                    </a>
+
+                    <!-- entrance button when user logged in  -->
+                    <div class="ent-dropdown-logged-in-container">
+
+                        <div class="ent-dropdown-wrapper">
+
+                            <!-- logged in name -->
+                            <div class="logged-in-name d-flex align-items-center justify-content-center justify-content-lg-end" role="button" tabindex="0" id="entButton">
+                                שלום שמעון <span class="ent-arrow"></span>
+                            </div>
+
+                            <div class="ent-dropdown-items-container none">
+
+                                <!-- profile option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../profile/index.html" role="button" tabindex="0">עדכון פרטים</a>
+                                </div>
+
+                                <!-- mailing option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="../mepharsemim/index.html" role="button" tabindex="0">הרשמה לדיוור</a>
+                                </div>
+
+                                <!-- exit option -->
+                                <div class="ent-dropdown-item-wrapper d-flex align-items-center justify-content-center" aria-labelledby="dropdownMenuButton">
+                                    <a class="ent-dropdown-item w-100 h-100 d-flex justify-content-center align-items-center" href="#" role="button" tabindex="0">יציאה</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- search input section -->
+    <div class="input-sec d-flex custom-container">
+        <div class="input-container d-flex">   
+
+            <!-- search input dropdown -->
+            <div class="dropdown input-dropdown d-flex align-items-center justify-content-center">
+                <div class="input-toggle-arrow"></div>
+                <select class="form-control input-toggle-select" type="button" id="inputToggle" title="בחר" placeholder= "בחר">
+
+                    <!-- search options -->
+                    <option class="input-dropdown-defult-item" value="0" disabled selected hidden>בחר</option>
+                    <option class="input-dropdown-item" value="1">מכרזים</option>
+                    <option class="input-dropdown-item" value="2">פטורים</option>
+                    <option class="input-dropdown-item" value="3">אחר</option>
+                    <option class="input-dropdown-item" value="4">חפש בדף זה</option>
+                </select>
+                <label class="sr-only" for="inputToggle"></label>
+            </div>
+
+            <!-- search input -->
+            <input type="text" name="search" placeholder="חפש" class="main-input" id="mainInput">
+            <label class="sr-only" for="mainInput">search</label>
+
+            <!-- error p -->
+            <div id="inputErrorP" class="align-items-center justify-content-center">
+                לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק
+            </div>
+
+            <!-- search button -->
+            <label class="sr-only" for="searchInput">search</label>
+            <button class="d-flex align-items-center search-input" id="searchInput">
+                <img src="../images/search-icon.svg" class="SearchIcon" alt="search-icon">
+            </button>
+        </div>
+    </div>
+    <div class="d-none d-lg-block main-nav-wrapper">
+        ${require("../top-navigation/top-navigation.html")}
+    </div>
+</header>

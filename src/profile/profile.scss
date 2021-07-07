@@ -1,0 +1,661 @@
+@import "../util/util.scss";
+
+.profile {
+	min-width: 330px;
+
+	.profile-top-sec {
+		position: relative;
+		background-color: $cobalt;
+		height: auto;
+		padding: 0;
+		min-height: 205px;
+        height: auto;
+
+		@media (min-width: $screen-lg-min) {
+            min-height: 260px;
+            background-position: left;
+        	background-image: url('../common/images/profile-header-visuals.png');
+        	object-fit: contain;
+			background-size: 30%;
+			background-repeat: no-repeat;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
+       	}
+
+		.top-sec-container {
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+
+			@media (min-width: $screen-lg-min) {
+                padding: 0 20px;
+                max-width: 1010px; 
+           	}
+
+           	@media (min-width: $screen-xl-min) {
+                max-width: 1262px;
+           	}
+
+			.profile-breadcrumb-wrapper {
+				margin: 0 8px 0 0;	
+				font-size: 1.5rem;
+				position: absolute;
+				width: auto;
+				left: 20px;
+				top: 16px;
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 23px 0 26px 0;
+                    font-size: 1.6rem;
+                    position: static;
+                    width: 100%;
+               	}
+
+               	@media (min-width: $screen-xl-min) {
+                    margin: 29px 0 33px 0;
+               	}
+
+               	.breadcrumb {
+					margin: 0;
+
+					span {
+						top: 0;
+					}
+				}
+
+               	.breadcrumb-item-1, .breadcrumb-item-2 {
+               		display: none;
+
+               		@media (min-width: $screen-lg-min) {
+	                    display: block;
+	               	}
+               	}
+			}
+
+			.profile-p-sec {
+				margin: 15px 6px 0 0;	
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0;
+               	}
+
+				.profile-icon-wrapper {
+					margin: 0 0 10px 0;
+
+					@media (min-width: $screen-lg-min) {
+	                    margin: 17px 0 0 24px;
+	               	}
+
+					img {
+						height: 47px;
+						width: 32px;
+
+						@media (min-width: $screen-lg-min) {
+		                	width: 68px;
+  							height: 93px;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
+		                	width: 85px;
+  							height: 116px;
+		               	}
+					}
+				}
+
+				.profile-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $main-white;
+					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+					@media (min-width: $screen-lg-min) {
+	                    font-size: 6.2rem;
+	               	}
+				}
+
+				.profile-p {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $main-white;
+					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+					padding: 0 0 0 20px;
+					margin:0 0 20px 0;
+					max-width: 500px;
+
+					@media (min-width: $screen-lg-min) {
+	                    font-size: 3rem;
+	                    margin:0 0 10px 0;
+	                    max-width: 625px;
+	                    padding: 0 0 0 20px;
+	               	}
+
+	               	@media (min-width: $screen-xl-min) {
+	                    max-width: 800px;
+	               	}
+				}
+			}
+		}
+	}
+
+	.profile-body {
+		height: auto;
+		padding: 0 0 87px 0;
+
+		@media (min-width: $screen-lg-min) {
+    		height: 567px;
+    		padding: 0;
+       	}
+
+		.profile-body-wrapper {
+			width: 100%;
+			padding: 0 15px;
+
+			@media (min-width: $screen-lg-min) {
+	    		padding: 0 20px;
+	       	}
+		}
+
+		.profile-form-wrapper {
+			max-width: 880px;
+			width: 100%;
+			margin-top: 30px;
+
+			@media (min-width: $screen-lg-min) {
+	    		margin-top: 44px;
+	       	}
+
+			.form-group {
+				width: 100%;
+				margin-bottom: 0;
+			}
+
+
+			input {
+				width: 100%;
+				height: 43px;
+				font-size: 1.5rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				color: #6a768a;
+				padding:0 25px 0 0;
+
+				@media (min-width: $screen-lg-min) {
+		    		height: 50px;
+		       	}
+			}
+
+			.first-name-wrapper {
+				margin: 0 0 0 10px;
+			}
+
+			.input-bullet {
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background-color: $header-blue;
+				border-radius: 50%;
+				right: 11px;
+				left: auto;
+				top: 50%;
+				margin: -4px 0 0 0;
+
+				@media (min-width: $screen-lg-min) {
+                    margin: -3px 0 0 0;
+               	}
+			}
+
+			.language {
+				position: relative;
+
+				.blue-arrow {
+					width: 9px;
+					height: 9px;
+					position: absolute;
+					border: solid $header-blue;
+				    border-width: 0 1.5px 1.5px 0;
+				    display: inline-block;
+				    transform: rotate(45deg);
+				    -webkit-transform: rotate(45deg);
+				    pointer-events: none;
+				    top: 18px;
+				    left: 17px;
+				    right: auto;
+				    margin-top: -3px;
+
+				    @media (min-width: $screen-lg-min) {
+			    		margin-top: 0;
+			       	}
+				}
+
+				.language-select {
+					width: 100%;
+					height: 43px !important;
+					font-size: 1.5rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					color: rgba(106,118,138,0.8);
+					appearance: none !important;
+					-webkit-appearance: none !important;
+					-moz-appearance: none !important;
+					padding:0 25px 0 0;
+
+					@media (min-width: $screen-lg-min) {
+			    		height: 50px !important;
+			       	}
+
+					&::-ms-expand {
+			           display: none;
+			        }
+				}
+
+				option {
+					width: 100%;
+					font-size: 1.5rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.5px;
+					color: rgba(106,118,138,0.8);
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					padding:0 25px 0 0;
+				}
+			}
+
+			.name-lng-wrapper, .email-wrapper {
+
+				@media (min-width: $screen-lg-min) {
+                    margin-bottom: 25px;
+                    height: 50px;
+               	}
+			}
+
+			.password-wrapper {
+				margin: 0 0 20px 0;
+
+				@media (min-width: $screen-lg-min) {
+                    margin:0 0 30px 0;
+               	}
+			}
+
+			.name, .email, {
+				margin: 0 0 20px 0;
+
+				@media (min-width: $screen-sm-min) {
+                    margin: 0 0 25px 0;
+               	}
+
+				@media (min-width: $screen-lg-min) {
+                    margin:0 0 0 20px;
+               	}
+			} 
+
+			.email {
+
+				@media (min-width: $screen-lg-min) {
+                    padding: 0 0 0 20px;
+               	}
+			}
+
+			#inputPasswordProfile {
+				//margin: 0 0 10px 0;
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0;
+               	}
+			}
+
+			.password {
+				margin: 0 0 20px 0;
+
+				#hint {
+					opacity: 0.51;
+					font-size: 1.2rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: 0.6px;
+					color: #6a768a;
+					margin: 0 25px 0 0;
+					position: absolute;
+					display: none;
+
+					@media (min-width: $screen-lg-min) {
+	                    margin: 3px 25px 0 0;
+	               	}
+				}
+
+				@media (min-width: $screen-sm-min) {
+                    margin: 0 0 25px 0;
+               	}
+
+				@media (min-width: $screen-lg-min) {
+                    margin:0 0 0 20px;
+               	}
+			}
+
+			.password-confirm {
+				position: relative;	
+
+				@media (min-width: $screen-lg-min) {
+	                margin:0 20px 0 0;
+	           	}
+
+	           	#showPasswordConfirm {
+					position: absolute;
+					left: 10px;
+					right: auto;
+					top: -23px;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+					color: #0a7bb6;
+					cursor: pointer;
+				}
+				#showPasswordConfirmProfile {
+					position: absolute;
+					left: 10px;
+					right: auto;
+					top: -23px;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+					color: #0a7bb6;
+					cursor: pointer;
+				}
+			}
+
+			.language, .email-confirm {
+				margin: 0 0 20px 0;
+
+				@media (min-width: $screen-sm-min) {
+                    margin: 0 0 25px 0;
+               	}
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0 20px 0 0;
+               	}
+			}
+
+			.phone-number {
+				margin: 0 0 20px 0;
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0;
+                    max-width: 420px;
+               	}
+			}
+
+			.checkbox-active-account-wrapper {
+				width: auto;
+				margin: 25px 0 80px 0;
+				position: relative;
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 25px 0 0 0;
+               	}
+
+				input {
+					width: 30px;
+					height: 30px;
+				}
+
+				.checkbox-input-wrapper {
+					margin: 0 0 0 12px;
+				}
+
+				.form-checkbox {
+					margin: 0;
+					appearance: none;
+					background-image: url('../common/images/checkbox-X.svg');
+					border-radius: 2.4px;
+					background-color: #f6f6f6;
+					box-shadow: inset 0 0 18px 0 rgba(0, 0, 0, 0.1);
+					background-size: auto;
+					background-repeat: no-repeat;
+					background-position: center;
+					//background-color: $main-white;
+					display: inline-block;
+					position: relative;
+					width: 30px;
+					height: 30px;
+				    padding: 0;
+
+					@media (min-width: $screen-lg-min) {
+						 
+					}
+				}
+
+
+				.form-checkbox:checked {
+					background-image: url('../common/images/selected-check.svg');
+					background-size: 100%;
+				}
+
+				.form-checkbox:checked:after {
+					
+				}
+
+				.input-first-label-not-active, .input-first-label-active {
+					font-size: 2rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.75;
+					letter-spacing: 0.6px;
+					color: #6a768a;
+					display: block;
+					margin: 0 0 5px 0;
+				}
+
+				.input-first-label-active {
+					color: $header-blue;
+				}
+
+				.input-second-label {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.94;
+					letter-spacing: 0.5px;
+					color: #6a768a;
+					display: inline-block;
+				}
+
+				.checkbox-input-p {
+					position: absolute;
+					max-width: 200px;
+					opacity: 0.51;
+					font-family: FbReforma;
+					font-size: 1.2rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.92;
+					letter-spacing: 0.4px;
+					color: #6a768a;
+					top: 40px;
+					right: 0;
+					left: auto;
+				}
+			}
+		}
+
+		.save-details-button {
+			max-width: 882px;
+
+			button {
+				width: 100%;
+				height: 50px;
+				object-fit: contain;
+				border-radius: 3px;
+				background-color: $header-blue;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $main-white;
+
+				@media (min-width: $screen-lg-min) {
+                    width: 180px;
+               	}
+
+				&:active, &:focus {
+		          background-color: #1c6897;
+		          color: $header-blue;
+		          border: 0;
+		        }
+			}
+		}
+
+		.save-details-button {
+			margin: 0 0 25px 0;
+
+			@media (min-width: $screen-lg-min) {
+            	margin: 0 0 25px 0;
+           	}
+		}
+	}
+
+	.modal {
+		background-color: rgba(10, 123, 182, 0.9);;
+
+		.modal-dialog {
+			margin: 156px auto 0;
+			max-width: 335px;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 100px auto 0;
+				max-width: 924px;
+				min-height: 425px;
+			}
+		}
+
+		.modal-content {
+			width: 100%;
+			height: auto;
+			border-radius: 3px;
+			background-color: #ffffff;
+			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+			margin: 0;
+			position: relative;
+
+			.close-btn {
+				width: 235px;
+				height: 50px;
+				object-fit: contain;
+				border-radius: 3px;
+				background-color: $header-blue;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $main-white;
+
+				@media (min-width: $screen-lg-min) {
+                    width: 180px;
+               	}
+			}
+		}
+
+		.modal-body {
+
+			padding: 0 9px 47px;
+			height: 333px;
+			width: 100%;
+
+			@media (min-width: $screen-lg-min) {
+				height: auto;
+				width: auto;
+				padding: 0 22px 72px;
+			}
+
+
+			.dialog-icon {
+				width: auto;
+				height: 134px;
+				margin: -37px 0 21px 0;
+
+				@media (min-width: $screen-lg-min) {
+					width: auto;
+  					height: 192px;
+  					margin: -61px 0 21px 0;
+				}
+			}
+
+			h4 {
+				font-size: 3rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: center;
+				color: $header-blue;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 6.2rem;
+				}
+			}
+
+			p {
+				font-size: 2rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				letter-spacing: normal;
+				text-align: center;
+				color: #4e5665;
+				max-width: 292px;
+				margin: 0 0 55px 0;
+				line-height: 1.25;
+				font-size: 2rem;
+
+				@media (min-width: $screen-lg-min) {
+					max-width: 100%;
+					line-height: 0.78;
+					font-size: 3.2rem;
+				}
+			}
+		}
+	}
+}	
+
+// .profile-footer {
+// 	border-top: solid 1px #dddddd;;
+//   	object-fit: contain;
+//   	padding: 30px 0 0;
+// }

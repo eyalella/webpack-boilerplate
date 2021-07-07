@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="24px" viewBox="0 0 29 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>09F2E9E0-754F-4F84-A0F4-A2DBBD442E98</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1230.5" height="264" rx="4"></rect>
+        <filter x="-0.6%" y="-2.8%" width="101.2%" height="105.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Green-Rechesh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-197.000000, -995.000000)">
+        <g id="Section-3-History-Copy-5" transform="translate(172.000000, 778.000000)">
+            <g id="line">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+        <g id="Group-12" transform="translate(197.000000, 996.000000)" fill="#33A38D" stroke="#33A38D" stroke-width="0.5">
+            <g id="Group-11" transform="translate(14.500000, 11.000000) scale(-1, 1) rotate(-180.000000) translate(-14.500000, -11.000000) ">
+                <polygon id="Page-1" points="5.97444895 11 14 2.9838194 11.0127755 0 0 11 11.0127755 22 14 19.0161806"></polygon>
+                <polygon id="Page-1-Copy" points="20.9744489 11 29 2.9838194 26.0127755 0 15 11 26.0127755 22 29 19.0161806"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

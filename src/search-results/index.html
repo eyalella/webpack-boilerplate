@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>תוצאות חיפוש</title>
+  ${require("../common/common-stylesheet.html")}
+  <link rel="stylesheet" href="/common/common.css">
+  <link rel="stylesheet" href="/common/fonts.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+</head>
+
+<!-- body -->
+<!-- add to the body "search-results-exemption" class to change the design to search results exemption design -->
+
+<body class="search-results">
+  <!-- <link href="../search-results.rtl/search-results.css" type="text/css" rel="stylesheet"> -->
+
+  <!-- mobile-menu -->
+  <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+    <div class="main-menu-mobile-wrapper"></div>
+    ${require("../common/top-navigation/top-navigation.html")}
+  </div>
+  <div class="main-content-wrapper">
+
+    <!-- header -->
+    ${require("../common/header/header.html")}
+
+    <!-- top-section -->
+    <section class="search-results-top-sec">
+      <div class="right-line"></div>
+      <div class="search-results-container custom-container">
+        <div class="search-results-head-wrapper d-flex justify-content-start flex-column">
+          <h1 class="search-results-head d-flex justify-content-start ">
+            תוצאות חיפוש
+          </h1>
+
+          <!-- search results main p -->
+          <p class="head-p">נמצאו 10 תוצאות לחיפוש "מחשבים" במכרזים</p>
+
+          <!-- search results exemption main p -->
+          <!-- move d-none to search results main p to show -->
+          <p class="head-p d-none">נמצאו 10 תוצאות לחיפוש “אספקה” בפטורים</p>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="body-container">
+
+      <div class="grey-overlay d-lg-none">
+      </div>
+
+      <!-- main-content -->
+      <section id="mainContent" class="search-results-body d-flex flex-column align-items-center">
+
+        <!-- changed place //////////////////////////////////////-->
+
+        <!-- open filter mobile button -->
+        <div class="filter-mobile-container d-flex flex-column align-items-center justify-content-center d-lg-none">
+          <div class="filter-mobile-wrapper d-flex flex-column align-items-center justify-content-center h-100">
+            <img src="../common/images/filter-icon.svg" class="filter-icon" alt="filter-icon">
+            <h3 class="mobile-filter-head">סנן תוצאות לפי</h3>
+            <div class="mobile-filter-arrows-wrapper d-flex flex-column">
+              <span class="mobile-filter-arrow"></span>
+              <span class="mobile-filter-arrow"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- end changed place //////////////////////////////////////-->
+
+        <!-- new //////////////////////////////////////////////////////////////////////////-->
+
+        <div class="facet js-facet custom-container d-flex">
+          <div class="all-filters-wrapper d-flex flex-column flex-lg-row">
+            <ul class="filters-list d-flex flex-wrap">
+              <!-- <li class="filters-list-item d-none">
+                  מעודכן
+                  <button class="deselect-filter-btn"></button>
+                </li> -->
+              <!-- <li class="filters-list-item">
+                  משרד הפנים
+                  <button class="deselect-filter-btn"></button>
+                </li>
+                <li class="filters-list-item">
+                  סכום מ-6,000 עד 600,000 ₪
+                  <button class="deselect-filter-btn"></button>
+                </li>
+                <li class="filters-list-item">
+                  תאריך עידכון מ-20/11/2018 עד 25/11/2018
+                  <button class="deselect-filter-btn"></button>
+                </li>
+                <li class="filters-list-item">
+                  לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. 
+                  קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט  לפתיעם ברשג  ולתיעם גודישי קוון
+                <button class="deselect-filter-btn"></button>
+                </li>
+                <li class="filters-list-item">
+                  מדפסות
+                  <button class="deselect-filter-btn"></button>
+                </li> -->
+            </ul>
+
+            <!-- deselect all button wrapper -->
+            <!-- remove d-none to show (if there is ANY checked filters!) -->
+            <div class="deselect-all-filters-wrapper align-items-center justify-content-center d-none">
+              <span>בטל את כל הסינונים</span>
+              <button class="deselect-all-filters-btn" id="deselectAllFiltersBtn"></button>
+              <label class="sr-only" for="deselectAllFiltersBtn">deselect all filters button</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- end new //////////////////////////////////////////////////////////////////////////-->
+
+        <div class="search-results-body-wrapper custom-container d-lg-flex justify-content-end w-100">
+
+          <div class="filters-wrapper d-none d-lg-block">
+            <!-- <div class="facet js-facet">
+                <div class="facet__name js-facet-name">
+                    <span class="glyphicon facet__arrow"></span>
+                    <h3><span tabindex="0">Applied Facets</span></h3>
+                </div>
+                <div class="facet__values js-facet-values">
+                    <ul class="facet__list">
+                      <li>
+                        פילטר 1&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
+                      </li>
+                      <li>
+                        פילטר 1&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
+                      </li>
+                      <li>
+                        Office Name 4&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
+                      </li>
+                      <li>
+                        Office Name 4&nbsp;<a href="/ilgstorefront/en/search?q=%3A%3Atype%3A4" aria-label="search.nav.applied.facets.removeOffice Name 4"><span class="glyphicon glyphicon-remove"></span></a>
+                      </li>
+                    </ul>
+                </div>
+              </div> -->
+
+            <!-- main search-results filter container -->
+            <div class="search-results-filter-container">
+              <div class="search-results-filter-wrapper">
+
+                <!-- filter status close -->
+                <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>סטטוס</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter status open -->
+                <div class="status-filter-wrapper">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" class="icheck status-checkbox" id="filterCheckbox1">
+                      <span class="main-label updated">מעודכן</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox2">
+                      <span class="main-label new">חדש</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox3">
+                      <span class="main-label closed">סגור</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox4">
+                      <span class="main-label pre-committees-decision">טרום החלטת ועדה</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck status-checkbox" id="filterCheckbox5">
+                      <span class="main-label cancelled">מבוטל</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- filter office close -->
+                <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>משרד</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter office open -->
+                <div class="office-filter-wrapper">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck" id="main-checkbox">
+                      <span class="main-label">אפשרות-1</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck">
+                      <span class="main-label">אפשרות-2</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck">
+                      <span class="main-label">אפשרות-3</span>
+                    </label>
+                  </div>
+
+                  <!-- new /////////////////////////////////////////////////////////////////////////////////-->
+
+                  <div class="d-none more-options-container">
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">אפשרות-5</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">
+                          דוגמא לטקסט לורם
+                          איפסום ארוך מרוד של
+                          יותר משתי שורות…
+                        </span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">
+                          אפשרות-7
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
+
+                  <button id="showMoreButton1" class="show-more-button">הצג עוד</button>
+
+                  <!-- end new /////////////////////////////////////////////////////////////////////////////////-->
+                </div>
+
+                <!-- filter update date close -->
+                <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>תאריך עדכון</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter update date open -->
+                <div class="date-filter-wrapper">
+
+                  <!-- start date input -->
+                  <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z"
+                    data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" id="datepicker1">
+                    <div class="input-wrapper">
+                      <input type="text" class="form-control datepicker startDate" placeholder="מתאריך"
+                        data-date-format="dd-mm-yyyy" id="datepickerInput1">
+                      <label class="sr-only" for="datepickerInput1">start-date</label>
+                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar"
+                        alt="calendar-icon">
+                    </div>
+                  </div>
+                  <input type="hidden" id="dtp_input1" value="">
+                  <label class="sr-only" for="dtp_input1"></label>
+
+                  <!-- end date input -->
+                  <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy"
+                    data-link-field="dtp_input2" id="datepicker2">
+                    <div class="input-wrapper">
+                      <input type="text" class="form-control datepicker endDate" placeholder="עד תאריך" id="datepickerInput2">
+                      <label class="sr-only" for="datepickerInput2">end-date</label>
+                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar"
+                        alt="calendar-icon">
+                    </div>
+                  </div>
+                  <input type="hidden" id="dtp_input2" value="">
+                  <label class="sr-only" for="dtp_input2"></label>
+
+                  <!-- new //////////////////////////////////////////////////////////////////////////-->
+
+                  <button onclick="" id="commitButton" class="commit-button disabled">החל</button>
+
+                  <!-- end new //////////////////////////////////////////////////////////////////////////-->
+                </div>
+
+                <!-- filter last date close -->
+                <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>מועד אחרון להגשה</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter last date open -->
+                <div class="last-date-filter-wrapper">
+                  <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z"
+                    data-date-format="dd-mm-yyyy" data-link-field="dtp_input3" id="datepicker3">
+                    <div class="input-wrapper">
+                      <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy"
+                        id="datepickerInput3">
+                      <label class="sr-only" for="datepickerInput3">end-date</label>
+                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar"
+                        alt="calendar-icon">
+                    </div>
+                  </div>
+                  <input type="hidden" id="dtp_input3" value="">
+                  <label class="sr-only" for="dtp_input3">last-date</label>
+
+                  <!-- new //////////////////////////////////////////////////////////////////////////-->
+
+                  <button onclick="" id="commitButton2" class="commit-button disabled">החל</button>
+
+                  <!-- end new //////////////////////////////////////////////////////////////////////////-->
+                </div>
+
+                <!-- new //////////////////////////////////////////////////////////////////////////-->
+
+                <!-- filter currency close -->
+                <div class="currency-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>סכום</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter currency open -->
+                <div class="currency-filter-wrapper">
+                  <div class="input-group currency-container">
+                    <div class="input-wrapper">
+                      <!-- <label for="currencyInput"></label>
+                        <input type="number" placeholder="מסכום" class="currency" id="currencyInput" /> -->
+                      <label for="currencyField"></label>
+                      <input class="currency-field" type="text" name="currency-field" id="currencyField" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
+                        value="" data-type="currency" placeholder="מסכום">
+                    </div>
+                  </div>
+                  <div class="input-group currency-container">
+                    <div class="input-wrapper">
+                      <label for="currencyField2"></label>
+                      <input class="currency-field" type="text" name="currency-field" id="currencyField2" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
+                        value="" data-type="currency" placeholder="עד סכום">
+                    </div>
+                  </div>
+                  <button onclick="" id="commitButton3" class="commit-button disabled">החל</button>
+                </div>
+
+                <!-- end new //////////////////////////////////////////////////////////////////////////-->
+
+                <!-- filter tags close -->
+                <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>תגיות</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter tags open -->
+                <div class="tags-filter-wrapper">
+
+                  <!-- changes /////////////////////////////////////////////////////////////////////////////////-->
+
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck tags-checkbox">
+                      <span class="main-label">אפשרות-1</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck tags-checkbox">
+                      <span class="main-label">
+                        דוגמא לטקסט לורם
+                        איפסום ארוך מרוד של
+                        יותר משתי שורות…
+                      </span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck tags-checkbox">
+                      <span class="main-label">
+                        אפשרות-3
+                      </span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck tags-checkbox">
+                      <span class="main-label long-text-checkbox">
+                        דוגמא לטקסט לורם
+                        איפסום ארוך מרוד של
+                        יותר משתי שורות…
+                      </span>
+                    </label>
+                  </div>
+
+                  <!-- new /////////////////////////////////////////////////////////////////////////////////-->
+
+                  <div class="d-none more-options-container">
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">אפשרות-5</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">
+                          דוגמא לטקסט לורם
+                          איפסום ארוך מרוד של
+                          יותר משתי שורות…
+                        </span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" class="icheck tags-checkbox">
+                        <span class="main-label">
+                          אפשרות-7
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button id="showMoreButton2" class="show-more-button">הצג עוד</button>
+
+                  <!-- end new/////////////////////////////////////////////////////////////////////////////////-->
+
+                  <!-- end changes/////////////////////////////////////////////////////////////////////////////////-->
+                </div>
+              </div>
+            </div>
+
+            <!-- exemption search results filter container -->
+            <!-- move d-none to main search-results filter container to show in search results exemption -->
+            <div class="search-results-filter-container search-results-exemption-filter-container d-none">
+              <div class="search-results-filter-wrapper">
+
+                <!-- filter status close -->
+                <div class="status-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>סטטוס</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter status open -->
+                <div class="status-filter-wrapper d-none">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck" id="main-checkbox">
+                      <span class="main-label updated">מעודכן</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck">
+                      <span class="main-label new">חדש</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck">
+                      <span class="main-label closed">סגור</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck">
+                      <span class="main-label pre-committees-decision">טרום החלטת ועדה</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck">
+                      <span class="main-label cancelled">מבוטל</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- filter office close -->
+                <div class="office-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>משרד</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter office open -->
+                <div class="office-filter-wrapper d-none">
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck" id="main-checkbox">
+                      <span class="main-label">אפשרות-1</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck">
+                      <span class="main-label">אפשרות-2</span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" class="icheck">
+                      <span class="main-label">אפשרות-3</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- filter last date close -->
+                <div class="last-date-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>מועד אחרון להגשה</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter last date open -->
+                <div class="last-date-filter-wrapper d-none">
+                  <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z"
+                    data-date-format="dd-mm-yyyy" data-link-field="dtp_input4" id="datepicker4">
+
+                    <!-- date exemption search results -->
+                    <div class="input-wrapper">
+                      <input type="text" class="form-control datepicker" placeholder="תאריך" data-date-format="mm/dd/yyyy"
+                        id="datepickerInput4">
+                      <label class="sr-only" for="datepickerInput4">last-date-exemption</label>
+                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar"
+                        alt="calendar-icon">
+                    </div>
+                  </div>
+                  <input type="hidden" id="dtp_input4" value="">
+                  <label class="sr-only" for="dtp_input4">date-exemption</label>
+                </div>
+
+                <!-- filter update date close -->
+                <div class="date-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>תאריך עדכון</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter update date open -->
+                <div class="date-filter-wrapper d-none">
+                  <div class="input-group input-group-1 date form_date" data-date="2014-06-14T05:25:07Z"
+                    data-date-format="dd-mm-yyyy" data-link-field="dtp_input5" id="datepicker5">
+
+                    <!-- start date exemption search results -->
+                    <div class="input-wrapper">
+                      <input type="text" class="form-control datepicker" placeholder="מתאריך" data-date-format="mm/dd/yyyy"
+                        id="datepickerInput5">
+                      <label class="sr-only" for="datepickerInput5">start-date-exemption</label>
+                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar"
+                        alt="calendar-icon">
+                    </div>
+                  </div>
+                  <input type="hidden" id="dtp_input5" value="">
+                  <label class="sr-only" for="dtp_input5"></label>
+                  <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy"
+                    data-link-field="dtp_input6" id="datepicker6">
+
+                    <!-- end date exemption search results -->
+                    <div class="input-wrapper">
+                      <input type="text" class="form-control datepicker" placeholder="עד תאריך" id="datepickerInput6">
+                      <label class="sr-only" for="datepickerInput6">end-date-exemption</label>
+                      <img src="../common/images/date-img.svg" class="date-picker-icon glyphicon glyphicon-calendar"
+                        alt="calendar-icon">
+                    </div>
+                  </div>
+                  <input type="hidden" id="dtp_input6" value="">
+                  <label class="sr-only" for="dtp_input6"></label>
+                </div>
+
+                <!-- filter tags close -->
+                <div class="tags-filter-close close-filter-container d-flex align-items-center justify-content-between"
+                  role="button" tabindex="0">
+                  <h3>תגיות</h3>
+                  <span class="filter-arrow rotate"></span>
+                </div>
+
+                <!-- filter tags open -->
+                <div class="tags-filter-wrapper d-none">
+                  <div class="tags-wrapper d-flex flex-column align-items-center">
+                    <a href="#" class="tag-wrapper d-flex align-items-center justify-content-center"><span>מחשוב
+                        ותקשורת</span></a>
+                    <a href="#" class="tag-wrapper d-flex align-items-center justify-content-center"><span>מדפסות</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- search results content -->
+          <div class="search-results-content-with-results">
+
+            <!-- search result -->
+            <div class="result-container">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
+
+                <!-- search result details-->
+                <div class="details-main-wrapper">
+                  <img src="../common/images/health-department-logo.svg" class="health-department-logo" alt="logo">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
+
+                    <!-- result link -->
+                    <a class="result-link" href="../bids/index.html" tabindex="0">
+                      <h2>האצת פרישת רשת החלקה להפחתת לחץ. ומדידה למתקני 
+
+                      <!-- add "eng-in-heb" class to any english words in hebrew pages    -->
+                      <span class="eng-in-heb">PRMS</span>
+                      </h2>
+                    </a>
+                    <div class="details-wrapper">
+
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- serial number -->
+                      <span>מספר סידורי: </span><span class="font-weight-normal">0000000000</span>
+                      <span class="font-weight-normal"> | </span>
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span>
+                       <span class="font-weight-normal d-none d-lg-inline-block">|</span>
+                      <br class="d-lg-none">
+
+                      <!-- process number -->
+                      <div class="d-lg-inline-block">
+                        <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span>
+                      </div>
+
+                      <div>
+                        <!-- release date -->
+                        <div class="d-lg-inline-block">
+                          <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span>
+                        </div>
+                         <span class="font-weight-normal d-none d-lg-inline-block">|</span>
+                        <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                        <!-- deadline for submission -->
+                        <div class="d-lg-inline-block">
+                          <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span>
+                          <span class="font-weight-normal d-none d-xl-inline-block">|</span>
+                        </div>
+                        
+                        <!-- deadline for submission -->
+                        <div class="d-lg-inline-block">
+                          <span class="last-date">מועד אחרון להגשה:
+                          </span>
+                          <span class="font-weight-normal number last-date">07/10/2013
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+
+                  <!-- Move class to the two irrelevant images -->
+
+                  <!-- tender img (default)-->
+                  <img src="../common/images/tender-icon.svg" class="tender-icon" alt="icon">
+
+                  <!-- central tender img -->
+                  <img src="../common/images/central-tender-icon.svg" class="central-tender-icon d-none" alt="icon">
+
+                  <!-- exemption img -->
+                  <img src="../common/images/exemption-card-icon.svg" class="exemption-card-icon d-none" alt="icon">
+
+                  <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- search result -->
+            <div class="result-container">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
+
+                <!-- search result details-->
+                <div class="details-main-wrapper">
+                  <img src="../common/images/health-department-logo.svg" class="health-department-logo" alt="logo">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">מכרזים</h3>
+
+                    <!-- result link -->
+                    <a class="result-link" href="../bids/index.html" tabindex="0">
+                      <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
+                    </a>
+
+                    <div class="details-wrapper">
+                      
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- serial number -->
+                      <span>מספר סידורי: </span><span class="font-weight-normal">0000000000</span>
+                      <span class="font-weight-normal"> | </span>
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span>
+                       <span class="font-weight-normal d-none d-lg-inline-block">|</span>
+                      <br class="d-lg-none">
+
+                      <!-- process number -->
+                      <div class="d-lg-inline-block">
+                        <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span>
+                      </div>
+                      <div>
+
+                        <!-- release date -->
+                        <div class="d-lg-inline-block">
+                          <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span>
+                        </div>
+                         <span class="font-weight-normal d-none d-lg-inline-block">|</span>
+                        <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                        <!-- deadline for submission -->
+                        <div class="d-lg-inline-block">
+                          <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span>
+                          <span class="font-weight-normal d-none d-xl-inline-block">|</span>
+                        </div>
+
+                        <!-- deadline for submission -->
+                        <div class="d-lg-inline-block">
+                          <span class="last-date">מועד אחרון להגשה:
+                          </span>
+                          <span class="font-weight-normal number last-date">07/10/2013
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+
+                  <!-- Move class to the two irrelevant images -->
+
+                  <!-- tender img (default)-->
+                  <img src="../common/images/tender-icon.svg" class="tender-icon d-none" alt="icon">
+
+                  <!-- central tender img -->
+                  <img src="../common/images/central-tender-icon.svg" class="central-tender-icon" alt="icon">
+
+                  <!-- exemption img -->
+                  <img src="../common/images/exemption-card-icon.svg" class="exemption-card-icon d-none" alt="icon">
+
+                  <h3 class="d-none d-lg-block search-result-sub-head">מכרזים</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- search result -->
+            <!-- add class "exemption-result" to make exemption orenge -->
+            <div class="result-container exemption-result">
+              <div class="right-line"></div>
+              <div class="content-wrapper d-flex justify-content-between align-items-start h-100">
+
+                <!-- search result details-->
+                <div class="details-main-wrapper">
+                  <img src="../common/images/health-department-logo.svg" class="health-department-logo" alt="logo">
+                  <div>
+                    <h3 class="d-lg-none search-result-sub-head">פטור</h3>
+
+                    <!-- result link -->
+                    <a class="result-link" href="../bids/index.html" tabindex="0">
+                      <h2>אספקת מחשבים עבור משרדי ממשלה</h2>
+                    </a>
+
+                    <div class="details-wrapper">
+                      
+                      <!-- name -->
+                      <span>מפרסם: </span><span class="font-weight-normal">משרד האוצר- מנהל הרכש הממשלתי</span><br>
+
+                      <!-- serial number -->
+                      <span>מספר סידורי: </span><span class="font-weight-normal">0000000000</span>
+                      <span class="font-weight-normal"> | </span>
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span>סטטוס: </span><span class="status updated font-weight-normal">מעודכן</span>
+                       <span class="font-weight-normal d-none d-lg-inline-block">|</span>
+                      <br class="d-lg-none">
+
+                      <!-- process number -->
+                      <div class="d-lg-inline-block">
+                        <span>מספר הליך: </span><span class="font-weight-normal number">18-2017</span>
+                      </div>
+                      <div>
+
+                        <!-- release date -->
+                        <div class="d-lg-inline-block">
+                          <span>תאריך פרסום: </span><span class="font-weight-normal number">28/08/2017</span>
+                        </div>
+                         <span class="font-weight-normal d-none d-lg-inline-block">|</span>
+                        <!-- <br class="d-lg-none"><span class="d-none d-lg-inline-block"> -->
+
+                        <!-- deadline for submission -->
+                        <div class="d-lg-inline-block">
+                          <span>תאריך עדכון אחרון: </span><span class="font-weight-normal number">28/08/2018</span>
+                          <span class="font-weight-normal d-none d-xl-inline-block">|</span>
+                        </div>
+
+                        <!-- deadline for submission -->
+                        <div class="d-lg-inline-block">
+                          <span class="last-date">מועד אחרון להגשה:
+                          </span>
+                          <span class="font-weight-normal number last-date">07/10/2013
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="logo-container d-lg-flex flex-column align-items-center">
+
+                  <!-- Move class to the two irrelevant images -->
+
+                  <!-- tender img (default)-->
+                  <img src="../common/images/tender-icon.svg" class="tender-icon d-none" alt="icon">
+
+                  <!-- central tender img -->
+                  <img src="../common/images/central-tender-icon.svg" class="central-tender-icon d-none" alt="icon">
+
+                  <!-- exemption img -->
+                  <img src="../common/images/exemption-card-icon.svg" class="exemption-card-icon" alt="icon">
+
+                  <h3 class="d-none d-lg-block search-result-sub-head">פטור</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- search results no results -->
+            <!-- remove d-none to search results content if no results -->
+            <div class="search-results-content-no-results d-none">
+                <div class="no-results-wrapper">
+                  לא נמצאו תוצאות חיפוש
+                  נסה ערך דומה
+                  <img src="../common/images/no-results-icon.svg" class="no-results-icon" alt="no-results-icon">
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="search-results-footer d-flex justify-content-center">
+        ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+
+  </div>
+  ${require("../common/common.html")}
+  <script type="text/javascript" src='/common/common.min.js'></script>
+</body>
+
+</html>

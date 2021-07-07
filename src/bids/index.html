@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>מכרזים</title>
+      ${require("../common/common-stylesheet.html")}
+      <link rel="stylesheet" href="/common/common.css">   
+      <link rel="stylesheet" href="/common/fonts.css">
+      <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css">    -->
+  </head>
+
+  <!-- body -->
+  <body class="bids">
+    <!-- <link href="../bids.rtl/bids.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")}
+
+      <!-- top-section -->
+      <section class="bids-top-sec d-flex flex-column align-items-center">
+        <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-center">
+          <!-- breadcrumbs -->
+          <div class="bids-breadcrumb-wrapper d-none d-lg-block">
+            <nav class="breadcrumb d-flex align-items-center justify-content-start">
+              <a class="breadcrumb-item align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
+
+              <!--tender breadcrumb (default)-->
+              <a class="breadcrumb-item align-items-center justify-content-center" href="#">מכרזים</a>
+
+              <!-- central tender breadcrumb -->
+              <a class="d-none breadcrumb-item align-items-center justify-content-center" href="#">מכרזים משרדיים</a>
+            </nav>
+          </div>
+          <div class="bids-head-wrapper d-flex flex-column flex-lg-row">
+
+            <!-- tender img (default)-->
+            <img src="../common/images/tender-icon.svg" class="tender-icon-top-icon" alt="icon">
+
+            <!-- central tender img -->
+            <img src="../common/images/central-tender-icon.svg" class="central-tender-top-icon d-none" alt="icon">
+            <div class="bids-h-wrapper">
+
+              <!-- sub head tender (default) -->
+              <h2 class="">מכרז</h2>
+
+              <!-- sub head central tender -->
+              <h2 class="d-none">מכרזים מרכזיים</h2>
+
+              <!-- main head -->
+              <h1 class="bids-head">
+                מכרז פומבי מספר 2/2018(קרן מחקרים) לביצוע <br> 
+                פרויקט עבודות בקומת הקרקע של מרכז הרווחה <br>
+                בשטח המרכז הרפואי הלל יפה
+              </h1>
+            </div>
+          </div>
+        </div> 
+      </section>
+
+      <!-- main-content -->
+      <section id="mainContent" class="bids-body d-flex flex-column align-items-center">
+        <div class="body-wrapper w-100">
+          <div class="bids-top-sec-wrapper custom-container">
+            <div class="bids-body-top-sec d-lg-flex">
+
+              <!-- bid details -->
+              <div class="bid-details-wrapper w-lg-100">
+                <div class="details-head">
+                  <h3 class="sub-head" id="sub-head-details">
+                    מפרסם:
+                  </h3>
+                  <h2>
+                    מנהל הרכש הממשלתי
+                  </h2> 
+                </div>
+                <div class="details-body d-flex">
+                  <div class="right-side-wrapper d-lg-flex justify-content-between">
+                    <div class="bid-num details-item-wrapper">
+                      <h3 class="sub-head">
+                        מספר פרסום:
+                      </h3>
+                      <span>22013</span>
+                    </div>
+
+                    <!-- status wrapper -->
+                    <div class="status details-item-wrapper">
+                      <h3 class="sub-head">
+                        סטטוס:
+                      </h3>
+
+                      <!-- status (Change class according to status and color changes: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span id="status-output" class="new">חדש</span>
+                    </div>
+                    <div class="bid-release-date details-item-wrapper">
+                      <h3 class="sub-head">
+                        מספר הליך:
+                      </h3>
+                      <span>2-2013</span>
+                    </div>
+                  </div>
+                  <div class="left-side-wrapper d-lg-flex justify-content-between">
+                    <div class="date details-item-wrapper">
+                      <h3 class="sub-head">
+                        תאריך פרסום:
+                      </h3>
+                      <span>27/6/2013</span>
+                    </div>
+                    <div class="update-date details-item-wrapper">
+                      <h3 class="sub-head">
+                        תאריך עדכון אחרון:
+                      </h3>
+                      <span>27/6/2013</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="last-date-wrapper">
+                  <h3 class="sub-head">
+                    מועד אחרון להגשה:
+                  </h3>
+                  <span id="lastDate"> 07/10/2013 ,23:59</span>
+                </div>
+              </div>
+
+              <!-- bid contact -->
+              <div class="bid-contact-wrapper">
+                <div class="right-line"></div>
+                <div class="logo-wrapper">
+                  <img src="../common/images/health-department-logo.svg" class="bid-contact-logo" alt="logo">
+                </div>
+                <h3>
+                  צור קשר עם מפרסם המכרז
+                </h3>
+                <div class="bid-contact-name">לורם איפסום דולור סיט אמט, קונסקטורר אדי</div>
+
+                <!-- tender contact mail / remove d-none to show -->
+                <div class="bid-contact-mail d-none">
+                    דוא"ל:&nbsp <a href="mailto:i_tender@mof.gov.il">i_tender@mof.gov.il</a>
+                </div>
+
+                <!-- central tender contact button (default)-->
+                <div class="bid-contact-button">
+                  <button class="btn btn-primary" type="submit" onclick="window.location.href='../contact-tender/index.html'">
+                    צור קשר
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="related-documents-container-close d-flex align-items-center justify-content-between custom-container">
+            מסמכים נלווים 
+            <div class="grey-arrow d-lg-none">
+                            
+            </div>
+          </div>
+          <div class="related-documents-container hidden w-100">
+            <div class="related-documents-wrapper-mobile d-lg-none">
+
+              <!-- related documents mobile swiper -->
+              <div class="swiper-container related-documents-swiper" id="relatedDocumentsSwiper">
+                <div class="swiper-wrapper">
+
+                  <!-- related documents mobile swiper slides -->
+                  <div class="swiper-slide swiper-slide-1 swiper-slide-related swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-2 swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-3 swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-4 swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-5 swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-6 swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-7 swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-8 swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="related-document-pagination swiper-pagination d-flex align-items-center justify-content-center"></div>
+            </div>
+
+            <div  class="related-documents-wrapper-desktop d-none d-lg-flex custom-container">
+
+              <!-- related documents desktop slides-->
+              <div class="desktop-slide desktop-slide-1 d-flex flex-column justify-content-between">
+                
+                <!-- related documents desktop slide content -->
+                <div class="related-document-wrapper h-100">
+                  <div class="document-date">
+                    10:00 ,08/03/2018
+                  </div>
+                  <div class="document-head">
+                    <h3>
+                      מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                    </h3>
+                  </div>
+                </div>
+                <div class="download-wrapper d-flex justify-content-end">
+                  <div class="download">
+                    <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-slide desktop-slide-2 d-flex flex-column justify-content-between">
+                
+                <!-- related documents desktop slide content -->
+                <div class="related-document-wrapper h-100">
+                  <div class="document-date">
+                    10:00 ,08/03/2018
+                  </div>
+                  <div class="document-head">
+                    <h3>
+                      מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                    </h3>
+                  </div>
+                </div>
+                <div class="download-wrapper d-flex justify-content-end">
+                  <div class="download">
+                    <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-slide desktop-slide-3 d-flex flex-column justify-content-between">
+                
+                <!-- related documents desktop slide content -->
+                <div class="related-document-wrapper h-100">
+                  <div class="document-date">
+                    10:00 ,08/03/2018
+                  </div>
+                  <div class="document-head">
+                    <h3>
+                      מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                    </h3>
+                  </div>
+                </div>
+                <div class="download-wrapper d-flex justify-content-end">
+                  <div class="download">
+                    <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-slide desktop-slide-4 d-flex flex-column justify-content-between">
+                  
+                  <!-- related documents desktop slide content -->
+                  <div class="related-document-wrapper h-100">
+                    <div class="document-date">
+                      10:00 ,08/03/2018
+                    </div>
+                    <div class="document-head">
+                      <h3>
+                        מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="download-wrapper d-flex justify-content-end">
+                    <div class="download">
+                      <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                    </div>
+                  </div>
+              </div>
+              <div class="desktop-slide desktop-slide-5 d-flex flex-column justify-content-between">
+                
+                <!-- related documents desktop slide content -->
+                <div class="related-document-wrapper h-100">
+                  <div class="document-date">
+                    10:00 ,08/03/2018
+                  </div>
+                  <div class="document-head">
+                    <h3>
+                      מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                    </h3>
+                  </div>
+                </div>
+                <div class="download-wrapper d-flex justify-content-end">
+                  <div class="download">
+                    <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-slide desktop-slide-6 d-flex flex-column justify-content-between">
+                    
+                    <!-- related documents desktop slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+              </div>
+              <div class="desktop-slide desktop-slide-7 d-flex flex-column justify-content-between">
+                    
+                    <!-- related documents desktop slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                      </div>
+                    </div>
+              </div>
+              <div class="desktop-slide desktop-slide-8 d-flex flex-column justify-content-between">
+                
+                <!-- related documents desktop slide content -->
+                <div class="related-document-wrapper h-100">
+                  <div class="document-date">
+                    10:00 ,08/03/2018
+                  </div>
+                  <div class="document-head">
+                    <h3>
+                      מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                    </h3>
+                  </div>
+                </div>
+                <div class="download-wrapper d-flex justify-content-end">
+                  <div class="download">
+                    <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="winning-bidders-container-close d-flex align-items-center justify-content-between custom-container">
+            ספקים זוכים 
+            <div class="grey-arrow d-lg-none">
+                            
+            </div>
+          </div>
+
+          <!-- winning bidders body -->
+          <div class="winning-bidders-main-container custom-container d-lg-flex hidden" id="winningBiddersMainContainer">
+
+            <!-- winning bidder wrapper -->
+            <div class="winning-bidder-main-wrppaer-1 winning-bidder-main-wrppaer">
+              <div class="winning-bidder-1 winning-bidder">
+                <div class="winning-bidder-container">
+
+                  <!-- winning bidder content -->
+                  <div class="winning-bidders-content-wrapper">
+                    <h3 class="winning-bidders-content-head">אשכול א': מחשב נייד קל משקל 14יי</h3>
+                    <div class="winning-bidders-content-sub-head"> 
+                      <h3>ספק: טלקוד מחשבים</h3>
+                      <p>
+                        עמחליף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                      </p>
+                    </div>
+                    <h3 class="winning-bidders-content-date-head">תקופת רכישה: מיום 1.1.2018 ועד יום 31.12.2018</h3>
+
+                    <!-- hour link -->
+                    <!-- (remove d-none to show) -->
+                    <!-- <a href="#" class="hour-link a d-none">הוראת שעה</a> -->
+                  </div>
+
+                  <!-- winning bidders links -->
+                  <div class="winning-bidders-links d-lg-flex justify-content-between w-100">
+                    <div  class="winning-bidders-links-right-side d-lg-flex flex-column">
+                      <a class="a" href="">ללורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">עוד לינק כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">ללורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">ללורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- winning bidder 1 swiper-->
+                <div class="winning-bidders-swiper-wrapper">
+                  <div class="swiper-container winning-bidders-swiper">
+                    <div class="gradient-overlay d-none d-lg-block d-none d-lg-block"></div>
+                    <div class="swiper-wrapper">
+
+                      <!-- winning bidder 1 swiper slide -->
+                      <div class="swiper-slide swiper-slide-1 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidders swiper slide 2-->
+                      <div class="swiper-slide swiper-slide-2 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidders swiper slide 3-->
+                      <div class="swiper-slide swiper-slide-3 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- winning bidders swiper button next-->
+                  <div class="swiper-button-next winning-bidders-button-next-1 d-none d-lg-block"></div>
+
+                  <!-- winning bidders swiper button prev-->
+                  <div class="swiper-button-prev winning-bidders-button-prev-1 d-none d-lg-block"></div>
+
+                  <!-- winning bidders pagination-->
+                  <div class="winning-bidders-pagination swiper-pagination d-flex align-items-center justify-content-center" id="winningBiddersPagination"></div>
+                </div>
+              </div>
+            </div>
+
+            
+            <!-- change -->
+
+
+            <!-- winning bidder wrapper with single card-->
+            <div class="winning-bidder-main-wrppaer-2 winning-bidder-main-wrppaer">
+              <div class="winning-bidder-2 winning-bidder">
+
+                <!-- change -->
+
+                <div class="winning-bidder-container winning-bidder-container-single">
+
+                  <!-- winning bidder 2 content -->
+                  <div class="winning-bidders-content-wrapper">
+                    <h3 class="winning-bidders-content-head">אשכול א': מחשב נייד קל משקל 14יי</h3>
+                    <div class="winning-bidders-content-sub-head"> 
+                      <h3>ספק: טלקוד מחשבים</h3>
+                      <p>
+                        עמחליף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                      </p>
+                    </div>
+                    <h3 class="winning-bidders-content-date-head">תקופת רכישה: מיום 1.1.2018 ועד יום 31.12.2018</h3>
+
+                    <!-- hour link -->
+                    <!-- (remove d-none to show) -->
+                    <!-- <a href="#" class="hour-link a d-none">הוראת שעה</a> -->
+                  </div>
+
+                  <!-- winning bidder wrapper 2 slide-->
+                  <div class="single-slide-warpper">
+                    <div class="single-slide d-flex flex-column justify-content-between">
+
+                      <!-- winning bidder wrapper 2 slide content-->
+                      <div class="winning-bidder-wrapper h-100">
+                        <div class="document-date">
+                          10:00 ,08/03/2018
+                        </div>
+                        <div class="document-head">
+                          <h3>
+                            מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="download-wrapper d-flex justify-content-end">
+                        <div class="download">
+                          <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- winning bidders links -->
+                  <div class="winning-bidders-links d-lg-flex justify-content-between w-100">
+                    <div  class="winning-bidders-links-right-side d-lg-flex flex-column">
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">עוד לינק כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- winning bidder wrapper 3-->
+            <div class="winning-bidder-main-wrppaer-3 winning-bidder-main-wrppaer">
+              <div class="winning-bidder-3 winning-bidder">
+
+                <!-- change -->
+
+                <div class="winning-bidder-container">
+
+                  <!-- winning bidder content -->
+                  <div class="winning-bidders-content-wrapper">
+                    <h3 class="winning-bidders-content-head">אשכול א': מחשב נייד קל משקל 14יי</h3>
+                    <div class="winning-bidders-content-sub-head"> 
+                      <h3>ספק: טלקוד מחשבים</h3>
+                      <p>
+                        עמחליף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                      </p>
+                    </div>
+                    <h3 class="winning-bidders-content-date-head">תקופת רכישה: מיום 1.1.2018 ועד יום 31.12.2018</h3>
+
+                    <!-- hour link -->
+                    <!-- (remove d-none to show) -->
+                    <!-- <a href="#" class="hour-link a d-none">הוראת שעה</a> -->
+                  </div>
+
+                  <!-- winning bidders links -->
+                  <div class="winning-bidders-links d-lg-flex justify-content-between w-100">
+                    <div  class=winning-bidders-links-right-side d-lg-flex flex-column">
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">עוד לינק כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                       <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="winning-bidders-swiper-wrapper">
+
+                  <!-- change -->
+
+                  
+                  <div class="swiper-container winning-bidders-swiper-3">
+                    <div class="gradient-overlay d-none d-lg-block"></div>
+
+                    <!-- winning bidder 3 swiper-->
+                    <div class="swiper-wrapper">
+
+                      <!-- winning bidder 3 swiper slide 1 -->
+                      <div class="swiper-slide swiper-slide-1 d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidder 3 swiper slide 2 -->
+                      <div class="swiper-slide swiper-slide-2 d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidder 3 swiper slide 3 -->
+                      <div class="swiper-slide swiper-slide-3 d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- winning bidder 3 swiper button next-->
+                  <div class="swiper-button-next winning-bidders-button-next-2 d-none d-lg-block"></div>
+
+                  <!-- winning bidder 3 swiper button prev-->
+                  <div class="swiper-button-prev winning-bidders-button-prev-2 d-none d-lg-block"></div>
+
+                  <!-- winning bidder 3 swiper pagination-->
+                  <div class="winning-bidders-pagination-2 swiper-pagination d-flex align-items-center justify-content-center" id="winningBiddersPagination2"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- winning bidder wrapper -->
+            <div class="winning-bidder-main-wrppaer-1 winning-bidder-main-wrppaer">
+              <div class="winning-bidder-1 winning-bidder">
+                <div class="winning-bidder-container">
+
+                  <!-- winning bidder content -->
+                  <div class="winning-bidders-content-wrapper">
+                    <h3 class="winning-bidders-content-head">אשכול א': מחשב נייד קל משקל 14יי</h3>
+                    <div class="winning-bidders-content-sub-head"> 
+                      <h3>ספק: טלקוד מחשבים</h3>
+                      <p>
+                        עמחליף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                      </p>
+                    </div>
+                    <h3 class="winning-bidders-content-date-head">תקופת רכישה: מיום 1.1.2018 ועד יום 31.12.2018</h3>
+
+                    <!-- hour link -->
+                    <!-- (remove d-none to show) -->
+                    <!-- <a href="#" class="hour-link a d-none">הוראת שעה</a> -->
+                  </div>
+
+                  <!-- winning bidders links -->
+                  <div class="winning-bidders-links d-lg-flex justify-content-between w-100">
+                    <div  class="winning-bidders-links-right-side d-lg-flex flex-column">
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">עוד לינק כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                    
+                      
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- winning bidder 1 swiper-->
+                <div class="winning-bidders-swiper-wrapper">
+                  <div class="swiper-container winning-bidders-swiper">
+                    <div class="gradient-overlay d-none d-lg-block d-none d-lg-block"></div>
+                    <div class="swiper-wrapper">
+
+                      <!-- winning bidder 1 swiper slide -->
+                      <div class="swiper-slide swiper-slide-1 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidders swiper slide 2-->
+                      <div class="swiper-slide swiper-slide-2 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidders swiper slide 3-->
+                      <div class="swiper-slide swiper-slide-3 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- winning bidders swiper button next-->
+                  <div class="swiper-button-next winning-bidders-button-next-1 d-none d-lg-block"></div>
+
+                  <!-- winning bidders swiper button prev-->
+                  <div class="swiper-button-prev winning-bidders-button-prev-1 d-none d-lg-block"></div>
+
+                  <!-- winning bidders pagination-->
+                  <div class="winning-bidders-pagination swiper-pagination d-flex align-items-center justify-content-center" id="winningBiddersPagination"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- winning bidder wrapper -->
+            <div class="winning-bidder-main-wrppaer-1 winning-bidder-main-wrppaer">
+              <div class="winning-bidder-1 winning-bidder">
+                <div class="winning-bidder-container">
+
+                  <!-- winning bidder content -->
+                  <div class="winning-bidders-content-wrapper">
+                    <h3 class="winning-bidders-content-head">אשכול א': מחשב נייד קל משקל 14יי</h3>
+                    <div class="winning-bidders-content-sub-head"> 
+                      <h3>ספק: טלקוד מחשבים</h3>
+                      <p>
+                        עמחליף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                      </p>
+                    </div>
+                    <h3 class="winning-bidders-content-date-head">תקופת רכישה: מיום 1.1.2018 ועד יום 31.12.2018</h3>
+
+                    <!-- hour link -->
+                    <!-- (remove d-none to show) -->
+                    <!-- <a href="#" class="hour-link a d-none">הוראת שעה</a> -->
+                  </div>
+
+                  <!-- winning bidders links -->
+                  <div class="winning-bidders-links d-lg-flex justify-content-between w-100">
+                    <div  class="winning-bidders-links-right-side d-lg-flex flex-column">
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                      
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+                      <a class="a" href="">עוד לינק כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                    
+                      
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- winning bidder 1 swiper-->
+                <div class="winning-bidders-swiper-wrapper">
+                  <div class="swiper-container winning-bidders-swiper">
+                    <div class="gradient-overlay d-none d-lg-block d-none d-lg-block"></div>
+                    <div class="swiper-wrapper">
+
+                      <!-- winning bidder 1 swiper slide -->
+                      <div class="swiper-slide swiper-slide-1 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidders swiper slide 2-->
+                      <div class="swiper-slide swiper-slide-2 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidders swiper slide 3-->
+                      <div class="swiper-slide swiper-slide-3 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- winning bidders swiper button next-->
+                  <div class="swiper-button-next winning-bidders-button-next-1 d-none d-lg-block"></div>
+
+                  <!-- winning bidders swiper button prev-->
+                  <div class="swiper-button-prev winning-bidders-button-prev-1 d-none d-lg-block"></div>
+
+                  <!-- winning bidders pagination-->
+                  <div class="winning-bidders-pagination swiper-pagination d-flex align-items-center justify-content-center" id="winningBiddersPagination"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- winning bidder wrapper -->
+            <div class="winning-bidder-main-wrppaer-1 winning-bidder-main-wrppaer">
+              <div class="winning-bidder-1 winning-bidder">
+                <div class="winning-bidder-container">
+
+                  <!-- winning bidder content -->
+                  <div class="winning-bidders-content-wrapper">
+                    <h3 class="winning-bidders-content-head">אשכול א': מחשב נייד קל משקל 14יי</h3>
+                    <div class="winning-bidders-content-sub-head"> 
+                      <h3>ספק: טלקוד מחשבים</h3>
+                      <p>
+                        עמחליף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                      </p>
+                    </div>
+                    <h3 class="winning-bidders-content-date-head">תקופת רכישה: מיום 1.1.2018 ועד יום 31.12.2018</h3>
+
+                    <!-- hour link -->
+                    <!-- (remove d-none to show) -->
+                    <!-- <a href="#" class="hour-link a d-none">הוראת שעה</a> -->
+                  </div>
+
+                  <!-- winning bidders links -->
+                  <div class="winning-bidders-links d-lg-flex justify-content-between w-100">
+                    <div  class="winning-bidders-links-right-side d-lg-flex flex-column">
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">עוד לינק כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                    
+                      
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- winning bidder 1 swiper-->
+                <div class="winning-bidders-swiper-wrapper">
+                  <div class="swiper-container winning-bidders-swiper">
+                    <div class="gradient-overlay d-none d-lg-block d-none d-lg-block"></div>
+                    <div class="swiper-wrapper">
+
+                      <!-- winning bidder 1 swiper slide -->
+                      <div class="swiper-slide swiper-slide-1 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidders swiper slide 2-->
+                      <div class="swiper-slide swiper-slide-2 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidders swiper slide 3-->
+                      <div class="swiper-slide swiper-slide-3 winning-bidders-swiper-slide d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+
+                        <!-- winning bidders swiper download section-->
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- winning bidders swiper button next-->
+                  <div class="swiper-button-next winning-bidders-button-next-1 d-none d-lg-block"></div>
+
+                  <!-- winning bidders swiper button prev-->
+                  <div class="swiper-button-prev winning-bidders-button-prev-1 d-none d-lg-block"></div>
+
+                  <!-- winning bidders pagination-->
+                  <div class="winning-bidders-pagination swiper-pagination d-flex align-items-center justify-content-center" id="winningBiddersPagination"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- winning bidder wrapper with single card-->
+            <div class="winning-bidder-main-wrppaer-2 winning-bidder-main-wrppaer">
+              <div class="winning-bidder-2 winning-bidder">
+
+                <!-- change -->
+
+                <div class="winning-bidder-container winning-bidder-container-single">
+
+                  <!-- winning bidder 2 content -->
+                  <div class="winning-bidders-content-wrapper">
+                    <h3 class="winning-bidders-content-head">אשכול א': מחשב נייד קל משקל 14יי</h3>
+                    <div class="winning-bidders-content-sub-head"> 
+                      <h3>ספק: טלקוד מחשבים</h3>
+                      <p>
+                        עמחליף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                      </p>
+                    </div>
+                    <h3 class="winning-bidders-content-date-head">תקופת רכישה: מיום 1.1.2018 ועד יום 31.12.2018</h3>
+
+                    <!-- hour link -->
+                    <!-- (remove d-none to show) -->
+                    <!-- <a href="#" class="hour-link a d-none">הוראת שעה</a> -->
+                  </div>
+
+                  <!-- winning bidder wrapper 2 slide-->
+                  <div class="single-slide-warpper">
+                    <div class="single-slide d-flex flex-column justify-content-between">
+
+                      <!-- winning bidder wrapper 2 slide content-->
+                      <div class="winning-bidder-wrapper h-100">
+                        <div class="document-date">
+                          10:00 ,08/03/2018
+                        </div>
+                        <div class="document-head">
+                          <h3>
+                            מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="download-wrapper d-flex justify-content-end">
+                        <div class="download">
+                          <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- winning bidders links -->
+                  <div class="winning-bidders-links d-lg-flex justify-content-between w-100">
+                    <div  class="winning-bidders-links-right-side d-lg-flex flex-column">
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">עוד לינק כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- winning bidder wrapper 3-->
+            <div class="winning-bidder-main-wrppaer-3 winning-bidder-main-wrppaer">
+              <div class="winning-bidder-3 winning-bidder">
+
+                <!-- change -->
+
+                <div class="winning-bidder-container">
+
+                  <!-- winning bidder content -->
+                  <div class="winning-bidders-content-wrapper">
+                    <h3 class="winning-bidders-content-head">אשכול א': מחשב נייד קל משקל 14יי</h3>
+                    <div class="winning-bidders-content-sub-head"> 
+                      <h3>ספק: טלקוד מחשבים</h3>
+                      <p>
+                        עמחליף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                      </p>
+                    </div>
+                    <h3 class="winning-bidders-content-date-head">תקופת רכישה: מיום 1.1.2018 ועד יום 31.12.2018</h3>
+
+                    <!-- hour link -->
+                    <!-- (remove d-none to show) -->
+                    <!-- <a href="#" class="hour-link a d-none">הוראת שעה</a> -->
+                  </div>
+
+                  <!-- winning bidders links -->
+                  <div class="winning-bidders-links d-lg-flex justify-content-between w-100">
+                    <div  class="winning-bidders-links-right-side d-lg-flex flex-column">
+                      <a class="a" href="">ללורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">עלורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                      <a class="a" href="">ללורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולהע 
+                      </a>
+
+                      <!-- add after evry link -->
+                      <span class="d-lg-none">&nbsp|&nbsp</span>
+
+                       <a class="a" href="">לינקים יופיעו כאן
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="winning-bidders-swiper-wrapper">
+
+                  <!-- change -->
+
+                  
+                  <div class="swiper-container winning-bidders-swiper-3">
+                    <div class="gradient-overlay d-none d-lg-block"></div>
+
+                    <!-- winning bidder 3 swiper-->
+                    <div class="swiper-wrapper">
+
+                      <!-- winning bidder 3 swiper slide 1 -->
+                      <div class="swiper-slide swiper-slide-1 d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidder 3 swiper slide 2 -->
+                      <div class="swiper-slide swiper-slide-2 d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                         <!--  <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div> -->
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- winning bidder 3 swiper slide 3 -->
+                      <div class="swiper-slide swiper-slide-3 d-flex flex-column justify-content-between">
+
+                        <!-- winning bidders swiper content-->
+                        <div class="winning-bidder-wrapper h-100">
+                          <div class="document-date">
+                            10:00 ,08/03/2018
+                          </div>
+                          <div class="document-head">
+                            <h3>
+                              מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                            </h3>
+                          </div>
+                        </div>
+                        <div class="download-wrapper d-flex justify-content-end">
+                          <div class="download">
+                            <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                              <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- winning bidder 3 swiper button next-->
+                  <div class="swiper-button-next winning-bidders-button-next-2 d-none d-lg-block"></div>
+
+                  <!-- winning bidder 3 swiper button prev-->
+                  <div class="swiper-button-prev winning-bidders-button-prev-2 d-none d-lg-block"></div>
+
+                  <!-- winning bidder 3 swiper pagination-->
+                  <div class="winning-bidders-pagination-2 swiper-pagination d-flex align-items-center justify-content-center" id="winningBiddersPagination2"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="subjects-container-close d-flex align-items-center justify-content-between custom-container">
+            נושאים 
+            <div class="grey-arrow d-lg-none">
+                            
+            </div>
+          </div>
+          <div class="subjects-container justify-content-center flex-lg-column custom-container d-none d-lg-flex">
+
+            <!-- subjects -->
+            <div class="subjects-wrapper d-flex flex-wrap justify-content-between justify-content-md-start flex-lg-row"> 
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשוב ותקשורת מחשוב ותקשורתמחשוב ו</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מסכי מחשב  מסכי מחשב </a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">תוכנות</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשוב ותקשורת</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשבים</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשוב ותקשורת מחשוב ותקשורתמחשוב ותקשורת</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מסכי מחשב  מסכי מחשב </a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">תוכנות  תוכנות תוכנות תוכנות תוכנות תוכנות </a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשוב ותקשורת</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשבים</a>
+            </div>
+          </div>
+        </div>
+        <div class="related-bids-main-container w-100">
+            <div class="related-bids-container-close d-flex align-items-center justify-content-between custom-container">
+              מכרזים שאולי יעניינו אותך 
+              <div class="grey-arrow d-lg-none">
+                              
+              </div>
+            </div>
+            <div class="related-bids-container hidden">
+              <div class="related-bids-swiper-wrapper h-100">
+
+                <!-- related bids swiper mobile-->
+                <div class="swiper-container related-bids-swiper h-100 d-lg-none" id="">
+
+                  <!-- related bids swiper-->
+                  <div class="swiper-wrapper">
+
+                    <!-- related bids swiper slide 1-->
+                    <div class="swiper-slide swiper-slide-1 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related bids swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <a href="">
+                            <h3>משרד הבריאות</h3>
+                          </a>
+                          <p class="top-p">קריאה לספרים <br> 75-2017</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- related bids swiper slide 2-->
+                    <div class="swiper-slide swiper-slide-2 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related bids swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <a href="">
+                            <h3>משרד הבריאות</h3>
+                          </a>
+                          <p class="top-p">קריאה לספרים <br> 75-2017</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- related bids swiper slide 3-->
+                    <div class="swiper-slide swiper-slide-3 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related bids swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <a href="">
+                            <h3>משרד הבריאות</h3>
+                          </a>
+                          <p class="top-p">קריאה לספרים <br> 75-2017</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- related-bids desktop-->
+                <div class="related-bids-desktop-container d-none d-lg-flex justify-content-between  custom-container m-auto">
+
+                  <!-- related bids desktop slide 1 -->
+                  <a href="">
+                    <div class="slide slide-1 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related bids swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+                          <p class="top-p">קריאה לספרים <br> 75-2017</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <!-- related bids desktop slide 2 -->
+                  <a href="">
+                    <div class="slide slide-2 d-flex flex-column justify-content-between">
+                    <div class="right-line"></div>
+
+                    <!-- related bids swiper content-->
+                    <div class="related-bid-wrapper h-100">
+                      <div class="related-bid-top-sec">
+                        <h3>משרד הבריאות</h3>
+                        <p class="top-p">קריאה לספרים <br> 75-2017</p>
+                      </div>
+                      <p class="middle-p">
+                        למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                      </p>
+                      <div class="last-date">
+                        <h3>תאריך אחרון להגשה:</h3>
+                        <span>06/03/2018</span>
+                      </div>
+                    </div>
+                    </div>
+                  </a>
+
+                  <!-- related bids desktop slide 3 -->
+                  <a href="">
+                    <div class="slide slide-3 d-flex flex-column justify-content-between">
+                    <div class="right-line"></div>
+
+                    <!-- related bids swiper content-->
+                    <div class="related-bid-wrapper h-100">
+                      <div class="related-bid-top-sec">
+                        <h3>משרד הבריאות</h3>
+                        <p class="top-p">קריאה לספרים <br> 75-2017</p>
+                      </div>
+                      <p class="middle-p">
+                        למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                      </p>
+                      <div class="last-date">
+                        <h3>תאריך אחרון להגשה:</h3>
+                        <span>06/03/2018</span>
+                      </div>
+                    </div>
+                    </div>
+                  </a>
+
+                  <!-- related bids desktop slide 4 -->
+                  <a href="">
+                    <div class="slide slide-4 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related bids swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+                          <p class="top-p">קריאה לספרים <br> 75-2017</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- related bids pagination -->
+                <div class="related-bids-pagination swiper-pagination d-flex align-items-center justify-content-center d-lg-none"></div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="bids-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

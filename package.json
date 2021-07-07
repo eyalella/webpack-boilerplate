@@ -4,8 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "start": "webpack-dev-server --config webpack.dev.js --host 0.0.0.0",
+    "build": "webpack --config webpack.prod.js && ./replace-rtl-image-url.sh",
+    "copy-css-js": "cp copy-css-js.sh dist && cd dist && ./copy-css-js.sh"
   },
   "keywords": [
     "webpack",
@@ -15,18 +16,39 @@
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.3.1",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "postcss-loader": "^2.0.9",
     "sass-loader": "^6.0.6",
+    "stickybits": "^3.5.8",
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.1.2",
-    "webpack": "^3.9.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "^2.9.5",
     "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "babel-loader": "^8.0.0-beta.2",
+    "bootstrap-show-password": "^1.1.2",
+    "downloadjs": "^1.4.7",
+    "dropzone": "^5.4.0",
+    "handlebars": "^4.0.11",
+    "jquery": "^3.1.1",
+    "jquery-animate-scroll": "^1.0.0",
+    "jquery-infinite-scroll-helper": "^1.2.4",
+    "moment": "^2.24.0",
+    "parsleyjs": "^2.8.0",
+    "pikaday": "^1.7.0",
+    "tiny-date-picker": "^3.2.8",
+    "webpack-rtl-plugin": "^1.6.0"
   }
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דוחות</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="reporting">
+    <!-- <link href="../reporting.rtl/reporting.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- top-section -->
+      <section class="reporting-top-sec d-flex flex-column align-items-center">
+        <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
+
+          <!-- breadcrumbs -->
+          <div class="reporting-breadcrumb-wrapper d-none d-lg-block">
+              <nav class="breadcrumb d-flex align-items-center justify-content-start">
+                 <a class="breadcrumb-item breadcrumb-item-1 d-flex align-items-center justify-content-center" href="../home/index.html">מנהל הרכש הממשלתי <span>››</span></a>
+                <a class="breadcrumb-item breadcrumb-item-2 d-flex align-items-center justify-content-center" href="#">דוחות </a>
+              </nav>
+          </div>
+          <div class="reporting-p-sec flex-column flex-lg-row d-flex align-items-start align-items-lg-center">
+            <div class="reporting-icon-wrapper">
+              <img src="../common/images/reporting-top-icon.svg"
+              class="reporting-icon" alt="reporting-icon">
+            </div>
+            <div class="reporting-p-wrapper">
+              <h1 class="reporting-head">
+                דוחות
+              </h1>
+              <p class="reporting-p">
+                טקסט קצר יותר מפורט לורם איפסום כאן
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-content -->
+      <section id="mainContent"  class="reporting-body d-lg-flex flex-column align-items-center">
+
+        <p class="mobile-p d-lg-none">לצפייה בדוחות בנוחות מירבית<br>אנא עיברו לצפייה במחשב נייח</p>
+
+        <p class="main-p d-none d-lg-block">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי מוסן מנת. להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קם </p>
+        
+        <div class="reporting-body-wrapper custom-container d-none d-lg-flex flex-column justify-content-center align-items-center">
+
+          <div class="buttons-wrapper d-flex">
+            <div class="reporting-button">
+
+              <!-- reporting button -->
+              <button class="btn btn-primary">פטורים</button>
+            </div>
+            <div class="reporting-button">
+
+              <!-- reporting button -->
+              <button class="btn btn-primary">מכרזים</button>
+            </div> 
+          </div>
+          <iframe src="" class="inner-iframe" width="100%" height="1140px">
+            
+          </iframe> 
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="reporting-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

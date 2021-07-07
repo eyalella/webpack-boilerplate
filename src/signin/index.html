@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כניסה</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css">  -->
+  </head>
+
+  <!-- body -->
+  <body class="signin">
+    <!-- <link href="../signin.rtl/signin.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- main-content -->
+      <section id="mainContent"  class="main-content d-flex align-items-center justify-content-center">
+        <div class="signin-container d-flex custom-container flex-column flex-lg-row">
+
+          <!-- sign in section -->
+          <div class="signin-sec-wrapper">
+            <div class="signin-p-wrapper">
+              <h1 class="signin-sec-head">
+                כניסה לרשומים
+              </h1>
+              <p class="signin-sec-p">
+                אתר מינהל הרכש הממשלתי מפרסם מידי יום, את רשימת המכרזים, הפטורים והדיווחים של משרדי הממשלה ויחידות הסמך.
+              </p>
+            </div>
+
+            <!-- sign in form -->
+            <form id="signinForm" data-parsley-validate>
+              <div class="form-group">
+
+                <!-- email input -->
+                <input id="InputEmailSign" type="email" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="כתובת האימייל חייבת להכיל את התו @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                <label id="emailAddressLabel" class="sr-only" for="InputEmailSign">
+                  כתובת האימייל חייבת להכיל את התו @
+                </label>
+              </div>
+
+              ${require("../common/password-with-eye/password-with-eye.html")}
+              
+              <div class="recaptcha-container">
+
+                <!-- recaptcha -->
+                <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
+              </div>
+              <div class= "signin-bottom-sec d-flex justify-content-end align-items-center">
+               <!--  <div class="form-check signin-form-check d-flex align-items-center">
+                  <input id="rememberMeCheckbox" type="checkbox">
+                  <label class="form-check-label d-flex justify-content-center align-items-center" for="rememberMeCheckbox">
+                    <span></span>
+                    זכור אותי
+                  </label>
+                </div> -->
+
+                <!-- forgot password button -->
+                <a href="../forgot-password-a/index.html">
+                  <div class="forgot-password">
+                    שכחתי סיסמא >
+                  </div>
+                </a>
+              </div>
+              <div class="signin-submit">
+
+                <!-- submit button -->
+                <button class="btn btn-primary" type="submit" form="signinForm" value="Submit">שלח</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- registration section -->
+          <div class="reg-sec-wrapper">
+            <div class="reg-p-wrapper">
+              <h1 class="reg-sec-head">
+                להצטרפות לשירות
+              </h1>
+              <p class="reg-sec-p">
+                על מנת להצטרף לשרות ולקבל את הפרסומים ישירות לתיבת הדואר האלקטרוני, יש להירשם לקבלת עדכונים:
+              </p>
+              <div class="reg-button">
+
+                <!-- sign up button -->
+                <button class="btn btn-primary"  type="button" onclick="window.location.href='../registration/index.html'">הרשם</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <footer>
+        ${require("../common/footer/footer.html")}
+      </footer>
+
+      <!-- error popup (invalid) -->
+      <div class="modal fade error" id="invalidModal" tabindex="-1" role="dialog" aria-labelledby="invalidModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body d-flex flex-column align-items-center justify-content-end">
+              <div class="mark-container d-flex align-items-center justify-content-center">
+                <img src="../common/images/error-icon.svg"
+                class="dialog-icon-error" alt="dialog-error-icon">
+              </div>
+              <h4>הודעת שגיאה</h4>
+              <p>לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.</p>
+              <button class="btn close-btn" value="Submit" data-target="#invalidModal" data-toggle="modal">
+                אישור
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- error popup (blocked) -->
+    <div class="modal fade error" id="blockedModal" tabindex="-1" role="dialog" aria-labelledby="blockedModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body d-flex flex-column align-items-center justify-content-end">
+              <div class="mark-container d-flex align-items-center justify-content-center">
+                <img src="../common/images/error-icon.svg"
+                class="dialog-icon-error" alt="dialog-error-icon">
+              </div>
+              <h4>הודעת שגיאה</h4>
+              <p>לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.</p>
+              <button class="btn close-btn" value="Submit" data-target="#blockedModal" data-toggle="modal">
+                אישור
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

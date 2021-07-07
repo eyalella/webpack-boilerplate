@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="registration">
+    <!-- <link href="../registration.rtl/registration.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- main-content -->
+      <section id="mainContent"  class="d-flex align-items-center justify-content-center">
+        <div class="registration-container d-flex custom-container">
+          <div class="registration-wrapper d-flex flex-column align-items-center">
+
+            <!-- registration head -->
+            <div class="registration-p-wrapper">
+              <h1 class="registration-head">
+                להצטרפות לשירות
+              </h1>
+              <p class="registration-p">
+                על מנת להצטרף לשרות ולקבל את הפרסומים ישירות לתיבת הדואר האלקטרוני, יש להירשם לקבלת עדכונים:
+              </p>
+            </div>
+
+            <!-- form wrapper -->
+            <div class="registration-form-wrapper">
+
+              <!-- registration form -->
+              <form id="registrationForm" data-parsley-validate  class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-lg-row name-lng-wrapper flex-column">
+
+                  <!-- name sec -->
+                  <div class="form-group name d-flex flex-column flex-lg-row">
+                    <!-- <div class="input-bullet"></div> -->
+                    <div class="form-group first-name">
+                      <div class="input-bullet"></div>
+
+                      <!--first name input -->
+                      <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInputReg" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="first-name" aria-describedby="firstNameLabel">
+                      <label id="firstNameLabel" class="sr-only" for="nameInputReg">
+                      שדה חובה
+                      </label>
+                    </div>
+                    <div class="form-group last-name">
+                      <div class="input-bullet"></div>
+                      
+                      <!--last name input -->
+                      <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInputReg" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
+                      <label id="lastNameLabel" class="sr-only" for="lastNameInputReg">
+                      שדה חובה
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- language sec -->
+                  <div class="form-group language">
+                    <!-- <div class="input-bullet"></div> -->
+                    <div class="blue-arrow"></div>
+
+                    <!-- language select -->
+                    <select class="form-control language-select" id="languagReg" title="שפה" required data-parsley-error-message="שדה חובה" aria-label="language-select" aria-describedby="languageSelectLabel">
+
+                      <!-- language select options -->
+                      <option selected>עברית</option>
+                      <option>אנגלית</option>
+                    </select>
+                    <label id="languageSelectLabel" class="sr-only" for="languagReg">
+                      שדה חובה
+                    </label>
+                  </div>
+                </div> 
+                <div class="form-group email-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
+                  <div class="form-group email">
+                    <div class="input-bullet"></div>
+
+                    <!-- email input -->
+                    <input type="email" class="form-control" id="inputEmailReg" class="form-control email-input" placeholder="דוא״ל" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                    <label id="emailAddressLabel" class="sr-only" for="inputEmailReg">
+                    אימייל חייב להכיל @
+                    </label>
+                  </div>
+                  <div class="form-group email-confirm">
+                    <div class="input-bullet"></div>
+
+                    <!-- email confirm input -->
+                    <input type="email" class="form-control" id="inputEmailConfirmReg" data-match="inputEmailReg" data-parsley-error-message="דוא״ל לא תואם" placeholder="אימות דוא״ל" data-parsley-equalto="#inputEmailReg" required aria-label="email-address-confirm" aria-describedby="emailAddressConfirmLabel">
+                    <label id="emailAddressConfirmLabel" class="sr-only" for="inputEmailConfirmReg">שדה חובה</label>
+                  </div>
+                </div>    
+                <div class="form-group password-wrapper d-flex flex-lg-row name-lng-wrapper flex-column">
+
+                  <div class="form-group password form-group-password">
+                    <div class="input-bullet"></div>
+
+                    <!-- show password button -->
+                    <div id="showPasswordEye" class="password-eye" role="button" tabindex="0">
+                      <img src="../common/images/password-eye-disabled.svg">
+                    </div>
+                    <label class="sr-only" for="showPasswordEye">Display password</label>
+                    <div id="showPasswordEyeShow" class="d-none password-eye" role="button" tabindex="0">
+                      <img src="../common/images/password-eye-show.svg">
+                    </div>
+                    <label class="sr-only" for="showPasswordEyeShow">Hide password</label>
+
+                    <!-- password input -->
+                    <label class="sr-only" for="inputPasswordReg"></label>
+                    <input type="password" id="inputPasswordReg" type="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" class="form-control password-input" id="InputPassword" placeholder="סיסמא" data-toggle="password" data-required="" data-parsley-validate-if-empty data-parsley-error-message="סיסמא צריכה להכיל 8 תווים לפחות, לכלול מספרים, תווים ולפחות אות אחת גדולה"  aria-label="password-input" aria-describedby="hint">
+                    <p id="hint">
+                      סיסמא צריכה להיות בת 8 תוים עם סיפרה וסימן מיוחד
+                    </p>
+                  </div>
+
+                  <div class="form-group password-confirm form-group-password">
+                    <div class="input-bullet"></div>
+
+                    <!-- show confirm password button -->
+                    <!-- <div id="showPasswordConfirm" role="button" tabindex="0">הצג סיסמא</div> -->
+                    <div id="showPasswordEyeConfirm" class="password-eye" role="button" tabindex="0">
+                      <img src="../common/images/password-eye-disabled.svg">
+                    </div>
+                    <label class="sr-only" for="showPasswordEyeConfirm">Display password confirm</label>
+
+                    <div id="showPasswordEyeConfirmShow" class="d-none password-eye" role="button" tabindex="0">
+                      <img src="../common/images/password-eye-show.svg">
+                    </div>
+                    <label class="sr-only" for="showPasswordEyeConfirmShow">Hide password confirm</label>
+
+                    <!-- confirm password input -->
+                    <input type="password" class="form-control" id="inputPasswordConfirmReg"  placeholder="אימות סיסמא"  data-parsley-error-message="סיסמא אינה תואמת"  data-parsley-equalto="#inputPassword" aria-describedby="passwordConfirmLabel aria-label="confirm-password-input" required>
+                    <label id="passwordConfirmLabel" class="sr-only" for="inputPasswordConfirmReg">שדה חובה</label>
+                  </div>
+                </div>
+
+                <!-- recaptcha -->
+                <!-- div class="recaptcha-container w-100">
+                  <div class="g-recaptcha" data-sitekey="6LcTeEAUAAAAAEqaDHyi2iLhTbV5usvBszRIErrF"></div>
+                </div> -->
+                
+                <div class="registration-button">
+
+                  <!-- registration button -->
+                  <button class="btn btn-primary" type="submit" form="registrationForm" value="Submit">הרשם</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- footer -->
+      <footer>
+        ${require("../common/footer/footer.html")}
+      </footer>
+
+      <!-- error message 
+      <div class="modal fade error" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body d-flex flex-column align-items-center justify-content-end">
+              <div class="mark-container d-flex align-items-center justify-content-center">
+                <img src="../common/images/error-icon.svg"
+                class="dialog-icon-error" alt="dialog-error-icon">
+              </div>
+              <h4>הודעת שגיאה</h4>
+              <p>לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.</p>
+              <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">
+                אישור
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- success message 
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body d-flex flex-column align-items-center">
+              <img src="../common/images/profile-modal-icon.svg"
+                class="dialog-icon" alt="dialog-success-icon">
+              <h4>הרשמתך הסתיימה בהצלחה</h4>
+              <p>בקרוב תקבל אימייל עם פרטים נוספים</p>
+              <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">
+                אישור
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="46px" viewBox="0 0 44 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>2699A506-9952-4200-A94B-816DE7E272AC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="355" height="139" rx="2"></rect>
+        <filter x="-1.3%" y="-3.2%" width="102.5%" height="106.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="about-a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-18.000000, -896.000000)">
+        <g id="Group-8" transform="translate(9.000000, 887.000000)">
+            <g id="Group-5-Copy">
+                <g id="Group-4">
+                    <g id="Group">
+                        <g id="Group-2">
+                            <g id="Section-3-History-Copy-5">
+                                <g id="line">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Mask">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="noun_528416_ffffff" transform="translate(9.000000, 9.000000)" fill="#1C6897" fill-rule="nonzero">
+                <path d="M38.7861789,17.8023622 L43.9195122,12.6047244 L38.7861789,7.40708661 L23.1,7.40708661 L23.1,5.07086614 C24.1552846,4.74488189 24.9333333,3.76692913 24.9333333,2.5988189 C24.9333333,1.16811024 23.7796748,0 22.3666667,0 C20.9536585,0 19.8,1.16811024 19.8,2.5988189 C19.8,3.76692913 20.5780488,4.75393701 21.6333333,5.07086614 L21.6333333,7.41614173 L16.5,7.41614173 L16.5,17.8023622 L21.6333333,17.8023622 L21.6333333,20.7724409 L5.21382114,20.7724409 L0.0804878049,25.9700787 L5.21382114,31.1677165 L21.6422764,31.1677165 L21.6422764,43.0389764 L14.3089431,43.0389764 L14.3089431,46 L15.7756098,46 L15.7756098,44.5149606 L28.9666667,44.5149606 L28.9666667,46 L30.4333333,46 L30.4333333,43.0299213 L23.1089431,43.0299213 L23.1089431,31.1586614 L27.5089431,31.1586614 L27.5089431,20.7724409 L23.1089431,20.7724409 L23.1089431,17.8023622 L38.7861789,17.8023622 Z M21.2666667,2.5988189 C21.2666667,1.98307087 21.7585366,1.48503937 22.3666667,1.48503937 C22.9747967,1.48503937 23.4666667,1.98307087 23.4666667,2.5988189 C23.4666667,3.21456693 22.9747967,3.71259843 22.3666667,3.71259843 C21.7585366,3.71259843 21.2666667,3.21456693 21.2666667,2.5988189 Z M26.0333333,29.673622 L5.81300813,29.673622 L2.14634146,25.9610236 L5.81300813,22.2484252 L26.0243902,22.2484252 L26.0243902,29.673622 L26.0333333,29.673622 Z M17.9666667,8.9011811 L38.1780488,8.9011811 L41.8447154,12.6137795 L38.1780488,16.326378 L17.9666667,16.326378 L17.9666667,8.9011811 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="23.1" y="11.8712598" width="1.46666667" height="1.48503937"></rect>
+                <rect id="Rectangle-path" x="26.0333333" y="11.8712598" width="1.46666667" height="1.48503937"></rect>
+                <rect id="Rectangle-path" x="28.9577236" y="11.8712598" width="1.46666667" height="1.48503937"></rect>
+                <rect id="Rectangle-path" x="12.8422764" y="25.2275591" width="1.46666667" height="1.48503937"></rect>
+                <rect id="Rectangle-path" x="15.7756098" y="25.2275591" width="1.46666667" height="1.48503937"></rect>
+                <rect id="Rectangle-path" x="18.7" y="25.2275591" width="1.46666667" height="1.48503937"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

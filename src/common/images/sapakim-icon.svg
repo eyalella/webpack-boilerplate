@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>984C567B-6B05-4E0F-80AF-95AFDD8E7A7B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1064.93506" height="205"></rect>
+        <filter x="-0.8%" y="-3.2%" width="101.6%" height="108.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Sapakimy-M" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-307.000000, -280.000000)">
+        <g id="Group-11" transform="translate(-612.000000, 260.000000)">
+            <g id="stock-vector-thin-line-flat-design-concept-for-contact-banner-concept-for-website-banners-and-promotional-293651963">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+        <g id="Group-9" transform="translate(307.000000, 280.000000)" fill="#6266A6">
+            <g id="Group-8">
+                <g id="Group">
+                    <g id="Group-13">
+                        <path d="M32.6597592,0 L29.571042,1.53582677 L26.5377936,0.0277559055 L23.5047306,1.53582677 L20.4714821,0.0277559055 L17.4383264,1.53582677 L14.3495165,0 L11.372015,1.97982874 L11.372015,9.94586614 L9.41484113,9.94586614 L0.324649694,25.8222441 L0,25.8222441 L0,47 L47,47 L47,25.8222441 L46.6847188,25.8222441 L37.5851589,9.94586614 L35.627985,9.94586614 L35.627985,1.97982874 L32.6597592,0 Z M26.5377936,1.72077362 L29.571042,3.22884449 L32.5484508,1.73937008 L34.1161378,2.78484252 L34.1161378,25.8222441 L12.8933235,25.8222441 L12.8933235,2.79400197 L14.4608249,1.74852953 L17.4383264,3.23809646 L20.4714821,1.73002559 L23.5047306,3.22884449 L26.5377936,1.72077362 Z M35.6372607,11.4630965 L36.7132425,11.4630965 L44.9407934,25.8314035 L35.6372607,25.8314035 L35.6372607,11.4630965 Z M10.2960332,11.4630965 L11.372015,11.4630965 L11.372015,25.8314035 L2.06848234,25.8314035 L10.2960332,11.4630965 Z M1.52121571,45.4918366 L45.48806,45.4918366 L45.48806,27.3395669 L1.52121571,27.3395669 L1.52121571,45.4918366 Z" id="Fill-1"></path>
+                        <path d="M17.2551949,39.6890499 L28.9459512,39.6890499 L28.9459512,36.924344 L17.2551949,36.924344 L17.2551949,39.6890499 Z M15.7983193,41.0756303 L30.4117647,41.0756303 L30.4117647,35.5462185 L15.7983193,35.5462185 L15.7983193,41.0756303 Z" id="Fill-2"></path>
+                        <polygon id="Fill-3" points="23.302521 11.4537815 31.5966387 11.4537815 31.5966387 9.4789916 23.302521 9.4789916"></polygon>
+                        <polygon id="Fill-4" points="23.302521 15.7983193 31.5966387 15.7983193 31.5966387 13.8235294 23.302521 13.8235294"></polygon>
+                        <polygon id="Fill-5" points="14.2184874 21.7226891 32.7815126 21.7226891 32.7815126 19.7478992 14.2184874 19.7478992"></polygon>
+                        <path d="M16.1894099,16.6486528 L20.926972,16.6486528 L20.926972,9.02361609 L16.1894099,9.02361609 L16.1894099,16.6486528 Z M14.6134454,18.1680672 L22.512605,18.1680672 L22.512605,7.50420168 L14.6134454,7.50420168 L14.6134454,18.1680672 Z" id="Fill-7"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="115px" viewBox="0 0 110 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>7047119C-8665-4627-A20A-7E8F76A2C348</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1600" height="308" rx="3"></rect>
+        <filter x="-0.5%" y="-2.1%" width="101.1%" height="105.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="0 0 121.09182 0 121.09182 93.6914812 0 93.6914812"></polygon>
+    </defs>
+    <g id="contact-copy-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1343.000000, -326.000000)">
+        <g id="Group-11" transform="translate(0.000000, 222.000000)">
+            <g id="stock-vector-thin-line-flat-design-concept-for-contact-banner-concept-for-website-banners-and-promotional-293651963" transform="translate(0.000000, 8.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+        <g id="Group-15" transform="translate(1311.000000, 325.000000)">
+            <g id="Page-1" transform="translate(74.000000, 66.000000) scale(-1, 1) rotate(-20.000000) translate(-74.000000, -66.000000) translate(13.000000, 19.000000)">
+                <mask id="mask-5" fill="white">
+                    <use xlink:href="#path-4"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M46.8985504,87.920531 L42.8534918,47.2014698 L112.630753,7.39059426 L46.8985504,87.920531 Z M5.81124228,17.1318179 L111.582034,4.24304691 L41.255444,44.3773858 L5.81124228,17.1318179 Z M120.93311,0.83424069 C120.787039,0.594131347 120.581041,0.396321059 120.333843,0.261959354 L120.135335,0.161188075 C119.851931,0.0243381901 119.534819,-0.0266694942 119.2227,0.0131413813 L1.44158021,14.3699384 C0.538932881,14.4831506 -0.10153473,15.3042499 0.0133249583,16.2037268 C0.0670093779,16.6279615 0.282995531,17.0136293 0.617586798,17.2811087 L39.5325486,47.1392653 L43.9896039,92.2250819 C44.086985,93.127047 44.8984937,93.7789501 45.8048864,93.6819111 C46.2318648,93.6371239 46.6251344,93.4256286 46.8985504,93.0947007 L120.759572,2.66305279 C120.934359,2.43538434 121.046722,2.16417275 121.082927,1.87927617 C121.086673,1.81707168 121.086673,1.75486719 121.082927,1.6914186 C121.114139,1.3978134 121.062952,1.10047592 120.93311,0.83424069 Z" id="Fill-1" fill="#1C6897" mask="url(#mask-5)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

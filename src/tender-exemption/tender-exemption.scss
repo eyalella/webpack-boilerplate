@@ -1,0 +1,1160 @@
+@import "../util/util.scss";
+
+.tender-exemption {
+	min-width: 330px;
+
+	.main-content-wrapper {
+		overflow: hidden;
+	}
+	
+	.custom-container {
+		padding: 0 20px;
+	}
+
+	.nav-item-text-4 {
+		background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		}
+	}
+
+	.tender-exemption-top-sec {
+		position: relative;
+		height: fit-content;
+		padding: 0;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+		min-height: 205px;
+
+		@media (min-width: $screen-lg-min) {
+            background-image: url('../common/images/exemption-header-visuals.png');
+            min-height: 260px;
+            background-size: 30%;
+            background-position: left;
+            background-repeat: no-repeat;
+       	}
+
+       	@media (min-width: $screen-xl-min) {
+            min-height: 308px;
+       	}
+       	
+       	.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			opacity: 0.97;
+			background-color: $main-orange;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+				//top: -7px;
+			}
+		}
+
+		.top-sec-container {
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+
+			@media (min-width: $screen-lg-min) {
+                padding: 0 20px 0;
+    			max-width: 1010px;
+           	}
+
+           	@media (min-width: $screen-xl-min) {
+    			max-width: 1262px;
+           	}
+
+           	.breadcrumb-wrapper {
+
+				@media (min-width: $screen-lg-min) {
+					margin: 24px 0 34px 0px;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					margin: 30px 0 42px 0px;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $main-orange;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.p-sec {
+				margin: 20px 0 0 0;	
+
+				@media (min-width: $screen-lg-min) {
+                    margin: 0;
+               	}
+
+				.icon-wrapper {
+					margin: 0 0 4px 0;
+
+					@media (min-width: $screen-lg-min) {
+	                    margin: 0 0 0 14px;
+	               	}
+
+					img {
+						width: 49px;
+  						height: 51px;
+
+						@media (min-width: $screen-lg-min) {
+		                    width: 78px;
+  							height: 95px;
+		               	}
+
+		               	@media (min-width: $screen-xl-min) {
+		                    width: 97px;
+  							height: 119px;
+		               	}
+					}
+				}
+
+				.p-wrapper {
+					padding-top: 4px;
+				}
+
+				.main-head {
+					font-size: 3rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					letter-spacing: normal;
+					color: $text-dark-grey;
+					font-size: 16px;
+  					line-height: 1.25;
+  					margin-bottom: 0;
+
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 3px 0;
+	                    font-size: 3.5rem;
+						line-height: normal;
+	               	}
+				}
+
+				.main-p {
+					max-width: 594px;
+					font-size: 2.5rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					padding: 0;
+					margin:0 0 20px 0;
+	                color: $main-orange;
+
+					@media (min-width: $screen-lg-min) {
+	                    font-size: 4rem;
+	                    margin:0 0 10px 0;
+	                    max-width: 595px;
+	               	}
+				}
+			}
+		}
+	}
+
+	.bids-body {
+		width: 100%;
+
+		.body-wrapper {
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0 20px;
+				max-width: 1010px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
+			}
+		}
+
+		.bids-top-sec-wrapper {
+			width: 100%;
+			margin:0 0 77px 0;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 44px 0;
+				border-bottom: solid 1px rgb(224, 224, 224);
+				padding: 0;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				margin: 0 0 55px 0;
+			}
+		}
+
+		.bids-body-top-sec {
+			padding: 20px 0 0 0;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 40px 0 46px 20px;
+				
+			}
+
+			.bid-details-wrapper {
+				margin: 0 0 29px 0;
+
+				@media (min-width: $screen-lg-min) {
+					width: 100%;
+					margin: 0;
+					position: relative;
+				}
+
+				h2 {
+					font-size: 2.5rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1;
+					letter-spacing: normal;
+					color: $main-orange;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 4rem;
+						line-height: 0.75;
+					}
+				}
+
+				span {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.56;
+					letter-spacing: normal;
+					color: $text-dark-grey;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 2rem;
+					}
+				}
+
+				.submission-button-wrapper {
+					margin-top: 30px;
+					
+					@media (min-width: $screen-lg-min) {
+		                display: inline-block;
+		                position: absolute;
+		                left: 40px;
+		                right: auto;
+		                margin-top: 14px;
+
+		           	}
+
+					button {
+						width: 100%;
+						height: 50px;
+						object-fit: contain;
+						border-radius: 3px;
+						background-color: $header-blue;
+						box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+						font-size: 2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						text-align: center;
+						color: $main-white;
+
+
+						@media (min-width: $screen-lg-min) {
+			                min-width: 180px;
+			           	}
+
+						&:active, &:focus {
+				          background-color: #1c6897;
+				          color: $header-blue;
+				          border: 0;
+				        }
+
+				        &:disabled {
+				        	background-color: #e8e8e8;
+				        	color: #9b9b9b;
+				        	border: 0;
+				        }
+					}
+
+					p {
+						display: none;
+					}
+
+					button:disabled + p {
+						display: block;
+						max-width: auto;
+						font-size: 1.2rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.08;
+						letter-spacing: normal;
+						text-align: center;
+						color: #4e5665;
+						margin: 8px auto 0;
+
+						@media (min-width: $screen-lg-min) {
+							max-width: 149px;
+							margin: 5px auto 0;
+						}
+					}
+				}
+			}
+
+			.details-body {
+				column-count: 2;
+				width: 100%;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 35px 38px;
+					width: auto;
+					//max-width: 860px;
+				}
+			}
+
+			.details-head {
+				margin: 0 0 9px 0;
+				order: -2;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 38px 0;
+					order: 0;
+				}
+			}
+
+			.last-date-wrapper {
+				order: -1;
+				margin-bottom: 26px;
+
+				@media (min-width: $screen-lg-min) {
+					order: 0;
+					margin-bottom: 0;
+					display: inline-block;
+				}
+			}
+
+			.details-item-wrapper {
+				margin: 0 0 7px 0;
+
+				@media (min-width: $screen-lg-min) {
+					//margin: 0 0 0 64px;
+				}
+			}
+
+			.right-side-wrapper {
+				margin: 0 0 0 60px;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+				}
+			}
+		}
+
+		.details-wrapper {
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 0 150px;
+			}
+		}
+
+		.communication-details-container {
+			padding: 10px 20px 33px;
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 44px 0;
+				border-bottom: solid 1px rgb(224, 224, 224);
+				padding: 0 0 44px 0 !important;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				margin: 0 0 55px 0;
+				padding: 0 0 55px 0 !important;
+			}
+
+			p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.13;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 2rem;
+					line-height: 1.5;
+				}
+			}
+
+			span {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.56;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 2rem;
+					line-height: 1.5;
+				}
+			}
+
+			.essence-wrapper {
+				margin-bottom: 16px;
+
+				@media (min-width: $screen-lg-min) {
+					margin-bottom: 15px;
+				}
+			}
+
+			.reasons-wrapper {
+				margin-bottom: 16px;
+
+				@media (min-width: $screen-lg-min) {
+					margin-bottom: 30px;
+				}
+			}
+
+			ul {
+				//column-count: 2;
+				display: inline-block;
+				justify-content: space-between;
+				//flex-wrap: wrap;
+				width: 50%;
+				margin: 0 0 0 20px;
+
+				&:last-child {
+					margin: 0;
+				}
+
+				@media (min-width: $screen-lg-min) {
+					column-count: inherit;
+					flex-direction: row;
+					display: flex;
+					width: 100%;
+					margin: 0;
+				}
+
+				&:nth-child(2) {
+					li:first-child {
+						@media (min-width: $screen-lg-min) {
+							// margin: 0 0 33px auto;
+							width:50%;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							// margin: 0 0 33px auto;
+						}
+					}
+				}
+
+
+				li {
+					margin: 0 0 13px auto;
+					max-width: 355px;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 33px auto;
+						display: inline-block;
+						max-width:none;
+						width:25%;
+						padding-left:15px;
+					}
+	
+					&:nth-child(5) {
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0 0 0 0;
+						}
+					}
+
+					&:nth-child(6) {
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0 0 0 0;
+						}
+					}
+
+					&:first-child {
+						
+					}
+
+					&:last-child {
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0;
+						}
+					}
+				}
+
+				.break {
+					clear: both;
+					//float:left;
+				}
+			}
+		}
+
+		#lastDate {
+			font-size: 2.5rem;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1;
+			letter-spacing: normal;
+			color: $main-orange;
+
+			@media (min-width: $screen-lg-min) {
+				font-size: 4rem;
+				line-height: 1.35;
+			}
+		}
+
+		.bid-contact-wrapper {
+			width: 100%;
+			min-height: 216px;
+			border-radius: 3px;
+			background-color: #ffffff;
+			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+			position: relative;
+			padding: 21px 25px;
+
+			@media (min-width: $screen-lg-min) {
+				width: auto;
+				min-width: 301px;
+				min-height: 254px;
+				height: 100%;
+				border-radius: 2.1px;
+				padding: 25px 32px 20px 20px;
+			}
+
+			.right-line {
+				position: absolute;
+				right: 0;
+				left: auto;
+				top: 0;
+				width: 7px;
+				height: 100%;
+				border-radius: 4px 0 0 4px;
+				background-color: $main-orange;
+			}
+
+			.logo-wrapper {
+				height: 78px;
+				width: 78px;
+				margin: 0 0 12px 0;
+
+				@media (min-width: $screen-lg-min) {
+					width: 88px;
+					height: 88px;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			h3 {
+				font-size: 3rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 0.93;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				width: 100%;
+				max-width: 249px;
+				margin-bottom: 10px;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 3.2rem;
+					//margin: 0 0 0 11px;
+				}
+			}
+
+			.bid-contact-mail, .bid-contact-name {
+				font-size: 1.4rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.87;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				//margin: 0 0 5px 0;
+
+				a {
+					color: #1f86bc;
+				}
+			}
+
+			.bid-contact-mail {
+				a {
+					font-size: 1.3rem;
+				}
+			}
+
+			.bid-contact-name {
+				line-height: normal;
+			}
+		}
+	}
+
+	.related-documents-container-close, .subjects-container-close, .related-exemptions-container-close, .communication-details-container-close {
+		min-height: 64px;
+		width: 100%;
+		border-bottom: solid 1px $bids-border;
+		font-size: 3.2rem;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: $text-dark-grey;
+		padding: 0 20px;
+		cursor: pointer;
+
+		@media (min-width: $screen-lg-min) {
+			border: 0;
+			margin: 0 0 20px;
+			min-height: auto;
+			pointer-events: none;
+			padding: 0;
+			max-width: 1222px;
+		}
+	}
+
+	.related-exemptions-container-close {
+		margin: 0 auto 20px;
+		max-width: 1010px;
+		padding: 0 20px;
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px;
+		}
+	}
+
+	.border-none {
+		border-bottom: 0 !important;
+	}
+
+	.grey-arrow {
+		width: 12px;
+		height: 12px;
+		border: solid 1px $text-dark-grey;
+	    border-width: 0 2px 2px 0;
+	    display: inline-block;
+	    transform: rotate(135deg);
+	    pointer-events: none;
+	}
+
+	.rotate {
+		transform: rotate(45deg);
+	}
+
+	.related-documents-container {
+		padding: 20px 0 40px 0;
+		height: 100%;
+		margin: 0;
+		width: 293px;
+
+		#relatedDocumentsSwiper {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.related-documents-wrapper-desktop {
+		margin: 0 auto;
+		flex-wrap: wrap;
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px $bids-border;
+			margin: 0 0 42px;
+			padding: 0 0 40px;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			margin: 0 0 53px;
+			padding: 0 0 50px;
+
+		}
+	}
+
+	.hidden {
+		visibility: hidden;
+		height: 1px;
+		margin: 0;
+		padding: 0 !important;
+
+		@media (min-width: $screen-lg-min) {
+			visibility: visible;
+			height: auto;
+			//margin: 0 auto;
+			//padding: 0 20px;
+		}
+	}
+
+	.hidden.related-documents-container {
+		padding: 0;
+		
+	}
+
+
+	.single-slide-warpper {
+		padding: 0 20px;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0 30px;
+		}
+	}
+
+	.single-slide {
+		position: static;
+		margin: 24px 0 0 0;
+		background-color: $main-white;
+		width: 293px;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0;
+		}
+	}
+
+	.swiper-container {
+		height: 140px;
+		max-width: 100%;
+
+		@media (min-width: $screen-lg-min) {
+			width: 100%;
+		}
+	
+		.swiper-wrapper {
+			width: 100%;
+		}
+
+		.swiper-slide {
+			border-radius: 2.1px;
+			background-color: $main-white;
+			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+			text-align: right;
+			min-height: 145px;
+
+			@media (min-width: $screen-lg-min) {
+				width: 293px!important;
+			}
+		}
+	}
+
+	.winning-bidders-swiper {
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 0 30px;
+			//width: 536px;
+			position: relative;
+		}
+	}
+
+	.gradient-overlay {
+			height: 100%;
+			width: 70px;
+			left: 0;
+			right: auto;
+			background: linear-gradient(to right, white , rgba(255,255,255,.2));
+			position: absolute;
+			z-index: 1000;
+		}
+
+	.swiper-pagination {
+        position: absolute;
+        width: auto;
+        z-index: 10;
+        margin: 10px 0 0 0;
+
+        .swiper-pagination-bullet {
+        	height: 8px;
+        	width: 8px;
+        	margin: 0 5px 0 0;
+        }
+
+        .swiper-pagination-bullet-active {
+        	background-color: $main-orange;
+        }
+    }
+
+	
+	.related-document-wrapper {
+		padding: 20px 14px 0;
+	}
+
+	.related-documents-swiper {
+		padding: 4px 20px 5px 0;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0;
+		}
+
+		.swiper-slide-prev {
+			right: -10px;
+			left: auto;
+		}
+	}
+	
+
+
+	.download-wrapper {
+		margin: 0 0 10px 10px;
+	}
+
+	.document-date {
+		font-size: 1.6rem;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.25;
+		letter-spacing: normal;
+		color: $text-dark-grey;
+		margin-bottom: 4px;
+	}
+
+	.document-head {
+
+		h3 {
+			font-size: 2rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 0.96;
+			letter-spacing: normal;
+			color: $main-orange;
+		}
+	}
+
+	.download-arrow {
+		height: 19px;
+		width: 15px;
+	}
+
+	.subjects-container {
+		padding: 18px 20px 34px;
+		border-bottom: solid 1px $bids-border;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 auto 41px;
+			padding: 0;
+			border-bottom: 0;
+		}
+	}
+
+
+	.subject-wrapper {
+		opacity: 0.8;
+		min-width: 165px;
+		//max-width: 335px;
+		min-height: 37px;
+		border-radius: 2px;
+		background-color: rgba(233, 235, 240, 0.5);
+		margin: 0 0 5px 0;
+		font-size: 1.6rem;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		text-align: center;
+		color: $text-dark-grey!important;
+		padding: 5px 25px;
+		margin: 0 0 5px 0;
+
+		@media (min-width: $screen-md-min) {
+			
+		}
+
+		@media (min-width: $screen-lg-min) {
+			min-width: 108px;
+			max-width: none;
+			min-height: 57px;
+			line-height: 2.7;
+			padding: 0 30px;
+			margin: 0 0 12px 12px;
+			font-size: 2rem;
+		}
+
+		&:nth-child(odd) {
+			
+
+			@media (min-width: $screen-lg-min) {
+				//width: 190px;
+				//height: 57px;
+				//margin: 0 0 12px 12px;
+			}
+		}
+
+		&:last-child {
+
+
+			@media (min-width: $screen-lg-min) {
+				margin: 0 0 12px 0; 
+			}
+		}
+	}
+
+	.related-exemptions-container {
+		position: relative;
+		margin: 8px 0 0 0;
+
+		@media (min-width: $screen-lg-min) {
+			height: auto;
+		}
+
+		.related-exemptions-swiper {
+			padding: 4px 0;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0;
+			}
+		}
+
+		.swiper-slide {
+			height: 100%;
+			width: 293px!important;
+			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+
+			@media (min-width: $screen-lg-min) {
+				border-radius: 2.1px;
+				background-color: #ffffff;
+			}
+		}
+
+		.swiper-slide-prev {
+			right: -20px;
+			left: auto;
+		}
+
+		.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			width: 6px;
+			height: 100%;
+			background-color: $main-orange;
+			border-radius: 4px 0 0 4px;
+		}
+
+		.related-bid-wrapper {
+			padding: 23px 21px 25px 37px;
+			min-height: 253px;
+		    display: flex;
+		    flex-direction: column;
+
+		    @media (min-width: $screen-lg-min) {
+		    	min-height: 239px;
+			}
+
+			h3 {
+				font-size: 2rem;
+				color: $main-orange;
+				font-weight: normal;
+				line-height: 1.25;
+				margin: 0;
+			}
+
+			p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.25;
+				letter-spacing: normal;
+				margin-bottom: 5px;
+			}
+
+			.middle-p {
+				line-height: 1.23;
+				margin: 0;
+
+				@media (min-width: $screen-lg-min) {
+				}
+			}
+		}
+
+		.last-date {
+			font-size: 20px;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1;
+			letter-spacing: normal;
+			margin: auto 0 0 0;
+
+			h3 {
+				color: $text-dark-grey;
+				font-weight: 500;
+			}
+
+			span {
+				font-weight: normal;
+			}
+		}
+	}
+
+	.hidden.related-exemptions-container {
+		@media (min-width: $screen-lg-min) {
+			padding: 0;
+		}
+	}
+
+	.desktop-slide {
+		border-radius: 2.1px;
+		background-color: $main-white;
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+		text-align: right;
+		width: 293px;
+		height: 160px;
+		margin: 0 0 10px 10px;
+	}
+
+	.bids-footer {
+	 	padding: 72px 0 0 0;
+	}
+
+
+	.related-exemptions-main-container {
+
+		@media (min-width: $screen-lg-min) {
+			min-height: 427px;
+			background-color: #f4f5f7;
+			padding: 54px 0 0 0;
+			width: 100%;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			padding: 44px 0 0 0;
+		}		
+	}
+
+	.margin-open {
+		margin: 0 0 65px 0;
+	}
+
+	.related-exemptions-desktop-container	{
+
+		flex-wrap: wrap;
+		padding: 0;
+
+		a {
+			margin-bottom: 25px;
+			width: 25%;
+			padding: 0 15px;
+
+			&:first-child {
+				padding-right: 20px;
+			}
+		}
+
+		.related-bid-wrapper {
+			padding: 23px 34px 11px 16px;
+		}
+
+		.slide {
+			// width: 293px;
+			min-height: 239px;
+			border-radius: 2.1px;
+			background-color: $main-white;
+			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+			position: relative;
+			margin: 0 0 0 10px;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	.swiper-slide-related {
+		width: 293px!important;
+	}
+
+	.sub-head {
+		font-size: 1.6rem;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.25;
+		letter-spacing: normal;
+		color: $text-dark-grey;
+		margin: 0;
+		//white-space: nowrap;
+
+		@media (min-width: $screen-lg-min) {
+			font-size: 2rem;
+			line-height: 1.5;
+		}
+	}
+
+	.communication-details-container .sub-head {
+
+		@media (min-width: $screen-lg-min) {
+			line-height: 1.5;
+		}
+	}
+
+	.border-on {
+
+			border: solid #e9ecef !important;
+			border-width: 0 0 1px 0 !important;
+	}
+
+	// tender status colors
+	.new {
+		color: $new !important;
+	}
+
+	.updated {
+		color: $updated !important;
+	}
+
+	.closed {
+		color: $closed !important;
+	}
+
+	.pre-committees-decision {
+		color: $pre-committees-decision !important;
+	}
+
+	.cancelled {
+		color: $cancelled !important;
+	}
+
+	a:focus {
+		outline: solid 1px #4286f4;
+	}
+
+	.add-margin {
+		margin: 0 0 5px 5px;
+	}
+
+	.orange {
+		color: $main-orange;
+	}
+
+	.related-bid-top-sec {
+		min-height: none;
+
+		@media (min-width: $screen-lg-min) {
+			min-height: 70px;
+		}
+	}
+}

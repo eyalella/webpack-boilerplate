@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>פטורים</title>
+      ${require("../common/common-stylesheet.html")}
+      <link rel="stylesheet" href="/common/common.css">   
+      <link rel="stylesheet" href="/common/fonts.css">
+      <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css">    -->
+  </head>
+
+  <!-- body -->
+  <body class="tender-exemption">
+    <!-- <link href="../tender-exemption.rtl/tender-exemption.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")}
+
+      <!-- top-section -->
+      <section class="tender-exemption-top-sec d-flex flex-column align-items-center">
+        <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
+
+          <!-- breadcrumbs -->
+          <div class="breadcrumb-wrapper d-none d-lg-block">
+            <nav class="breadcrumb d-flex align-items-center justify-content-start">
+              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי
+                <span>››</span>
+              </a>
+              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="#">
+                פרסום כוונה
+              </a>
+            </nav>
+          </div>
+
+          <!-- top-sec-content -->
+          <div class="p-sec flex-column flex-lg-row d-flex align-items-start">
+            <div class="icon-wrapper">
+              <img src="../common/images/exemption-icon.svg"
+              class="icon" alt="exemption-icon">
+            </div>
+            <div class="p-wrapper">
+
+              <!-- main head exemption -->  
+              <h1 class="main-head d-none">
+                פטורים
+              </h1>
+
+              <!-- main head (defult)-->
+              <h1 class="main-head">
+                פרסומי כוונה
+              </h1>
+
+              <p class="main-p">
+                בקשה לפטור ממכרז
+              </p>
+
+              <!-- tender exemption with button main-p -->
+              <!-- to show p for tender-exemption with button move d-none to other main-p -->
+              <p class="main-p d-none">
+                פרסום כוונה להתקשרות עם ספק יחיד <br>
+                טרום החלטת וועדה
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-content -->
+      <section id="mainContent"  class="bids-body d-flex flex-column align-items-center">
+        <div class="body-wrapper w-100">
+          <div class="bids-top-sec-wrapper custom-container">
+            <div class="bids-body-top-sec d-lg-flex">
+
+              <!-- bid details -->
+              <div class="bid-details-wrapper w-lg-100 d-flex flex-column d-lg-block">
+                <div class="details-head">
+                  <h3 class="sub-head">
+                    מפרסם:
+                  </h3>
+                  <h2>
+                    משרד הבריאות - המרכז הרפואי ע"ש אדית וולפסון
+                  </h2> 
+                </div>
+                <ul class="details-body d-lg-flex justify-content-between">
+                    
+                    <!-- bid num wrapper -->
+                    <li class="bid-num details-item-wrapper">
+                      <h3 class="sub-head">
+                        מספר פרסום:
+                      </h3>
+                      <span>22013</span>
+                    </li>
+
+                    <!-- status wrapper -->
+                    <li class="status details-item-wrapper">
+                      <h3 class="sub-head">
+                        סטטוס:
+                      </h3>
+
+                      <!-- status (Change class according to status and the color will change: new, updated, closed, pre-committees-decision, cancelled) -->
+                      <span id="status-output" class="pre-committees-decision">טרום החלטת ועדה</span>
+                    </li>
+
+                    <!-- date wrapper -->
+                    <li class="bid-release-date details-item-wrapper">
+                      <h3 class="sub-head">
+                        מספר הליך:
+                      </h3>
+                      <span>2-2013</span>
+                    </li>
+               
+                    <!-- manof wrapper -->
+                    <li class="manof-num details-item-wrapper">
+                      <h3 class="sub-head">
+                        תאריך פרסום:
+                      </h3>
+                      <span>27/6/2013</span>
+                    </li>
+
+                    <!-- update date wrapper -->
+                    <li class="update-date details-item-wrapper">
+                      <h3 class="sub-head">
+                        תאריך עדכון אחרון:
+                      </h3>
+                      <span>27/6/2013</span>
+                    </li>
+                </ul>
+                <div class="last-date-wrapper d-none">
+                  <h3 class="sub-head">
+                    מועד אחרון להגשה:
+                  </h3>
+                  <span id="lastDate">07/10/2013</span>
+                </div>
+
+                <!-- submission button -->
+                <!-- remove d-none to make submission button appear -->
+                <div class="submission-button-wrapper d-none">
+
+                  <!-- submission button enable(defult)/disabled -->
+                  <!-- add disabled Attribute and the disabled-p and styles will appear -->
+                  <button class="btn btn-primary" type="submit" onclick="window.location.href='../tender-exemption-form/index.html'">
+                    להגשת השגה
+                  </button>
+
+                  <!-- disabled-p -->
+                  <p>לא ניתן להגיש השגה כיוון שהתאריך האחרון להגשה חלף</p>
+                </div>
+              </div>
+
+            <!-- bid contact -->
+              <div class="bid-contact-wrapper">
+                <div class="right-line"></div>
+                <div class="logo-wrapper">
+                  <img src="../common/images/health-department-logo.svg" class="bid-contact-logo" alt="logo">
+                </div>
+                <h3>
+                  צור קשר עם מפרסם פרסום כוונה
+                </h3>
+                <div class="bid-contact-name">שם איש קשר: גלעד טלמור</div>
+
+                <!-- tender contact mail -->
+                <div class="bid-contact-mail">
+                    דוא"ל:&nbsp <a href="mailto:i_tender@mof.gov.il">i_tender@mof.gov.il</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- communication sec -->
+          <div class="communication-details-container-close d-flex align-items-center justify-content-between custom-container">
+            פרטי תקשורת 
+            <div class="grey-arrow d-lg-none">
+                            
+            </div>
+          </div>
+          <div class="communication-details-container justify-content-center flex-lg-column hidden d-lg-flex">
+
+            <!-- The essence of communication -->
+            <div class="essence-wrapper">
+              <h3 class="sub-head">
+                מהות ההתקשרות:
+              </h3>
+              <p>
+                שירותים שונים על קווי בזק, כולל שליחת סמסים מתוך מחשב
+              </p>
+            </div>
+            <div class="reasons-wrapper">
+              <h3 class="sub-head">
+                נימוקים לבקשת הפטור:
+              </h3>
+              <p>
+                מפורטים בפרוטוקול המצורף. לאור העובדה כי ההליכים המשפטיים והליכי הקליטה בשירות המדינה טרם הסתיימו, בשים לב להמלצת הפרקליטות ולהתחייבות המדינה מול בית הדין שלא לעשות שינוי באופן העסקת התובעים וזאת עד
+              </p>
+            </div>
+            <div class="details-wrapper d-flex flex-lg-column">
+              <ul>
+                <li>
+                  <h3 class="sub-head">
+                    היקף כספי:
+                  </h3>
+                  <span>9,300,000</span>
+                </li>
+                <li>
+                  <h3 class="sub-head">
+                    חושב לפי מטבע:
+                  </h3>
+                  <span>שקל</span>
+                </li>
+                <li>
+                  <h3 class="sub-head">
+                    תחילת תקופת ההתקשרות:
+                  </h3>
+                  <span>01/03/2018</span>
+                </li>
+                <li>
+                  <h3 class="sub-head">
+                    תום תקופת ההתקשרות:
+                  </h3>
+                  <span>28/02/19</span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <h3 class="sub-head">
+                    מתן הפטור מסתמך על תקנה:
+                  </h3>
+                  <span>ההתקשרות עם ספק יחיד בצק יהול, לכנוץ בעריר גק ליץ, נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.  עמחליף קולהע צופעט למרקוח איבן איף. </span>
+                </li>
+                <li>
+                  <h3 class="sub-head">
+                    מספר ספק:
+                  </h3>
+                  <span>520031931</span>
+                </li>
+                <li>
+                  <h3 class="sub-head">
+                   שם ספק:
+                  </h3>
+                  <span>בזק החברה הישראלית לתקשורת בע"מ</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- related documents sec -->
+          <div class="related-documents-container-close d-flex align-items-center justify-content-between custom-container">
+            מסמכים נלווים 
+            <div class="grey-arrow d-lg-none">
+                            
+            </div>
+          </div>
+          <div class="related-documents-container hidden w-100">
+            <div class="related-documents-wrapper-mobile d-lg-none">
+
+              <!-- related documents mobile swiper -->
+              <div class="swiper-container related-documents-swiper" id="relatedDocumentsSwiper">
+                <div class="swiper-wrapper">
+
+                  <!-- related documents mobile swiper slides -->
+                  <div class="swiper-slide swiper-slide-1 swiper-slide-related swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                          <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-2 swiper-slide-related d-flex flex-column justify-content-between">
+
+                    <!-- related documents slide content -->
+                    <div class="related-document-wrapper h-100">
+                      <div class="document-date">
+                        10:00 ,08/03/2018
+                      </div>
+                      <div class="document-head">
+                        <h3>
+                          מענה עורך 
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="download-wrapper d-flex justify-content-end">
+                      <div class="download">
+                        <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                          <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="related-document-pagination swiper-pagination d-flex align-items-center justify-content-center w-100"></div>
+            </div>
+
+            <div  class="related-documents-wrapper-desktop d-none d-lg-flex custom-container">
+
+              <!-- related documents desktop slides-->
+              <div class="desktop-slide desktop-slide-1 d-flex flex-column justify-content-between">
+                
+                <!-- related documents desktop slide content -->
+                <div class="related-document-wrapper h-100">
+                  <div class="document-date">
+                    10:00 ,08/03/2018
+                  </div>
+                  <div class="document-head">
+                    <h3>
+                      מענה עורך המכרז לשאלות הבהרה לעניין דרישות הביטול במכרז
+                    </h3>
+                  </div>
+                </div>
+                <div class="download-wrapper d-flex justify-content-end">
+                  <div class="download">
+                    <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                      <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop-slide desktop-slide-2 d-flex flex-column justify-content-between">
+                
+                <!-- related documents desktop slide content -->
+                <div class="related-document-wrapper h-100">
+                  <div class="document-date">
+                    10:00 ,08/03/2018
+                  </div>
+                  <div class="document-head">
+                    <h3>
+                      מודעה לעיתון בעברית
+                    </h3>
+                  </div>
+                </div>
+                <div class="download-wrapper d-flex justify-content-end">
+                  <div class="download">
+                    <a href= "https://www.dropbox.com/s/6qejg0apxxroadt/logo.png?dl=1" download>
+                      <img src="../common/images/download-arrow.svg" class="download-arrow" alt="download-arrow">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- subjects sec -->
+          <div class="subjects-container-close d-flex align-items-center justify-content-between custom-container">
+            נושאים 
+            <div class="grey-arrow d-lg-none">
+                            
+            </div>
+          </div>
+          <div class="subjects-container justify-content-center flex-lg-column custom-container d-none d-lg-flex">
+
+            <!-- subjects -->
+            <div class="subjects-wrapper d-flex flex-wrap justify-content-between justify-content-md-start flex-lg-row"> 
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשוב ותקשורת מחשוב ותקשורתמחשוב ו</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מסכי מחשב  מסכי מחשב </a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">תוכנות</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשוב ותקשורת</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשבים</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשוב ותקשורת מחשוב ותקשורתמחשוב ותקשורת</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מסכי מחשב  מסכי מחשב </a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">תוכנות  תוכנות תוכנות תוכנות תוכנות תוכנות </a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשוב ותקשורת</a>
+              <a href="#" class="subject-wrapper d-flex align-items-center justify-content-center">מחשבים</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="related-exemptions-main-container w-100">
+            <div class="related-exemptions-container-close d-flex align-items-center justify-content-between custom-container">
+              פטורים שאולי יעניינו אותך 
+              <div class="grey-arrow d-lg-none">
+                              
+              </div>
+            </div>
+            <div class="related-exemptions-container hidden">
+              <div class="related-exemptions-swiper-wrapper h-100">
+
+                <!-- related exemptions swiper mobile-->
+                <div class="swiper-container related-exemptions-swiper h-100 d-lg-none" id="">
+
+                  <!-- related exemptions swiper-->
+                  <div class="swiper-wrapper">
+
+                    <!-- related exemptions swiper slide 1-->
+
+                    <div class="swiper-slide swiper-slide-1 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related exemptions swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+                          <p class="top-p">קקריאה לספקים עוד טקסט שיכנס כאן וכאן קריאה לספקיםם </p>
+                        </div>
+                        <p class="middle-p">
+                          ללמתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים עוד טקסט     
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- related exemptions swiper slide 2-->
+                    <div class="swiper-slide swiper-slide-2 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related exemptions swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+                          <p class="top-p">מכרז<br> 1/2018</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- related exemptions swiper slide 3-->
+                    <div class="swiper-slide swiper-slide-3 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related exemptions swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+
+                          <!-- add orange class to make orange -->
+                          <p class="top-p orange">1/2018</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- related-exemptions desktop-->
+                <div class="related-exemptions-desktop-container d-none d-lg-flex justify-content-between  custom-container m-auto">
+
+                  <!-- related exemptions desktop slide 1 -->
+                  <a href="">
+                    <div class="slide slide-1 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related exemptions swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+                          <p class="top-p">קקריאה לספקים עוד טקסט שיכנס כאן וכאן קריאה לספקיםם </p>
+                        </div>
+                        <p class="middle-p">
+                          ללמתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים עוד טקסט     
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- related exemptions desktop slide 2 -->
+                  <a href="">
+                    <div class="slide slide-2 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related exemptions swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+                          <p class="top-p">מכרז<br> 1/2018</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- related exemptions desktop slide 3 -->
+                  <a href="">
+                    <div class="slide slide-3 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related exemptions swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+
+                          <!-- add orange class to make orange -->
+                          <p class="top-p orange">1/2018</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- related exemptions desktop slide 4 -->
+                  <a href="">
+                    <div class="slide slide-4 d-flex flex-column justify-content-between">
+                      <div class="right-line"></div>
+
+                      <!-- related exemptions swiper content-->
+                      <div class="related-bid-wrapper h-100">
+                        <div class="related-bid-top-sec">
+                          <h3>משרד הבריאות</h3>
+                          <p class="top-p">קריאה לספרים <br> 75-2017</p>
+                        </div>
+                        <p class="middle-p">
+                          למתן שירות ותחזוקה למחשבים ולציוד היקפי עבור מערך הבריאות שבאחריות חטיבת המרכזים הרפואיים הממשלתיים
+                        </p>
+                        <div class="last-date">
+                          <h3>תאריך אחרון להגשה:</h3>
+                          <span>06/03/2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>                  
+
+                <!-- related exemptions pagination -->
+                <div class="related-exemptions-pagination swiper-pagination d-flex align-items-center justify-content-center w-100 d-lg-none"></div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="bids-footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

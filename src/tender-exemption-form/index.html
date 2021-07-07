@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פטורים</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="tender-exemption-form">
+    <!-- <link href="../tender-exemption-form.rtl/tender-exemption-form.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- top-section -->
+      <section class="tender-exemption-form-top-sec d-flex flex-column align-items-center">
+        <div class="right-line"></div>
+        <div class="top-sec-container custom-container d-flex flex-column justify-content-start">
+
+          <!-- breadcrumbs -->
+          <div class="breadcrumb-wrapper d-none d-lg-block">
+            <nav class="breadcrumb d-flex align-items-center justify-content-start">
+              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="../home/index.html">מינהל הרכש הממשלתי<span>››</span></a>
+              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="#">פטורים <span>››</span></a>
+              <a class="breadcrumb-item d-flex align-items-center justify-content-center" href="#">הגשת השגה</a>
+            </nav>
+          </div>
+
+          <!-- top-sec-content -->
+          <div class="p-sec flex-column flex-lg-row d-flex align-items-start">
+            <div class="icon-wrapper">
+              <img src="../common/images/exemption-icon.svg"
+              class="icon" alt="exemption-icon">
+            </div>
+            <div class="p-wrapper">
+              <h1 class="main-head">
+                פטורים
+              </h1>
+              <p class="main-p">
+                בקשה לפטור ממכרז
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-content -->
+      <section id="mainContent"  class="body d-flex flex-column align-items-center">
+        <div class="body-wrapper custom-container d-flex flex-column">
+
+          <!-- details section -->
+          <div class="details-wrapper d-flex flex-column flex-lg-row">
+            <div class="tender-number d-flex align-items-center">
+              מספר מכרז: 2-2013 
+            </div>
+            <div class="type d-flex align-items-center">
+              סוג הקריאה: פרסום כוונה
+            </div>
+          </div>
+
+          <!-- form section -->
+          <form class="form-wrapper" id="exemptionForm" data-parsley-validate>
+
+            <!-- name and company number sec -->
+            <div class="d-flex flex-column flex-lg-row name-number-wrapper">
+
+                <!--first name input -->
+                <div class="form-group first-name">
+                  <input class="form-control" type="text" placeholder= "שם פרטי" id="nameInput" name="name" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="first-name" aria-describedby="firstNameLabel">
+                  <label id="firstNameLabel" class="sr-only" for="nameInput">
+                    שדה חובה
+                  </label>
+                  <div class="input-bullet"></div>
+                </div>
+
+                <!--last name input -->
+                <div class="form-group last-name">
+                  <input class="form-control" type="text" placeholder= "שם משפחה" id="lastNameInput" name="lastName" required data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="last-name" aria-describedby="lastNameLabel">
+                  <label id="lastNameLabel" class="sr-only" for="lastNameInput">
+                    שדה חובה
+                  </label>
+                  <div class="input-bullet"></div>
+                </div>
+
+                <!--company name input -->
+                <div class="form-group company-name">
+                  <input class="form-control" type="text" placeholder= "שם חברה" id="companyName" name="lastName" data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="company-name" aria-describedby="companyNameLabel">
+                  <label class="sr-only" for="companyName">
+                    שדה חובה
+                  </label>
+                  <div class="input-bullet d-none" id="bulletCompanyName"></div>
+                </div>
+
+                <!--company number input -->
+                <div class="form-group company-number">
+                  <input class="form-control" type="text" placeholder= "מספר ח.פ" id="companyNumber" name="lastName" data-parsley-error-message="שדה חובה" data-parsley-validate-if-empty aria-label="company-number" aria-describedby="companyNumberLabel">
+                  <label id="companyNumberLabel" class="sr-only" for="companyNumber">
+                    שדה חובה
+                  </label>
+                  <div class="input-bullet d-none" id="bulletCompanyNumber"></div>
+                </div>  
+            </div> 
+
+            <!-- email address and phone sec -->
+            <div class="form-group email-phone-wrapper d-flex flex-column flex-lg-row">
+
+              <!-- mail input -->
+              <div class="form-group email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="דוא״ל"   id="inputEmail" class="form-control email-input" name="email" data-required="" data-parsley-validate-if-empty data-parsley-error-message="אימייל חייב להכיל @" aria-label="email-address" aria-describedby="emailAddressLabel">
+                <label id="emailAddressLabel" class="sr-only" for="inputEmail">
+                    אימייל חייב להכיל @
+                </label>
+                <div class="input-bullet"></div>
+              </div>
+
+              <!-- phone number input -->
+              <div class="form-group phone-number">
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="טלפון" data-parsley-error-message="מספר לא תקין" minlength="9" maxlength="10" aria-label="phone-number" aria-describedby="phoneNumberLabel">
+                <label id="phoneNumberLabel" class="sr-only" for="phoneNumber">
+                טלפון
+                </label>
+              </div>
+
+              <!-- address input -->
+              <div class="form-group address">
+                <input type="text" class="form-control" id="addressInput" placeholder="כתובת"   id="addressInput" class="form-control address-input" name="address" data-required="" data-parsley-validate-if-empty data-parsley-error-message="" aria-label="address" aria-describedby="addressLabel">
+                <label id="addressLabel" class="sr-only" for="addressInput">
+                  כתובת
+                </label>
+                <!-- <div class="input-bullet"></div> -->
+              </div>
+            </div> 
+
+            <!-- subject textarea input -->
+            <div class="form-group subject-textarea">
+              <textarea class="form-control" id="subjectTextarea" placeholder="פירוט הפנייה" required data-parsley-error-message="פירוט פנייה נדרש" aria-label="subject-textarea" aria-describedby="subjectTextareaLabel"></textarea>
+              <label id="subjectTextareaLabel" class="sr-only" for="subjectTextarea">
+                פירוט הפנייה
+              </label>
+              <div id="textAreaId" class="input-bullet"></div>
+            </div>
+
+            <!-- upload file input -->
+            <div class="upload-file-wrapper form-group d-flex d-lg-block align-items-center dropzone form-control" action="/upload">
+              <div class="file-input-wrapper">
+                <small class="d-none d-lg-block">
+                  ניתן לצרף קבצי <span lang="en">DOC, DOCX, XLS, XLSX, PPT, PPTX, PDF</span>
+                  <br>
+                  כמה קבצים שתרצו עם מגבלה של 15MB לכל הקבצים יחד
+                </small>
+                <div class="file-button-wrapper d-flex d-lg-block align-items-center">
+                  <span class="file-button-light-text d-lg-none">קבצים מסוג <span lang="en">PDF, JPEG, PNG</span></span> 
+                  <label id="uploadFileLabel" class="sr-only" for="customFile">
+                    צרף מסמך
+                  </label>
+                  <input type="file" class="custom-file-input" id="customFile" name="" multiple aria-label="upload-file" aria-describedby="uploadFileLabel">
+                  <span class="file-button-text">צרף מסמך</span>
+                  <div class="three-upload-file-dots d-flex justify-content-between d-lg-none"> 
+                    <span class="upload-file-dot"></span> 
+                    <span class="upload-file-dot"></span> 
+                    <span class="upload-file-dot"></span>
+                  </div>
+                </div>
+                <div id="selectedFiles"></div>
+                <span class="dropzone-previews">
+                </span>
+              </div>
+            </div>  
+
+            <!-- save details button -->
+            <div class="save-details-button d-flex justify-content-end">
+              <button class="btn btn-primary" type="submit" form="exemptionForm" value="Submit" data-target="#myModal" data-toggle="modal">שלח
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer d-flex justify-content-center">
+          ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+
+   <!-- error message 
+    <div class="modal fade error" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-column align-items-center justify-content-end">
+            <div class="mark-container d-flex align-items-center justify-content-center">
+              <img src="../common/images/error-icon.svg"
+              class="dialog-icon-error" alt="dialog-error-icon">
+            </div>
+            <h4>הודעת שגיאה</h4>
+            <p>לורם איפסום קינץ תתיח לרעחלת צשחמי צש בליא, מנסוטו צמלח לביקו ננביצמוקו בלוקריה שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח.</p>
+            <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- success message 
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../common/images/profile-modal-icon.svg"
+              class="dialog-icon" alt="dialog-success-icon">
+            <h4>פנייתך התקבלה בהצלחה!</h4>
+            <p>לורם איפסום קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבכי, צמככוקו בלוקריה.</p>
+            <button class="btn btn-primary" type="button" data-target="#myModal" data-toggle="modal">
+              אישור
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

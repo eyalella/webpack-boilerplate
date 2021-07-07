@@ -1,0 +1,357 @@
+@import "../util/util.scss";
+
+.websites-links-2 {
+	min-width: 330px;
+
+	#searchInput {
+		 //padding: 0 0 0 22px;
+	}
+
+	.custom-container {
+		padding: 0 20px;
+	}
+
+	.nav-item-text-6 {
+      	background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		 } 
+	}
+
+	.top-sec-wrapper {
+		padding: 0;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0 20px;
+			max-width: 1010px;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px;
+		}
+	}
+
+	.websites-links-2-top-sec {
+		position: relative;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+		margin: 0 0 5px 0;
+		padding: 15px 20px 0;
+		min-height: 205px;
+
+		@media (min-width: $screen-lg-min) {
+			background-image: url('../common/images/links-header-visuals.png');
+			margin: 0;
+			padding: 0;
+			min-height: 260px;
+			background-position: left;
+			background-size: 30%;
+			background-repeat: no-repeat;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			min-height: 308px;
+		}
+
+		.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			top: 0;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			background-color: $main-purple;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+			}
+		}
+
+		.websites-links-2-breadcrumb-wrapper {
+
+			@media (min-width: $screen-lg-min) {
+				 margin: 26px 0 23px 0;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				 margin: 32px 0 29px 0;
+			}
+
+			.breadcrumb {
+				margin: 0;	
+			}
+
+			.breadcrumb-item  {
+				color: $main-purple;
+				font-size: 1.6rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+			}
+		}
+
+		.top-sec-container { 
+			width: 100%;
+			padding: 0;
+			height: auto;
+			position: relative;
+
+			@media (min-width: $screen-lg-min) {
+				max-width: 1010px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
+			}
+
+			.websites-links-2-p-sec {
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 10px 0;
+					padding: 0;
+				}	
+
+				.websites-links-2-p-container {
+
+					@media (min-width: $screen-lg-min) {
+						position: relative;
+					}	
+				}
+
+				.websites-links-2-p-wrapper {
+					order: 2;
+					margin: 0;
+
+
+					@media (min-width: $screen-lg-min) {
+						
+					}
+				}
+
+				.websites-links-2-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.82;
+					letter-spacing: normal;
+					color: $main-purple;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 6.2rem;
+						font-weight: 500;
+						line-height: 0.82;
+						margin: 0 0 3px 0;
+						max-width: 600px;
+					}	
+				}
+
+				.websites-links-2-top-p {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.25;
+					letter-spacing: normal;
+					color: #4e5665;
+					margin: 0 0 0 40px;
+					max-width: 500px;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 3rem;
+						line-height: normal;
+						letter-spacing: normal;
+						padding: 0 0 0 30px;
+						margin: 0;
+						max-width: 650px;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 800px;
+					}
+				}
+			}
+		}
+
+		.websites-links-2-top-icon {
+			order: -1;
+			width: 47px;
+			height: 47px;
+			margin: 0 1px 3px 0;
+
+			@media (min-width: $screen-lg-min) {
+				width: 93px;
+				height: 93px;
+				margin: 0 0 0 24px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				width: 116px;
+				height: 116px;
+			}
+		}	
+	}
+
+	.websites-links-2-body {
+		margin: 0 0 90px 0;
+		padding: 20px 5px 0;
+		position: relative;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 90px 20px 0;
+			margin: 0px auto 240px;
+			max-width: 1010px;
+			min-height: 100%;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px;
+		}
+
+		.main-tabs-container {
+			width: 100%;
+
+			@media (min-width: $screen-lg-min) {
+				max-width: 1222px;
+			}
+
+			.tab {
+				width: 100%;
+				height: 67px;
+				object-fit: contain;
+				margin: 0 0 5px 0;
+				font-size: 3.2rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 0.78;
+				letter-spacing: normal;
+				padding: 0 21px 0 19px;
+				cursor: pointer;
+				background-color: #cfd1e4;
+				//text-align: center;
+
+				@media (min-width: $screen-lg-min) {
+					width: 300px;
+					min-height: 90px;
+					padding: 0 20px 0 0;
+					margin: 0 0 9px 9px;
+					color: #4e5665;
+					background-color: rgba(233, 235, 240, 0.5);
+				}
+
+				@media (min-width: $screen-xl-min) {
+					width: 394px;
+					min-height: 90px;
+				}
+
+				&:last-child {
+					margin: 0;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 9px 0;
+					}
+				}
+
+				// &:nth-child(3n) {
+				// 	margin: 0 0 9px 9px;
+
+				// 	@media (min-width: $screen-lg-min) {
+				// 		margin: 0 0 9px 0;
+				// 	}
+				// }
+
+				&:active, &:focus, &:hover {
+
+					@media (min-width: $screen-lg-min) {
+						background-color: rgba(98, 102, 166, 0.15);
+					}
+		        }
+			}
+		}
+	}
+
+	.tab-content, .tab-content-mobile {
+		width: 100%;
+		margin: 15px 0 0 0;
+		padding: 0 15px 0 5px;
+		//display: flex;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 31px 0 0 0;
+			padding: 0 20px;
+		}
+
+		.link-wrapper {
+			//width: 50%;
+		}
+
+		ul {
+			width: 100%;
+			
+			@media (min-width: $screen-lg-min) {
+				column-count: 2;
+				column-gap: 173px;
+				column-width: 50%;
+			}
+
+			li {
+				//display: block;
+				//width: 50%;
+			}
+		}
+
+		a {
+			font-size: 1.5rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 3.33;
+			letter-spacing: normal;
+			color: $cobalt;
+			display: inline-block;
+			text-decoration: underline;
+
+			@media (min-width: $screen-lg-min) {
+				font-size: 1.6rem;
+				line-height: 3.13;
+			}
+		}
+	}
+
+	.tab-content-mobile {
+		margin: 10px 0 0 0;
+	}
+
+	.websites-links-2-footer {
+		padding: 0;
+		border-top: 0;
+	}
+
+	.active {
+		
+		@media (min-width: $screen-lg-min) {
+			font-weight: 500;
+			background-color: rgba(98, 102, 166, 0.15) !important;
+		}
+	}
+
+	.grey-arrow {
+		width: 12px;
+		height: 12px;
+		border: solid $text-dark-grey;
+	    border-width: 0 2px 2px 0;
+	    display: inline-block;
+	    transform: rotate(45deg);
+	    pointer-events: none;
+	    margin-top: -3px;
+	}
+
+	.rotate {
+		transform: rotate(225deg);
+		margin-top: 0;
+	}
+}

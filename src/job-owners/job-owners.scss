@@ -1,0 +1,831 @@
+@import "../util/util.scss";
+
+.job-owners {
+	min-width: 330px;
+	//overflow: hidden;
+	
+	.custom-container {
+		padding: 0 20px;
+	}
+
+	.nav-item-text-2 {
+		background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		}
+	}
+
+	.job-owners-top-sec {
+		position: relative;
+		height: 205px;
+		background-color: $main-white;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+		@media (min-width: $screen-lg-min) {
+			background-image: url('../common/images/job-owners-header-visuals.png');
+			padding: 0 20px;
+			min-height: 260px;
+			background-size: 30%;
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			min-height: 308px;
+		}
+
+		@media (max-width: 340px) {
+			height: 240px;
+			box-shadow: none;
+		}
+
+		.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			top: 0;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			background-color: #1c6897;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+				//top: -7px;
+			}
+		}
+
+		.top-sec-container { 
+			width: 100%;
+
+			@media (min-width: $screen-lg-min) {
+				max-width: 1010px;
+				padding: 0 20px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
+				padding: 0 20px;
+			}
+
+			.job-owners-breadcrumb-wrapper {
+
+				margin: 26px 0 23px 0;
+
+				@media (min-width: $screen-xl-min) {
+					 margin: 32px 0 29px 0;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $header-blue;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.job-owners-p-sec {
+				margin: 73px 0 0 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0;
+				}	
+
+				.job-owners-p-wrapper {
+
+					@media (min-width: $screen-lg-min) {
+					}	
+				}	
+
+				.job-owners-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.83;
+					letter-spacing: normal;
+					color: #1c6897;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 6.2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						color: $cobalt;
+					}	
+				}
+
+				.job-owners-top-p {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.25;
+					letter-spacing: normal;
+					color: #4e5665;
+					margin: 0 0 0 40px;
+					max-width: 300px;
+
+					@media (min-width: $screen-lg-min) {
+						max-width: 600px;
+						font-size: 3.2em;
+						line-height: normal;
+						letter-spacing: normal;
+					}
+
+					@media (min-width: $screen-xl-min) {
+						max-width: 750px;
+					}	
+				}
+			}
+		}
+	}
+
+	.job-owners-body {
+
+		.job-owners-body-wrapper {
+			width: 100%;
+			margin:0 0 77px 0;
+			padding: 12px 5px 0;
+
+			@media (min-width: $screen-lg-min) {
+				max-width: 1010px;
+				margin:0 0 230px 0;
+				padding: 34px 20px 0;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				max-width: 1262px;
+			}
+
+			.table-wrapper {
+				margin: 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 30px 0;
+				}
+
+				.h2-wrapper {
+					height: 67px;
+					background-color: rgba(51,163,141,0.3);
+					margin-bottom: 5px;
+					padding: 0 21px;
+
+					@media (min-width: $screen-lg-min) {
+						margin: 0 0 12px 0;
+						padding: 0;
+						height: inherit;
+						background-color: transparent;	
+					}
+				}
+
+				.th {
+					background-color: rgba(51,163,141,0.3);
+
+					@media (min-width: $screen-lg-min) {
+						background-color: transparent;	
+					}
+				}
+
+				h2 {
+					margin: 0;
+					font-size: 3.2rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $text-dark-grey;
+				}
+
+				table {
+					width: 100%;
+					margin: 0;
+					//border-spacing: 5px;
+
+					th {
+						vertical-align: middle;
+						font-size: 2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						color: $text-dark-grey;
+
+						@media (min-width: $screen-lg-min) {
+							height: 67px;
+							border: solid $main-white;
+							border-width: 0 0 5px 5px;
+							padding: 0 20px 0 0;
+						}
+
+						&:last-child {
+							border-width: 0 0 5px 0;
+						}
+					}
+
+					.mobil-toggle-wrapper {
+						//height: 142px;
+						padding: 11px 21px 20px 0;
+						position: relative;
+
+						@media (min-width: $screen-lg-min) {
+							height: auto;
+							padding: 0;
+						}
+
+						.email-icon {
+							width: 24px;
+		  					height: 18px;
+		  					
+							@media (min-width: $screen-lg-min) {
+								display: static;
+							}
+						}
+					}
+
+					.th-mobile {
+						font-weight: 500;
+
+						@media (min-width: $screen-lg-min) {
+							height: auto;
+							padding: 0;
+						}
+					}
+	 
+					.table-head {
+						margin: 0 0 5px 0;
+						font-size: 2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						color: $text-dark-grey;
+						border-right: 0;
+						//padding: 0 20px;
+						//vertical-align: inherit;
+						
+
+						@media (min-width: $screen-lg-min) {
+							height: 67px;
+						}
+					}
+
+					.table-row {
+						
+						@media (min-width: $screen-lg-min) {
+							height: 67px;
+							//width: 100%;
+							//margin: 0 0 5px 0;
+						}
+					}
+
+					.th-name {
+
+						@media (min-width: $screen-lg-min) {
+							min-width: 216px;
+							width: 20%;
+						}
+
+						// @media (min-width: $screen-xl-min) {
+						// 	min-width: 270px;
+						// }
+					}
+
+					.th-position {
+						//width: 520px;
+						
+
+						@media (min-width: $screen-lg-min) {
+							width: 30%;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							width: 40%;
+						}
+					}
+
+					.th-tel, .th-fax {
+
+						@media (min-width: $screen-lg-min) {
+							min-width: 150px;
+							width: 15%;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							width: 12%;
+						}
+					}
+
+
+					.th-fax {
+						//font-family: HelveticaNeue;
+						font-weight: bold;
+						font-size: 1.6rem;
+					}
+
+					.th-mail, .th-related-documents {
+
+						@media (min-width: $screen-lg-min) {
+							//min-width: 95px;
+							font-size: 1.6rem;
+							line-height: 0.88;
+							width: 10%;
+							text-align: center;
+	   						padding: 0 15px;
+							//text-align: center;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							width: 8%;
+						}
+
+						img {
+							height: 24px;
+							width: auto;
+						}
+					}
+
+					.th-related-documents {
+
+						@media (min-width: $screen-lg-min) {
+							//padding: 0 18px;
+						
+						}
+
+						img {
+							height: 24px;
+							width: auto;
+						}
+					}
+
+
+					td {
+						font-size: 1.6rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.63;
+						letter-spacing: 0.5px;
+						color: $text-dark-grey;
+						//margin: 0 0 5px 0;
+						vertical-align: middle;
+						
+						@media (min-width: $screen-lg-min) {
+							height: 67px;
+							vertical-align: inherit;
+							background-color: $td-background;
+							line-height: normal;
+							margin: 0;
+							border: solid #fff;
+	    					border-width: 0 0 5px 5px;
+	    					padding: 0 20px 0 0;
+						}
+
+						&:last-child {
+							border-width: 0 0 5px 0;
+						}
+
+						span {
+							font-weight: normal;
+							color: #1f86bc;
+
+							@media (min-width: $screen-lg-min) {
+								font-weight: 500;
+								color: $text-dark-grey;
+							}
+						}
+
+						.grey-arrow {
+							width: 12px;
+							height: 12px;
+							border: solid $text-dark-grey;
+						    border-width: 0 2px 2px 0;
+						    display: inline-block;
+						    transform: rotate(45deg);
+						    pointer-events: none;
+						}
+
+						.rotate {
+							transform: rotate(225deg);
+						}
+					}
+
+					.name-td {
+						color: #1f86bc;
+						height: 67px;
+						background-color: $td-background;
+
+						@media (min-width: $screen-lg-min) {
+							//min-width: 216px;
+							height: auto;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							min-width: 270px;
+						}
+					}
+
+
+					.fax-td {
+						margin: 0 0 13px 0;
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0;
+						}
+
+						span {
+							pointer-events: none;
+	 						cursor: default;
+	  						text-decoration: none;
+	  						color: $text-dark-grey !important;
+	  						undeline: none;
+						}
+					}
+
+					.mail-td, .related-documents-td {
+						//position: absolute;
+	  					bottom: 20px;
+	  					left: 69px;
+	  					right: auto;
+	  					//display: inline-block;
+	  					margin: 0;
+	  					line-height: 0;
+	  					vertical-align: bottom;
+
+						@media (min-width: $screen-lg-min) {
+							//min-width: 95px;
+							//text-align: center;
+							//width: auto;
+							position: static;
+							//display: block;
+							line-height: normal;
+							//vertical-align: inherit;
+	    					vertical-align: middle;
+	    					//text-align: -webkit-center;
+	    					padding: 0 18px;
+						}
+
+						a {
+							display: block;
+
+							@media (min-width: $screen-lg-min) {
+								display: inherit;
+							}
+						}
+					}
+
+					.position-td {
+						//width: 520px;
+						font-weight: normal;
+
+						@media (min-width: $screen-lg-min) {
+							padding: 0 20px 0 10px;
+						}
+
+						span {
+							@media (min-width: $screen-lg-min) {
+								font-weight: normal;
+							}
+						}
+					}
+				}
+
+				.mobile-table-wrapper {
+					width: 100%;
+					margin: 0;
+
+					.mobil-toggle-wrapper {
+						//height: 142px;
+						padding: 11px 21px 20px 0;
+						position: relative;
+
+						@media (min-width: $screen-lg-min) {
+							height: auto;
+							padding: 0;
+						}
+
+						.email-icon {
+							width: 24px;
+		  					height: 18px;
+		  					
+							@media (min-width: $screen-lg-min) {
+								display: static;
+							}
+						}
+					}
+
+					.th-mobile {
+						font-weight: 500;
+
+						@media (min-width: $screen-lg-min) {
+							height: auto;
+							padding: 0;
+						}
+
+						a {
+							color: $text-dark-grey;
+						}
+					}
+	 
+					.table-head {
+						margin: 0 0 5px 0;
+						font-size: 2rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: 0.5px;
+						color: $text-dark-grey;
+						border-right: 0;
+						//padding: 0 20px;
+						//vertical-align: inherit;
+						
+
+						@media (min-width: $screen-lg-min) {
+							height: 67px;
+						}
+					}
+
+					.table-row {
+						
+						@media (min-width: $screen-lg-min) {
+							height: 67px;
+							width: 100%;
+							margin: 0 0 5px 0;
+						}
+					}
+
+					.th-name {
+
+						@media (min-width: $screen-lg-min) {
+							min-width: 216px;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							min-width: 270px;
+						}
+					}
+
+					.th-position {
+						//width: 520px;
+					}
+
+					.th-tel, .th-fax {
+
+						@media (min-width: $screen-lg-min) {
+							min-width: 150px;
+						}
+					}
+
+					.th-name, .th-position, .th-tel, .th-fax, .th-related-documents {
+
+						@media (min-width: $screen-lg-min) {
+							border: solid $main-white;
+							border-width: 0 0 0 5px;
+							padding: 0 20px 0 0;
+						}	
+					}
+
+					.th-fax {
+						font-size: 1.6rem;
+					}
+
+					
+
+					.th-mail, .th-related-documents {
+
+						@media (min-width: $screen-lg-min) {
+							min-width: 95px;
+							font-size: 1.6rem;
+							line-height: 0.88;
+						}
+					}
+
+					.th-related-documents {
+
+						@media (min-width: $screen-lg-min) {
+							padding: 0 18px;
+						}
+
+						img {
+							height: 24px;
+							width: auto;
+						}
+					}
+
+
+					.td {
+						font-size: 1.6rem;
+						font-weight: 500;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.63;
+						letter-spacing: 0.5px;
+						color: $text-dark-grey;
+						margin: 0 0 5px 0;
+						
+						@media (min-width: $screen-lg-min) {
+							height: 67px;
+							vertical-align: middle;
+							background-color: $td-background;
+							line-height: normal;
+							margin: 0;
+						}
+
+						span {
+							font-weight: normal;
+							//color: #1f86bc;
+
+							@media (min-width: $screen-lg-min) {
+								font-weight: 500;
+								color: $text-dark-grey;
+							}
+						}
+
+						.grey-arrow {
+							width: 12px;
+							height: 12px;
+							border: solid $text-dark-grey;
+						    border-width: 0 2px 2px 0;
+						    display: inline-block;
+						    transform: rotate(45deg);
+						    pointer-events: none;
+						}
+
+						.rotate {
+							transform: rotate(225deg);
+						}
+					}
+
+					.name-td {
+						color: #1f86bc;
+						height: 67px;
+						background-color: $td-background;
+						padding: 0 21px 0 18px;
+
+						@media (min-width: $screen-lg-min) {
+							min-width: 216px;
+							height: auto;
+							padding: 0;
+						}
+
+						@media (min-width: $screen-xl-min) {
+							min-width: 270px;
+						}
+					}
+
+					.tel-td, .fax-td {
+						
+						@media (min-width: $screen-lg-min) {
+							min-width: 150px;
+						}
+					}
+
+					.fax-td {
+						margin: 0 0 13px 0;
+
+						@media (min-width: $screen-lg-min) {
+							margin: 0;
+						}
+
+						span {
+							pointer-events: none;
+	 						cursor: default;
+	  						text-decoration: none;
+	  						color: $text-dark-grey !important;
+	  						undeline: none;
+						}
+					}
+
+					.mail-td, .related-documents-td {
+						//position: absolute;
+	  					bottom: 20px;
+	  					left: 69px;
+	  					right: auto;
+	  					display: inline-block;
+	  					margin: 0;
+	  					line-height: 0;
+	  					vertical-align: bottom;
+
+						@media (min-width: $screen-lg-min) {
+							min-width: 95px;
+							text-align: center;
+							width: auto;
+							position: static;
+							display: block;
+							line-height: normal;
+							vertical-align: inherit;
+						}
+
+						a {
+							display: block;
+
+							@media (min-width: $screen-lg-min) {
+								display: inherit;
+							}
+						}
+					}
+
+					.name-td, .position-td, .tel-td, .fax-td, .related-documents-td {
+						
+						@media (min-width: $screen-lg-min) {
+							border: solid $main-white;
+							border-width: 0 0 0 5px; 
+							padding: 0 20px 0 0;
+						}
+					}
+
+					.position-td {
+						//width: 520px;
+						font-weight: normal;
+
+						@media (min-width: $screen-lg-min) {
+							padding: 0 20px 0 10px;
+						}
+					}
+
+					.related-documents-td {
+						margin: 0 0 0 19px;
+
+						@media (min-width: $screen-lg-min) {
+							text-align: center;
+							width: auto;
+							position: static;
+							margin: 0;
+							padding: 0;
+						}
+					}
+				}
+			}
+
+			.table-wrapper:nth-child(3n+0) {
+
+				.h2-wrapper {
+					background-color: rgba(51,163,141,0.3);
+
+					@media (min-width: $screen-lg-min) {
+						background-color: transparent;	
+					}
+				}
+
+				th {
+					background-color: rgba(51,163,141,0.3);
+				}
+			}
+		
+			.table-wrapper:nth-child(3n+1) {
+
+				.h2-wrapper {
+					background-color: rgba(31,134,188,0.3);
+
+					@media (min-width: $screen-lg-min) {
+						background-color: transparent;	
+					}
+				}
+
+				th {
+					background-color: rgba(31,134,188,0.3);
+				}
+			}
+
+			.table-wrapper:nth-child(3n+2) {
+
+				.h2-wrapper {
+					background-color: rgba(98,102,166,0.3);
+
+					@media (min-width: $screen-lg-min) {
+						background-color: transparent;	
+					}
+				}
+
+				th {
+					background-color: rgba(98,102,166,0.3);
+				}
+			}	
+		}
+	}
+
+	.job-owners-footer {
+		padding: 69px 0 0 0;
+		// margin: 0 46px 0;
+		// border-top: solid 2px $footer-border;
+
+		// @media (min-width: $screen-lg-min) {
+		// 	margin: 0 165px 0;
+		// 	padding: 50px 0 0 0;
+		// }	
+	}
+}

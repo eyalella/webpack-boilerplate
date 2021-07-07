@@ -1,0 +1,594 @@
+@import "../util/util.scss";
+
+.dictionary {
+	min-width: 330px;
+
+	#searchInput {
+		 //padding: 0 0 0 22px;
+	}
+
+	.custom-container {
+		padding: 0 20px;
+	}
+
+	.nav-item-text-6 {
+      	background-color: rgba(255, 255, 255, 0.19);
+
+		@media (min-width: $screen-lg-min) {
+			border-bottom: solid 1px #1c6897; 
+		 } 
+	}
+
+	.dictionary-top-sec {
+		position: relative;
+		background-color: $main-white;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+		margin: 0 0 5px 0;
+		padding:0 ;
+		min-height: 205px;
+
+		@media (min-width: $screen-lg-min) {
+			margin: 0 0 40px 0;
+			//padding:0 0 18px 0;
+			//min-height: 308px;
+			height: auto;
+			background-position: left;
+			background-image: url('../common/images/dictionary-header-visuals.png');
+			background-repeat: no-repeat;
+			background-size: 30%;
+		}
+
+		.right-line {
+			position: absolute;
+			right: 0;
+			left: auto;
+			top: 0;
+			width: 5px;
+			height: 100%;
+			border-radius: 4px 0 0 4px;
+			background-color: $main-purple;
+
+			@media (min-width: $screen-lg-min) {
+				width: 11px;
+			}
+		}
+
+		.top-sec {
+
+			@media (min-width: $screen-lg-min) {
+				width: 100%;
+				height: 100%;
+				//min-height: 290px;
+			}
+		}
+
+		.top-sec-container { 
+			width: 100%;
+			padding: 0 20px;
+			height: auto;
+			position: relative;
+
+			@media (min-width: $screen-lg-min) {
+				min-height: 260px;
+				max-width: 1010px;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				min-height: 308px;
+				max-width: 1262px;
+			}
+
+			.dictionary-breadcrumb-wrapper {
+
+				@media (min-width: $screen-lg-min) {
+					margin: 26px 0 29px 0;
+				}
+
+				@media (min-width: $screen-xl-min) {
+					margin: 32px 0 36px 0;
+				}
+
+				.breadcrumb {
+					margin: 0;	
+				}
+
+				.breadcrumb-item  {
+					color: $main-purple;
+					font-size: 1.6rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.75;
+					letter-spacing: normal;
+				}
+			}
+
+			.dictionary-p-sec {
+				margin: 20px 0 0 0;
+
+				@media (min-width: $screen-lg-min) {
+					margin: 0 0 10px 0;
+					padding: 0;
+				}	
+
+				.dictionary-p-container {
+
+					@media (min-width: $screen-lg-min) {
+						position: relative;
+						margin: 0 24px 0 0;
+					}	
+				}
+
+				.dictionary-p-wrapper {
+					order: 2;
+					margin: 0;
+
+
+					@media (min-width: $screen-lg-min) {
+						
+					}
+				}
+
+
+				.dictionary-head {
+					font-size: 3rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 0.83;
+					letter-spacing: normal;
+					color: $main-purple;
+					margin: 0 0 13px 0;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 6.2rem;
+						font-weight: 500;
+						line-height: normal;
+						margin: 0 0 3px 0;
+					}	
+				}
+
+				.dictionary-top-p {
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.25;
+					letter-spacing: normal;
+					color: #4e5665;
+					margin: 0 0 0 55px;
+					width: 100%;
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 3rem;
+						line-height: normal;
+						letter-spacing: normal;
+						padding: 0 0 0 30px;
+						margin: 0;
+					}	
+
+					@media (min-width: $screen-xl-min) {
+						padding: 0 0 0 165px;
+						max-width: 1262px;
+					}	
+				}
+			}
+
+			.alphabet-nav {
+				padding: 0;
+			}
+
+			.alphabet-lg {
+				position: absolute;
+				width: 100%;
+				max-width: 800px;
+				bottom: 0;
+				right: 0;
+				left: auto;
+				padding: 0 25px 0;
+				margin: 0 113px 5px 0;
+
+				@media (min-width: $screen-xl-min) {
+					margin: 0 136px 18px 0;
+					max-width: 900px;
+				}
+
+				ul {
+					width: 100%;
+
+					.alphabet-item {
+						height: 42px;
+						width: 42px;
+						font-size: 3rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						color: #6266a6;
+						cursor: pointer;
+
+						&:active, &:hover, &:focus {
+				        	color: #ffffff;
+							font-weight: 500;
+							background-color: $main-purple;
+							background-position: center;
+				        }
+					}
+				}
+			}
+		}
+
+		.dictionary-top-icon {
+			order: -1;
+			width: 47px;
+			height: 47px;
+			margin: 0 0 6px 0;
+
+			@media (min-width: $screen-lg-min) {
+				width: 93px;
+				height: 93px;
+				margin: 0;
+			}
+
+			@media (min-width: $screen-xl-min) {
+				width: 116px;
+				height: 116px;
+			}
+		}	
+	}
+
+	.dictionary-body {
+		margin: 0 0 70px 0;
+		padding: 0;
+		position: relative;
+
+		@media (min-width: $screen-lg-min) {
+			padding: 0 20px 0;
+			margin: 0px auto 308px;
+			max-width: 1010px;
+			min-height: 100%;
+		}
+
+		@media (min-width: $screen-xl-min) {
+			max-width: 1262px;
+		}
+
+		.body-p-wrapper {
+			padding: 0 20px;
+			margin: 15px 0 30px 0;
+			width: 100%;
+
+			@media (min-width: $screen-lg-min) {
+				padding: 0 0 0 40px;
+			}	
+
+			.body-head {
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 2.7;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				margin: 0;
+			}
+
+			.body-top-p {
+				font-size: 1.6rem;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.25;
+				letter-spacing: normal;
+				color: $text-dark-grey;
+				margin: 0;
+				max-width: 1180px;
+
+				@media (min-width: $screen-lg-min) {
+					line-height: 1.75;
+				}
+			}
+
+			button {
+				width: 180px;
+				height: 50px;
+				object-fit: contain;
+				border-radius: 3px;
+				background-color: $header-blue;
+				box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+				font-size: 2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $main-white;
+
+
+				@media (min-width: $screen-lg-min) {
+	                
+	           	}
+
+				&:active, &:focus {
+		          background-color: #1c6897;
+		          color: $header-blue;
+		          border: 0;
+		        }
+			}
+		}	
+
+		.alphabet-nav {
+			padding: 0;
+			width: 20px;
+			height: 550px;
+			z-index: 99;
+		}
+
+		.alphabet-mobile {
+			height: 100%;
+
+			ul {
+				background-color: $main-white;
+				height: 100%;
+
+				.alphabet-item {
+					height: 20px;
+					width: 20px;
+					font-size: 2rem;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 3;
+					letter-spacing: normal;
+					text-align: center;
+					color: #6266a6;
+					display: inline-block;
+					margin-top: 0!important;
+
+					&:active, &:focus {
+
+			        	color: #ffffff;
+						font-weight: 500;
+						background-color: $main-purple;
+						background-position: center;
+
+			        }
+				}
+			}
+		}	
+
+		.cards-wrapper {
+			width: 100%;
+		}
+
+		.expression-container {
+			display: none;
+		}
+
+		.card {
+			border: 0;
+			width: 100%;
+			padding: 0;
+
+			@media (min-width: $screen-lg-min) {
+
+			}
+		}
+
+		.expression-container {
+
+			.card-header {
+				background-color: $main-white;
+				padding: 0 13px 0 20px;
+				height: 59px;
+				border-bottom: solid 1px $main-purple;
+				font-weight: 500;
+				border-top: solid 1px $bottom-border-question;
+		
+			    @media (min-width: $screen-lg-min) {
+					padding: 0 10px 0 0;
+				    margin: 0;
+				    border: 0;
+				    height: 52px;
+				}
+
+				.collapse-arrow {
+					width: 14px;
+  					height: 8px;
+  					margin: 0;
+				}
+			}
+
+			.collapsed .card-header,  .collapsed .expression {
+				font-weight: normal;
+			}
+
+			.expression {
+				font-weight: 500;
+			}
+
+			.closed-symbol {
+				display: none;
+			}
+
+			.expression-wrapper {
+				width: 100%;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 0 12px 0 0;
+				}
+
+				.expression {
+	   				font-size: 1.6rem;
+					line-height: normal;
+					letter-spacing: normal;
+					color: #4e5666;
+					font-style: normal;
+					font-stretch: normal;
+					letter-spacing: normal;
+					padding: 0 0 0 15px;
+					margin: 0;
+					
+
+	   				@media (min-width: $screen-lg-min) {
+						padding: 0;
+						line-height: 1.25;
+						color: #4e5665;
+						font-size: 2rem;
+					}
+	 			}
+			}
+
+			.card-block {
+				background-color: $background-answer-mobile;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 0 38px 23px 22px;
+					background-color: $main-white;
+				}
+			}	
+		}
+
+		.answer {
+			font-size: 1.6rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #4e5666;
+			border-bottom: solid 1px $bottom-border-question;
+			padding: 33px;
+
+			@media (min-width: $screen-lg-min) {
+				font-size: 1.6rem;
+				line-height: 1.75;
+				border-bottom: solid 3px $main-purple;
+				padding: 0;
+			}
+		}
+
+		.collapsed {
+
+		   .card-header {
+		   		width: 100%;
+				border-bottom: solid 1px $bottom-border-question;
+
+				&:first-child {
+					border: solid $bottom-border-question;
+					border-width: 1px 0;
+
+					@media (min-width: $screen-lg-min) {
+						border: solid $bottom-border-question;
+						border-width: 0 0 1px 0;
+					}
+				}
+			}	
+
+			.open {
+				display: none;
+			}
+
+			.closed-symbol {
+				display: none;
+
+				@media (min-width: $screen-lg-min) {
+					display: block;
+				}
+			}
+
+			.expression-p {
+				padding: 0;
+
+				@media (min-width: $screen-lg-min) {
+					padding: 0!important;
+				}
+			}
+
+			.collapse-arrow {
+				transform: rotate(180deg);
+			}
+		}
+
+		.closed-symbol  {
+			font-size: 3.5rem;
+			height: 24px;
+			width: auto;
+			line-height: 0;
+			padding: 11px 0 0 0;
+			font-family: FbReforma-sign!important;
+			color: $header-blue;
+			font-weight: lighter;
+		}
+
+		.open {
+			display: none;
+			
+			@media (min-width: $screen-lg-min) {
+				display: block;
+				width: 12px;
+				height: 1.5px;
+				background-color: $header-blue;
+			}
+		}
+
+		.collapse-buttons-wrapper {
+			position: absolute;
+			left: 0;
+			right: auto;
+			top: -35px;
+			padding: 0 10px;
+			margin:0 0 0 10px;
+
+			.collapse-button-open, .collapse-button-close, .collapse-button-show-all {
+				font-size: 1.6rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.75;
+				letter-spacing: normal;
+				text-align: left;
+				color: $main-purple;
+				background-color: transparent;
+				border: 0;
+				padding: 0;
+				
+				&:active {
+					text-decoretion: underline !important;
+					//background-color: red;
+				}
+			}
+
+			.button-active {
+				text-decoration: underline !important;
+			}
+		}
+	}
+
+
+	.dictionary-footer {
+		padding: 0;
+		//margin: 0 46px 0;
+		border-top: 0;
+
+		// @media (min-width: $screen-lg-min) {
+		// 	margin: 0 auto 0;
+		// 	padding: 38px 0 0 0;
+		// 	border-top: solid 1px #dddddd;
+		// 	max-width: 1311px;
+		// }
+
+		// .footer-nav-wrapper	{
+		// 	margin:0 0 44px 0;
+		// }
+	}
+
+	.active {
+		color: #fff !important;
+		font-weight: 500 !important;
+		background-color: $main-purple;
+		background-position: center;
+	}
+}

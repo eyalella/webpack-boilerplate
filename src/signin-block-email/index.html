@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מייל לא נמצא במערכת</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css">  -->
+  </head>
+
+  <!-- body -->
+  <body class="signin-block-email">
+    <!-- <link href="../signin.rtl/signin.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- main-content -->
+      <section id="mainContent"  class="main-content d-flex align-items-center justify-content-center">
+        <div class="signin-container d-flex custom-container flex-column flex-lg-row">
+
+          <!-- sign in section -->
+          <div class="signin-sec-wrapper">
+            <div class="signin-p-wrapper">
+              <h1 class="signin-sec-head">
+                כניסה לרשומים
+              </h1>
+              <p class="signin-p-bold">
+                מייל לא נמצא במערכת.
+              </p>
+              <p class="signin-p">
+                לאחר 5 ניסיונות להכנס למערכת, חשבונך נחסם. <br>
+                עליך לאפס את סיסמתך
+              </p>
+              <a class="forgot-password-link" href="../forgot-password-c-from-link/index.html">
+                אפס סיסמא >             
+              </a>
+            </div>
+          </div>
+
+          <!-- registration section -->
+          <div class="reg-sec-wrapper">
+            <div class="reg-p-wrapper">
+              <h1 class="reg-sec-head">
+                להצטרפות לשירות
+              </h1>
+              <p class="reg-sec-p">
+                על מנת להצטרף לשרות ולקבל את הפרסומים ישירות לתיבת הדואר האלקטרוני, יש להירשם לקבלת עדכונים:
+              </p>
+              <div class="reg-button">
+
+                <!-- sign up button -->
+                <button class="btn btn-primary" type="submit" form="signinForm" value="Submit">הרשם</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <footer>
+        ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+@import "../util/util.scss";
+
+.error-page {
+
+	// #searchInput {
+	// 	 padding: 0 0 0 22px;
+	// }
+
+	.custom-container {
+		padding: 0 20px;
+	}
+
+	// .nav-item-text-8 {
+ //      	background-color: rgba(255, 255, 255, 0.19);
+
+	// 	@media (min-width: $screen-lg-min) {
+	// 		border-bottom: solid 1px #1c6897; 
+	// 	 } 
+	// }
+
+	.main-content-wrapper {
+		
+		.main-content {
+			//height: 400px;
+			margin: 100px 0;
+
+			@media (min-width: $screen-lg-min) {
+				height: 943px;
+				padding-top: 177px;
+			}
+
+			.error-arrow {
+				align-self: start;
+				width: 20px;
+				height: 19px;
+				margin: -7px 0 0 -8px;
+
+				@media (min-width: $screen-lg-min) {
+					width: 61px;
+  					height: 58px;
+  					margin: -20px 0 0 -25px;
+				}
+			}
+
+			.error-img {
+				width: 227px;
+  				height: 89px;
+
+				@media (min-width: $screen-lg-min) {
+					width: 680px;
+  					height: 267px;
+				}
+			}
+
+			h1 {
+				margin: 22px 0 0 0;
+				font-size: 3.2rem;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: center;
+				color: $text-dark-grey;
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 6.2rem;
+					margin: 22px 20px 0 0;
+				}
+			}
+		}
+	}
+}

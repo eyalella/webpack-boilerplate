@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סיסמא חדשה</title>
+    ${require("../common/common-stylesheet.html")}
+    <link rel="stylesheet" href="/common/common.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../common.rtl/common.css"> -->
+  </head>
+
+  <!-- body -->
+  <body class="forgot-password-c">
+    <!-- <link href="../forgot-password-c.rtl/forgot-password-c.css" type="text/css" rel="stylesheet"> -->
+
+    <!-- mobile-menu -->
+    <div class="main-menu-mobile-container d-lg-none" aria-labelledby="mainMobileNavTrigger">
+      <div class="main-menu-mobile-wrapper"></div>
+      ${require("../common/top-navigation/top-navigation.html")}
+    </div>
+    <div class="main-content-wrapper">
+
+      <!-- header -->
+      ${require("../common/header/header.html")} 
+
+      <!-- main-content -->
+      <section id="mainContent"  class="d-flex align-items-center justify-content-center">
+        <div class="forgot-password-c-container d-flex custom-container">
+          <div class="forgot-password-c-wrapper d-flex flex-column align-items-center">
+
+            <!-- forgot password c head -->
+            <div class="forgot-password-c-p-wrapper">
+              <h1 class="forgot-password-c-head">
+                הקלד סיסמא חדשה
+              </h1>
+            </div>
+
+            <!-- form wrapper -->
+            <div class="forgot-password-c-form-wrapper">
+
+              <!-- forgot password c form -->
+              <form id="forgotPasswordCForm" data-parsley-validate  class="d-flex flex-column align-items-center">
+                
+                <div class="form-group password-wrapper d-flex flex-column">
+
+                  <div class="forgot-password-wrapper">
+                    <small class="d-none d-lg-block">סיסמא חדשה:</small>
+                    ${require("../common/password-with-eye/password-with-eye.html")}
+                    <div class="password-placeholder">סיסמא</div>
+                  </div>
+
+                  <div class="forgot-password-confirm-wrapper">
+                    <small class="d-none d-lg-block">אשר סיסמא:</small>
+                    ${require("../common/password-confirm-with-eye/password-confirm-with-eye.html")}
+                    <div class="password-confirm-placeholder">הקלד סיסמא שוב</div>
+                  </div>
+
+                </div>   
+                <div class="forgot-password-c-button">
+
+                  <!-- forgot password c button -->
+                  <button class="btn btn-primary" type="submit" data-target="#myModal" data-toggle="modal" form="forgotPasswordCForm">קבע סיסמא חדשה</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- footer -->
+      <footer>
+        ${require("../common/footer/footer.html")}
+      </footer>
+    </div>
+    ${require("../common/common.html")}
+    <script type="text/javascript" src='/common/common.min.js'></script>
+  </body>
+</html>

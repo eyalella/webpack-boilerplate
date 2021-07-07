@@ -1,0 +1,130 @@
+@import "../util/util.scss";
+
+.mailing-file {
+
+	.custom-container-mailing {
+		padding: 0 190px;
+	}
+
+	.main-content-wrapper {
+		width: 100%;
+		box-shadow: none;
+
+		.head-sec {
+			height: 230px;
+			padding: 0 190px 40px;
+		}
+
+		h1 {
+			font-size: 6.2rem;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $main-white;
+			margin: 0;
+		}
+
+		.mailing-file-top-sec {
+			background-color: $header-blue;
+			height: 307px;
+
+		}
+
+		.mailing-logo-sec {
+			height: 75px;
+			border-bottom: solid 2px $bottom-border-question;
+		}
+
+		.mailing-file-body {
+			padding: 72px 190px 0;
+		}
+
+		.main-p-wrapper {
+			max-width: 912px;
+			font-size: 1.6rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.75;
+			letter-spacing: normal;
+			color: $text-dark-grey;
+			margin: 0 0 34px 0;
+
+			p {
+				margin: 0 0 25px 0;
+			}
+
+			.bottom-p {
+				font-weight: 500;
+			}
+		}
+
+		.file-sec {
+			margin: 0 0 120px 0;
+		}
+
+		.file-wrapper {
+			width: 162px;
+			height: 189px;
+			background-color: #d8d8d8;
+  		}
+
+  		.file-sec-p {
+			max-width: 498px;
+			font-size: 1.6rem;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.38;
+			letter-spacing: normal;
+			color: $header-blue;
+			margin: 0 18px 0 0;
+  		}
+	}
+
+	.mailing-footer {
+		border-top: solid 2px $footer-border; 
+		padding: 40px 0 80px;
+		margin: 0 164px; 
+
+		.footer-nav-wrapper-mailing {
+
+			.mailing-footer-nav {
+			    margin: 0;
+			    padding: 0;
+
+			    a {
+					height: auto;
+					text-decoration: none;
+
+				    .mailing-footer-link {
+						font-size: 1.6rem;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.69;
+						letter-spacing: normal;
+						color: $header-blue;
+				    }
+			  	}
+
+			  	span {
+			    	font-weight: 500;
+			    }
+
+				.footer-line {
+					margin: 0 10px;
+					font-size: 1.6rem;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.69;
+					letter-spacing: normal;
+					color: $header-blue;
+				}
+			}
+		}
+	}
+}
